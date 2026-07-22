@@ -1,0 +1,136 @@
+{
+  "enabled": true,
+  "outputDir": "zh_cn",
+  "htmlLang": "zh-CN",
+  "htmlDir": "ltr",
+  "meta": {
+    "title": "InnerOutliner - 大纲梳理，专注完成",
+    "description": "InnerOutliner 是一款本地优先任务大纲工具，帮你将零散想法整理为可执行计划。注重隐私，无需云端，无需账号。",
+    "keywords": "InnerOutliner, 任务大纲，本地优先，待办工具，任务管理，效率工具，离线",
+    "canonical": "https://inneroutliner.com/zh_cn/",
+    "ogLocale": "zh_CN",
+    "ogTitle": "InnerOutliner - 大纲梳理，专注完成",
+    "ogDesc": "本地优先任务大纲工具。你的数据，始终留在你的设备上。"
+  },
+  "nav": {
+    "brand": "InnerOutliner",
+    "langSwitcher": [
+      {
+        "code": "en",
+        "label": "EN",
+        "href": "/en/",
+        "active": false
+      },
+      {
+        "code": "zh-cn",
+        "label": "中文",
+        "href": "/zh_cn/",
+        "active": true
+      }
+    ]
+  },
+  "hero": {
+    "ariaLabel": "主视觉区",
+    "badge": "本地优先，隐私保护，极速响应",
+    "h1-line1": "大纲梳理，",
+    "h1-line2": "专注当下，",
+    "h1_line3": "高效完成。",
+    "lead": "将零散的想法快速整理为清晰可执行的任务结构。嵌套大纲、子任务、提醒——所有数据始终留在你的设备上。",
+    "cta_primary_href": "#download",
+    "cta_primary_label": "免费下载",
+    "cta_secondary_href": "#features",
+    "cta_secondary_label": "查看功能"
+  },
+  "stats": [
+    {
+      "value": "100%",
+      "label": "本地存储，零云端数据暴露"
+    },
+    {
+      "value": "Instant",
+      "label": "无同步延迟，无需登录"
+    },
+    {
+      "value": "14+",
+      "label": "支持语言包"
+    }
+  ],
+  "download": {
+    "ariaLabel": "下载 InnerOutliner",
+    "heading": "立即下载",
+    "stores": [
+      {
+        "sub": "获取于",
+        "name": "微软商店",
+        "href": "#",
+        "ariaLabel": "从微软商店获取"
+      }
+    ]
+  },
+  "features": {
+    "ariaLabel": "功能介绍",
+    "heading": "你所需要的一切。",
+    "headingAccent": "不多不少。",
+    "subheading": "专为专注工作设计。无需订阅，数据不离开你的设备。",
+    "items": [
+      {
+        "title": "任务层级",
+        "desc": "将大目标拆解为父任务与子任务，结构一览无余。"
+      },
+      {
+        "title": "重点任务置顶",
+        "desc": "将今日最关键的任务固定展示在置顶区，保持专注不分散。"
+      },
+      {
+        "title": "提醒与截止日期",
+        "desc": "为每个任务设置本地提醒与截止时间，再也不错过重要节点。"
+      },
+      {
+        "title": "拖拽排序",
+        "desc": "通过流畅的拖拽操作即时调整列表与子任务结构。"
+      },
+      {
+        "title": "进度趋势",
+        "desc": "可视化时间线报告，清晰掌握每周任务完成节奏。"
+      },
+      {
+        "title": "多语言界面",
+        "desc": "一键切换全界面语言，已支持14种语言并持续添加。"
+      }
+    ]
+  },
+  "trust": [
+    {
+      "text": "100% 离线运行，无需账号"
+    },
+    {
+      "text": "数据永不离开你的设备"
+    }
+  ],
+  "footer": {
+    "copyright": "InnerOutliner. 保留所有权利。",
+    "linksAriaLabel": "页脚链接",
+    "links": [
+      {
+        "label": "隐私政策",
+        "href": "/zh_cn/privacy/"
+      },
+      {
+        "label": "服务条款",
+        "href": "/zh_cn/terms/"
+      },
+      {
+        "label": "安全策略",
+        "href": "/zh_cn/security/"
+      },
+      {
+        "label": "更新日志",
+        "href": "/zh_cn/changelog/"
+      },
+      {
+        "label": "中文",
+        "href": "/zh_cn/"
+      }
+    ]
+  }
+}

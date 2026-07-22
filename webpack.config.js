@@ -1,0 +1,49 @@
+'use strict';
+
+const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
+const LocaleSitePlugin = require('./src/build/locale-site-plugin');
+
+module.exports = (env, argv) => {
+  const isProd = (argv && argv.mode === 'production') || process.env.NODE_ENV === 'production';
+
+  return {
+    mode: isProd ? 'production' : 'development',
+
+    // -- Entry: page interaction script (will be minified + inlined) ---
+    entry: './src/scripts/main.js',
+
+    output: {
+      filename: '__bundle.js',
+      path: path.resolve(__dirname, 'dist'),
+      clean: true
+    },
+
+    optimization: {
+      minimize: isProd,
+      minimizer: [
+        new TerserPlugin({
+          terserOptions: {
+            compress: { drop_console: isProd },
+            format: { comments: false },
+          },
+          extractComments: false,
+        }),
+      ],
+    },
+
+    // -- Locale-aware static site generator ----
+    plugins: [
+      new LocaleSitePlugin({
+        template: path.resolve(__dirname, 'src/templates/page.html'),
+        localesDir: path.resolve(__dirname, 'src/data/locales'),
+        style: path.resolve(__dirname, 'src/styles/main.css'),
+        bundleKey: '__bundle.js',
+      }),
+    ],
+
+    // Silence "asset size" warnings - everything is intentionally inlined
+    performance: { hints: false },
+    stats: 'minimal',
+  };
+};

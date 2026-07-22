@@ -1,0 +1,82 @@
+{
+  "enabled": true,
+  "outputDir": "en",
+  "htmlLang": "en",
+  "htmlDir": "ltr",
+
+  "meta": {
+    "title": "InnerOutliner - Outline. Focus. Done.",
+    "description": "InnerOutliner is a local-first task outliner that turns scattered ideas into executable plans. Private by design - no cloud, no account required.",
+    "keywords": "InnerOutliner, task outliner, local-first, todo app, task manager, productivity, offline",
+    "canonical": "https://inneroutliner.com/en/",
+    "ogLocale": "en_US",
+    "ogTitle": "InnerOutliner - Outline. Focus. Done.",
+    "ogDesc": "A local-first task outliner. Your data stays on your device. Always."
+  },
+
+  "nav": {
+    "brand": "InnerOutliner",
+    "langSwitcher": [
+      { "code": "en", "label": "EN", "href": "/en/", "active": true},
+      { "code": "zh-cn", "label": "中文", "href": "/zh_cn", "active": false}
+    ]
+  },
+
+  "hero": {
+    "ariaLabel": "Hero",
+    "badge": "Local-first, Private, Fast",
+    "h1-line1": "Outline.",
+    "h1-line2": "Focus.",
+    "h1_line3": "Done.",
+    "lead": "Turn scattered thoughts into a clean, executable task structure. Nested outlines, subtasks, reminders - everything stays on your device.",
+    "cta_primary_href": "#download",
+    "cta_primary_label": "Download Free",
+    "cta_secondary_href": "#features",
+    "cta_secondary_label": "See Features"
+  },
+
+  "stats": [
+    { "value": "100%", "label": "Local storage - zero cloud exposure" },
+    { "value": "Instant", "label": "No sync delay, no login required" },
+    { "value": "14+", "label": "Language packs supported"}
+  ],
+
+  "download": {
+    "ariaLabel": "Download InnerOutliner",
+    "heading": "Download",
+    "stores": [
+      { "sub": "Get it on", "name": "Microsoft Store", "href": "#", "ariaLabel": "Get it on Microsoft Store"}
+    ]
+  },
+
+  "features": {
+    "ariaLabel": "Features",
+    "heading": "Everything you need.",
+    "headingAccent": "Nothing you don't",
+    "subheading": "Designed for focused work. No subscriptions to worry about, no data leaving your machine.",
+    "items": [
+      { "title": "Nested outlines", "desc": "Break any goal into parent tasks and subtasks. Crystal-clear structure." },
+      { "title": "Priority pinning", "desc": "Hoist today's most critical items to a dedicated pinned area. Stay laser-focused." },
+      { "title": "Reminders & due dates", "desc": "Per-task deadlines and local notifications. Never miss a follow-up again." },
+      { "title": "Drag & reorder", "desc": "Restructure your lists and sublists instantly with fluid drag-and-drop." },
+      { "title": "Progress trends", "desc": "Visual timeline reports reveal your completion rhythm week by week" },
+      { "title": "Multi-language UI", "desc": "Switch the entire interface language in one tap - 14 locales and growing." }
+    ]
+  },
+
+  "trust": [
+    { "text": "100% offline - no account needed" },
+    { "text": "Data never leaves your device" }
+  ],
+
+  "footer": {
+    "copyright": "InnerOutliner. All rights reserved.",
+    "linksAriaLabel": "Footer links",
+    "links": [
+      { "label": "Privacy", "href": "/en/privacy/" },
+      { "label": "Terms", "href": "/en/terms" },
+      { "label": "Security", "href": "/en/changelog/"},
+      { "label": "中文", "href": "/zh_cn/" }
+    ]
+  }
+}
