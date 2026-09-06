@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="{{htmlLang}}" dir="{{htmlDir}}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{meta.title}}</title>
+    <meta name="description" content="{{meta.description}}" />
+    <meta name="keywords" content="{{meta.keywords}}" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0a0c12" />
+    <link rel="canonical" href="{{meta.canonical}}" />
+    {{#each languages}}
+    <link rel="alternate" hreflang="{{htmlLang}}" href="{{absHref}}" />
+    {{/each}}
+    <link rel="alternate" hreflang="x-default" href="{{xDefaultHref}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{nav.brand}}" />
+    <meta property="og:locale" content="{{meta.ogLocale}}" />
+    <meta property="og:title" content="{{meta.ogTitle}}" />
+    <meta property="og:description" content="{{meta.ogDesc}}" />
+    <meta property="og:url" content="{{meta.canonical}}" />
+    {{STRUCTURED_DATA}}
+    {{INLINE_CSS}}
+  </head>
+  <body>
+    <div class="page">
+      <nav class="nav" aria-label="Main navigation">
+        <span class="brand" href="/{{currentLanguage.code}}">{{nav.brand}}</span>
+        <div class="nav-right">
+          <div class="langpicker" data-langpicker>
+            <button type="button" class="langpicker-trigger" id="lang-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-menu" aria-label="{{nav.language.ariaLabel}}">
+              <span class="langpicker-globe" aria-hidden="true">&#127760;</span>
+              <span class="langpicker-current">{{currentLanguage.name}}</span>
+              <span class="langpicker-caret" aria-hidden="true"></span>
+            </button>
+
+            <div class="langpicker-menu" id="lang-menu" role="listbox" tabindex="-1" aria-labelledby="lang-trigger" hidden>
+              <p class="langpicker-menu-title">{{nav.language.heading}}</p>
+              <ul class="langpicker-list">
+                {{#each languages}}
+                <li>
+                  <a href="{{href}}" lang="{{htmlLang}}" role="option" class="langpicker-option{{#if active}} active{{/if}}" aria-selected="{{#if active}}true{{else}}false{{/if}}"{{#if active}}aria-current="page"{{/if}}>
+                    <span class="langpicker-option-name">{{name}}</span>
+                    <span class="langpicker-option-code">{{code}}</span>
+                  </a>
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+          </div>
+          <div class="langpicker-backdrop" data-langpicker-backdrop hidden></div>
+        </div>
+       </nav>
+
+       <section class="features-section" aria-label="{{pageLabel}}">
+        <div class="section-header">
+          <h1>{{pageLabel}}</h1>
+          <p>{{legal.privacy.summary}}</p>
+        </div>
+        <div class="features-grid">
+          {{#each legal.privacy.sections}}
+          <article class="feature-card">
+            <h2>{{heading}}</h2>
+            {{#each paragraphs}}
+            <p>{{this}}</p>
+            {{/each}}
+          </article>
+          {{/each}}
+        </div>
+       </section>
+
+       <footer class="footer">
+        <div class="footer-left">&copy; <span id="yr"></span> {{footer.copyright}}</div>
+        <nav class="footer-links" aria-label="{{footer.linksAriaLabel}}">
+          {{#each footer.links}}
+          <a href="{{href}}">{{label}}</a>
+          {{/each}}
+        </nav>
+       </footer>
+    </div>
+
+    {{INLINE_JS}}
+  </body>
+</html>

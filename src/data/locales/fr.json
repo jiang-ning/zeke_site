@@ -91,13 +91,91 @@
     { "text": "Les données ne quittent jamais votre appareil" }
   ],
 
+  "legal": {
+    "privacy": {
+      "summary": "Comment InnerOutliner gère les informations et protège votre vie privée.",
+      "sections": [
+        {
+          "heading": "Données locales par défaut",
+          "paragraphs": [
+            "Tes tâches, plans, rappels et paramètres sont stockés localement sur ton appareil.",
+            "InnerOutliner ne nécessite pas de compte et n'envoie pas vos données de tâches sur nos serveurs lors d'une utilisation normale."
+          ]
+        },
+        {
+          "heading": "Informations que nous collectons",
+          "paragraphs": [
+            "InnerOutliner ne collecte pas d'informations personnelles depuis l'application.",
+            "Si vous nous contactez pour obtenir de l'aide, nous utilisons les informations que vous fournissez uniquement pour répondre à votre demande."
+          ]
+        },
+        {
+          "heading": "Ta responsabilité",
+          "paragraphs": [
+            "Parce que vos données restent sur votre appareil, c'est à vous de faire des sauvegardes et de sécuriser l'accès à votre appareil."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "summary": "Les conditions qui s'appliquent lorsque vous utilisez InnerOutliner.",
+      "sections": [
+        {
+          "heading": "Utiliser l'application",
+          "paragraphs": [
+            "Vous acceptez d'utiliser InnerOutliner en respectant les lois et réglementations en vigueur.",
+            "Vous pouvez utiliser l'application pour la planification de tâches personnelles ou professionnelles, à condition que son utilisation ne contrevienne pas à ces conditions."
+          ]
+        },
+        {
+          "heading": "Disponibilité",
+          "paragraphs": [
+            "InnerOutliner est fourni tel quel, sans garantie de disponibilité continue ni de compatibilité avec tous les environnements.",
+            "Nous pouvons mettre à jour, modifier ou supprimer des fonctionnalités au fur et à mesure que l'application évolue."
+          ]
+        },
+        {
+          "heading": "Tes données",
+          "paragraphs": [
+            "Tu es responsable de ton contenu et de la sauvegarde de tes données, puisque celles-ci sont stockées localement sur ton appareil."
+          ]
+        }
+      ]
+    },
+    "security": {
+      "summary": "Comment InnerOutliner réduit les risques grâce à une conception locale d'abord.",
+      "sections": [
+        {
+          "heading": "Architecture locale en priorité",
+          "paragraphs": [
+            "InnerOutliner est conçu pour garder vos données de tâches sur votre appareil, réduisant au minimum les risques d'attaques à distance.",
+            "Aucune synchronisation cloud permanente n'est nécessaire pour un fonctionnement normal."
+          ]
+        },
+        {
+          "heading": "Protection de l'appareil",
+          "paragraphs": [
+            "Protégez votre appareil avec une méthode de connexion sécurisée et maintenez son système d'exploitation à jour.",
+            "Installez les mises à jour de l'application dès qu'elles sont disponibles pour bénéficier des dernières améliorations et corrections de sécurité."
+          ]
+        },
+        {
+          "heading": "Signaler des préoccupations",
+          "paragraphs": [
+            "Si vous pensez avoir trouvé un problème de sécurité, contactez-nous via le canal de support indiqué sur le site principal."
+          ]
+        }
+      ]
+    }
+  },
+
   "footer": {
     "copyright": "InnerOutliner. Tous droits réservés.",
     "linksAriaLabel": "Liens du pied de page",
     "links": [
-      { "label": "Confidentialité", "href": "/en/privacy/" },
-      { "label": "Conditions", "href": "/en/terms" },
-      { "label": "Sécurité", "href": "/en/changelog/"}
+      { "label": "Confidentialité", "href": "/fr/privacy/" },
+      { "label": "Conditions", "href": "/fr/terms/" },
+      { "label": "Sécurité", "href": "/fr/security/"}
     ]
   }
 }

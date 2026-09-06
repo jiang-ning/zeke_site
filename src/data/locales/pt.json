@@ -91,13 +91,91 @@
     { "text": "Os dados nunca saem do teu dispositivo" }
   ],
 
+  "legal": {
+    "privacy": {
+      "summary": "Como o InnerOutliner lida com a informação e protege a tua privacidade.",
+      "sections": [
+        {
+          "heading": "Dados locais por defeito",
+          "paragraphs": [
+            "As suas tarefas, esboços, lembretes e definições estão guardados localmente no seu dispositivo.",
+            "O InnerOutliner não requer uma conta nem envia os teus dados de tarefas para os nossos servidores durante o uso normal."
+          ]
+        },
+        {
+          "heading": "Informações que recolhemos",
+          "paragraphs": [
+            "O InnerOutliner não recolhe informações pessoais dentro da aplicação.",
+            "Se nos contactares para obter apoio, usamos a informação que forneces apenas para responder ao teu pedido."
+          ]
+        },
+        {
+          "heading": "A tua responsabilidade",
+          "paragraphs": [
+            "Como os teus dados permanecem no teu dispositivo, és responsável por fazer backups e proteger o acesso ao teu dispositivo."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "summary": "Os termos que se aplicam quando usas o InnerOutliner.",
+      "sections": [
+        {
+          "heading": "A usar a app",
+          "paragraphs": [
+            "Aceitas usar o InnerOutliner em conformidade com as leis e regulamentos aplicáveis.",
+            "Podes usar a app para planear tarefas pessoais ou de trabalho, desde que o uso não viole estes termos."
+          ]
+        },
+        {
+          "heading": "Disponibilidade",
+          "paragraphs": [
+            "O InnerOutliner é fornecido tal como está, sem garantias de disponibilidade contínua ou de compatibilidade com todos os ambientes.",
+            "Podemos atualizar, alterar ou descontinuar funcionalidades à medida que a app evolui."
+          ]
+        },
+        {
+          "heading": "Os teus dados",
+          "paragraphs": [
+            "Tu és responsável pelo teu conteúdo e por manter backups, já que os teus dados estão armazenados localmente no teu dispositivo."
+          ]
+        }
+      ]
+    },
+    "security": {
+      "summary": "Como o InnerOutliner reduz riscos com um design local-prioritário.",
+      "sections": [
+        {
+          "heading": "Arquitetura local-primeiro",
+          "paragraphs": [
+            "O InnerOutliner foi concebido para manter os dados das suas tarefas no seu dispositivo, minimizando a superfície de ataque remota.",
+            "Não é necessária sincronização contínua na cloud para o funcionamento normal."
+          ]
+        },
+        {
+          "heading": "Proteção do dispositivo",
+          "paragraphs": [
+            "Protege o teu dispositivo com um método de início de sessão forte e mantém o sistema operativo atualizado.",
+            "Instala as atualizações da app quando estiverem disponíveis para receber as últimas melhorias e correções de segurança."
+          ]
+        },
+        {
+          "heading": "Reportar preocupações",
+          "paragraphs": [
+            "Se acha que encontrou um problema de segurança, contacte-nos através do canal de suporte indicado no site principal."
+          ]
+        }
+      ]
+    }
+  },
+
   "footer": {
     "copyright": "InnerOutliner. Todos os direitos reservados.",
     "linksAriaLabel": "Links do rodapé",
     "links": [
-      { "label": "Privacidade", "href": "/en/privacy/" },
-      { "label": "Termos", "href": "/en/terms" },
-      { "label": "Segurança", "href": "/en/changelog/"}
+      { "label": "Privacidade", "href": "/pt/privacy/" },
+      { "label": "Termos", "href": "/pt/terms/" },
+      { "label": "Segurança", "href": "/pt/security/"}
     ]
   }
 }

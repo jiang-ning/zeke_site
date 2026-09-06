@@ -91,13 +91,91 @@
     { "text": "資料永遠不會離開你的裝置" }
   ],
 
+  "legal": {
+    "privacy": {
+      "summary": "InnerOutliner 如何處理資訊並保護你的隱私。",
+      "sections": [
+        {
+          "heading": "預設使用本地資料",
+          "paragraphs": [
+            "你的任務、綱要、提醒和設定都儲存在你的裝置上。",
+            "InnerOutliner 在正常使用時不需要帳號，也不會將你的任務資料上傳到我們的伺服器。"
+          ]
+        },
+        {
+          "heading": "我們收集的資訊",
+          "paragraphs": [
+            "InnerOutliner 不會從應用程式內收集個人資訊。",
+            "如果你聯絡我們尋求支援，我們只會使用你提供的資訊來回應你的請求。"
+          ]
+        },
+        {
+          "heading": "你的責任",
+          "paragraphs": [
+            "因為你的資料保存在你的裝置上，所以你需要自己負責備份以及保護裝置的存取安全。"
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "summary": "使用 InnerOutliner 時適用的條款。",
+      "sections": [
+        {
+          "heading": "使用這個應用程式",
+          "paragraphs": [
+            "你同意遵守相關法律法規使用 InnerOutliner。",
+            "你可以使用這個應用程式來進行個人或工作任務規劃，只要使用方式不違反這些條款。"
+          ]
+        },
+        {
+          "heading": "可用性",
+          "paragraphs": [
+            "InnerOutliner 是按現狀提供的，無法保證持續可用或與每個環境兼容。",
+            "隨著應用程式的演進，我們可能會更新、修改或停用某些功能。"
+          ]
+        },
+        {
+          "heading": "你的資料",
+          "paragraphs": [
+            "你要對你的內容和備份負責，因為你的資料是存放在你自己的裝置上的。"
+          ]
+        }
+      ]
+    },
+    "security": {
+      "summary": "InnerOutliner 如何透過本地優先設計來降低風險。",
+      "sections": [
+        {
+          "heading": "以本地為先的架構",
+          "paragraphs": [
+            "InnerOutliner 是為了讓你的任務資料保留在你的裝置上而設計，這樣可以把遠端攻擊風險降到最低。",
+            "正常運作不需要一直開啟的雲端同步。"
+          ]
+        },
+        {
+          "heading": "裝置保護",
+          "paragraphs": [
+            "用強大的登入方式保護你的裝置，並保持其作業系統更新。",
+            "有更新時安裝應用程式更新，以獲得最新的改進和安全修補。"
+          ]
+        },
+        {
+          "heading": "回報問題",
+          "paragraphs": [
+            "如果你認為自己發現了安全問題，請透過主網站上列出的支援管道聯絡我們。"
+          ]
+        }
+      ]
+    }
+  },
+
   "footer": {
     "copyright": "InnerOutliner。版權所有。",
     "linksAriaLabel": "頁腳連結",
     "links": [
-      { "label": "隱私", "href": "/en/privacy/" },
-      { "label": "條款", "href": "/en/terms" },
-      { "label": "安全", "href": "/en/changelog/"}
+      { "label": "隱私", "href": "/zh_tw/privacy/" },
+      { "label": "條款", "href": "/zh_tw/terms/" },
+      { "label": "安全", "href": "/zh_tw/security/"}
     ]
   }
 }

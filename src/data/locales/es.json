@@ -91,13 +91,91 @@
     { "text": "Los datos nunca salen de tu dispositivo" }
   ],
 
+  "legal": {
+    "privacy": {
+      "summary": "Cómo InnerOutliner maneja la información y protege tu privacidad.",
+      "sections": [
+        {
+          "heading": "Datos locales por defecto",
+          "paragraphs": [
+            "Tus tareas, esquemas, recordatorios y configuraciones se almacenan localmente en tu dispositivo.",
+            "InnerOutliner no requiere una cuenta ni subir tus datos de tareas a nuestros servidores durante el uso normal."
+          ]
+        },
+        {
+          "heading": "Información que recopilamos",
+          "paragraphs": [
+            "InnerOutliner no recopila información personal desde dentro de la aplicación.",
+            "Si nos contactas para soporte, usamos la información que nos das solo para responder a tu solicitud."
+          ]
+        },
+        {
+          "heading": "Tu responsabilidad",
+          "paragraphs": [
+            "Como tus datos permanecen en tu dispositivo, eres responsable de hacer copias de seguridad y de proteger el acceso a tu dispositivo."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "summary": "Los términos que aplican cuando usas InnerOutliner.",
+      "sections": [
+        {
+          "heading": "Usando la app",
+          "paragraphs": [
+            "Aceptas usar InnerOutliner cumpliendo con las leyes y regulaciones aplicables.",
+            "Puedes usar la aplicación para planificar tareas personales o de trabajo, siempre que su uso no viole estos términos."
+          ]
+        },
+        {
+          "heading": "Disponibilidad",
+          "paragraphs": [
+            "InnerOutliner se proporciona tal cual, sin garantías de disponibilidad continua o compatibilidad con todos los entornos.",
+            "Podemos actualizar, cambiar o descontinuar funciones a medida que la app evoluciona."
+          ]
+        },
+        {
+          "heading": "Tus datos",
+          "paragraphs": [
+            "Eres responsable de tu contenido y de mantener copias de seguridad, ya que tus datos se almacenan localmente en tu dispositivo."
+          ]
+        }
+      ]
+    },
+    "security": {
+      "summary": "Cómo InnerOutliner reduce el riesgo con un diseño local-prioritario.",
+      "sections": [
+        {
+          "heading": "Arquitectura local primero",
+          "paragraphs": [
+            "InnerOutliner está diseñado para mantener los datos de tus tareas en tu dispositivo, minimizando la superficie de ataque remota.",
+            "No se requiere sincronización en la nube siempre activa para el funcionamiento normal."
+          ]
+        },
+        {
+          "heading": "Protección del dispositivo",
+          "paragraphs": [
+            "Protege tu dispositivo con un método de inicio de sesión fuerte y mantén su sistema operativo actualizado.",
+            "Instala las actualizaciones de la app cuando estén disponibles para recibir las últimas mejoras y correcciones de seguridad."
+          ]
+        },
+        {
+          "heading": "Reportando preocupaciones",
+          "paragraphs": [
+            "Si crees que has encontrado un problema de seguridad, contáctanos a través del canal de soporte que aparece en el sitio principal."
+          ]
+        }
+      ]
+    }
+  },
+
   "footer": {
     "copyright": "InnerOutliner. Todos los derechos reservados.",
     "linksAriaLabel": "Enlaces del pie de página",
     "links": [
-      { "label": "Privacidad", "href": "/en/privacy/" },
-      { "label": "Términos", "href": "/en/terms" },
-      { "label": "Seguridad", "href": "/en/changelog/"}
+      { "label": "Privacidad", "href": "/es/privacy/" },
+      { "label": "Términos", "href": "/es/terms/" },
+      { "label": "Seguridad", "href": "/es/security/"}
     ]
   }
 }

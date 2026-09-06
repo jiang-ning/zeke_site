@@ -36,6 +36,12 @@ module.exports = (env, argv) => {
     plugins: [
       new LocaleSitePlugin({
         template: path.resolve(__dirname, 'src/templates/page.html'),
+        pageTemplates: {
+          index: path.resolve(__dirname, 'src/templates/page.html'),
+          privacy: path.resolve(__dirname, 'src/templates/privacy.html'),
+          terms: path.resolve(__dirname, 'src/templates/terms.html'),
+          security: path.resolve(__dirname, 'src/templates/security.html'),
+        },
         localesDir: path.resolve(__dirname, 'src/data/locales'),
         style: path.resolve(__dirname, 'src/styles/main.css'),
         imagesDir: path.resolve(__dirname, 'src/images'),

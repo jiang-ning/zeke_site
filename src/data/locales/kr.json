@@ -91,13 +91,91 @@
     { "text": "데이터는 절대 기기를 떠나지 않아요" }
   ],
 
+  "legal": {
+    "privacy": {
+      "summary": "InnerOutliner가 정보를 다루고 개인정보를 보호하는 방식.",
+      "sections": [
+        {
+          "heading": "기본적으로 로컬 데이터",
+          "paragraphs": [
+            "당신의 작업, 개요, 알림, 설정은 모두 기기에 로컬로 저장돼 있어요.",
+            "InnerOutliner는 일반적으로 사용할 때 계정이 필요 없고 작업 데이터를 서버에 업로드하지 않아도 돼요."
+          ]
+        },
+        {
+          "heading": "우리가 수집하는 정보",
+          "paragraphs": [
+            "InnerOutliner는 앱 내에서 개인 정보를 수집하지 않아요.",
+            "만약 저희에게 지원을 요청하면, 저희는 제공해 주신 정보를 오직 요청에 답변하는 데만 사용해요."
+          ]
+        },
+        {
+          "heading": "네 책임",
+          "paragraphs": [
+            "데이터가 기기에 남아 있기 때문에 백업을 하고 기기 접근을 안전하게 지키는 건 당신 책임이에요."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "summary": "InnerOutliner를 사용할 때 적용되는 조건들.",
+      "sections": [
+        {
+          "heading": "앱 사용하기",
+          "paragraphs": [
+            "당신은 InnerOutliner를 관련 법규를 준수해서 사용하기로 동의합니다.",
+            "이 앱은 개인용이나 업무 용도로 일정 계획을 하는 데 사용할 수 있지만, 사용이 이 약관을 위반하지 않아야 해."
+          ]
+        },
+        {
+          "heading": "사용 가능",
+          "paragraphs": [
+            "InnerOutliner는 중단 없는 사용 가능성이나 모든 환경과의 호환성을 보장하지 않고 그대로 제공돼요.",
+            "앱이 발전함에 따라 기능을 업데이트하거나, 변경하거나, 중단할 수도 있어요."
+          ]
+        },
+        {
+          "heading": "너의 데이터",
+          "paragraphs": [
+            "당신은 콘텐츠와 백업 관리를 책임져야 해, 데이터가 당신 기기에 로컬로 저장되니까."
+          ]
+        }
+      ]
+    },
+    "security": {
+      "summary": "InnerOutliner가 로컬 우선 디자인으로 위험을 줄이는 방법.",
+      "sections": [
+        {
+          "heading": "로컬 우선 아키텍처",
+          "paragraphs": [
+            "InnerOutliner는 작업 데이터를 기기에 보관하도록 설계되어, 원격 공격 표면을 최소화해요.",
+            "일반적인 사용에는 항상 켜져 있는 클라우드 동기화가 필요하지 않아."
+          ]
+        },
+        {
+          "heading": "기기 보호",
+          "paragraphs": [
+            "강력한 로그인 방법으로 기기를 보호하고 운영 체제를 최신 상태로 유지하세요.",
+            "최신 개선 사항과 보안 수정사항을 받으려면 앱 업데이트가 나올 때 설치하세요."
+          ]
+        },
+        {
+          "heading": "우려 사항 보고하기",
+          "paragraphs": [
+            "보안 문제를 발견했다고 생각되면, 메인 사이트에 나와 있는 지원 채널을 통해 저희에게 연락해 주세요."
+          ]
+        }
+      ]
+    }
+  },
+
   "footer": {
     "copyright": "InnerOutliner. 모든 권리 보유.",
     "linksAriaLabel": "푸터 링크",
     "links": [
-      { "label": "개인 정보", "href": "/en/privacy/" },
-      { "label": "약관", "href": "/en/terms" },
-      { "label": "보안", "href": "/en/changelog/"}
+      { "label": "개인 정보", "href": "/kr/privacy/" },
+      { "label": "약관", "href": "/kr/terms/" },
+      { "label": "보안", "href": "/kr/security/"}
     ]
   }
 }

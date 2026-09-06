@@ -115,21 +115,98 @@
       "text": "数据永不离开你的设备"
     }
   ],
+  "legal": {
+    "privacy": {
+      "summary": "InnerOutliner 如何处理信息并保护你的隐私。",
+      "sections": [
+        {
+          "heading": "默认本地数据",
+          "paragraphs": [
+            "你的任务、概要、提醒和设置都存储在你的设备上。",
+            "InnerOutliner 在正常使用时不需要账户，也不会将你的任务数据上传到我们的服务器。"
+          ]
+        },
+        {
+          "heading": "我们收集的信息",
+          "paragraphs": [
+            "InnerOutliner 不会在应用内收集个人信息。",
+            "如果你联系我们寻求支持，我们只会使用你提供的信息来回应你的请求。"
+          ]
+        },
+        {
+          "heading": "你的责任",
+          "paragraphs": [
+            "因为你的数据保存在你的设备上，所以你需要负责备份和保护设备的访问安全。"
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "summary": "使用 InnerOutliner 时适用的条款。",
+      "sections": [
+        {
+          "heading": "使用这个应用",
+          "paragraphs": [
+            "你同意在遵守适用法律法规的前提下使用InnerOutliner。",
+            "你可以用这个应用来规划个人或工作任务，只要这种使用不违反这些条款。"
+          ]
+        },
+        {
+          "heading": "可用性",
+          "paragraphs": [
+            "InnerOutliner 是按原样提供的，不保证持续可用或与每个环境兼容。",
+            "随着应用的发展，我们可能会更新、更改或停止某些功能。"
+          ]
+        },
+        {
+          "heading": "你的数据",
+          "paragraphs": [
+            "你要对自己的内容负责，也要自己备份，因为你的数据是存储在本地设备上的。"
+          ]
+        }
+      ]
+    },
+    "security": {
+      "summary": "InnerOutliner 如何通过本地优先设计降低风险。",
+      "sections": [
+        {
+          "heading": "本地优先架构",
+          "paragraphs": [
+            "InnerOutliner 旨在将你的任务数据保存在设备上，尽量减少远程攻击风险。",
+            "正常操作不需要始终开启的云同步。"
+          ]
+        },
+        {
+          "heading": "设备保护",
+          "paragraphs": [
+            "用强密码保护你的设备，并保持操作系统更新。",
+            "有更新时安装应用，以获取最新改进和安全修复。"
+          ]
+        },
+        {
+          "heading": "报告问题",
+          "paragraphs": [
+            "如果你认为自己发现了一个安全问题，请通过官网上列出的支持渠道联系我们。"
+          ]
+        }
+      ]
+    }
+  },
   "footer": {
     "copyright": "InnerOutliner. 保留所有权利。",
     "linksAriaLabel": "页脚链接",
     "links": [
       {
         "label": "隐私政策",
-        "href": "/en/privacy/"
+        "href": "/zh_cn/privacy/"
       },
       {
         "label": "服务条款",
-        "href": "/en/terms/"
+        "href": "/zh_cn/terms/"
       },
       {
         "label": "安全策略",
-        "href": "/en/security/"
+        "href": "/zh_cn/security/"
       }
     ]
   }
