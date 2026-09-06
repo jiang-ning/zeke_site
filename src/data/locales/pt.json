@@ -1,0 +1,103 @@
+{
+  "enabled": true,
+  "outputDir": "pt",
+  "htmlLang": "pt",
+  "htmlDir": "ltr",
+  "languageName": "Português",
+
+  "meta": {
+    "title": "InnerOutliner - Estrutura. Concentra-te. Concluído.",
+    "description": "InnerOutliner é um organizador de tarefas que funciona localmente e transforma ideias dispersas em planos executáveis. Privado por design - sem nuvem, sem necessidade de conta.",
+    "keywords": "InnerOutliner, organizador de tarefas, local-primeiro, aplicação de tarefas, gestor de tarefas, produtividade, offline",
+    "canonical": "https://inneroutliner.com/pt/",
+    "ogLocale": "pt_pt",
+    "ogTitle": "InnerOutliner - Estrutura. Concentra-te. Concluído.",
+    "ogDesc": "Um organizador de tarefas com prioridade local. Os teus dados ficam no teu dispositivo. Sempre."
+  },
+
+  "nav": {
+    "brand": "InnerOutliner",
+    "language": {
+      "ariaLabel": "Escolher idioma",
+      "heading": "Língua"
+    }
+  },
+
+  "hero": {
+    "ariaLabel": "Herói",
+    "badge": "Primário local, Privado, Rápido",
+    "h1-line1": "Esboço.",
+    "h1-line2": "Foco.",
+    "h1_line3": "Feito.",
+    "lead": "Transforma pensamentos dispersos numa estrutura de tarefas clara e executável. Esquemas aninhados, subtarefas, lembretes – tudo fica no teu dispositivo.",
+    "cta_primary_href": "#download",
+    "cta_primary_label": "Transferir",
+    "cta_secondary_href": "#features",
+    "cta_secondary_label": "Funcionalidades"
+  },
+
+  "stats": [
+    { "value": "100%", "label": "Armazenamento local - sem exposição à cloud" },
+    { "value": "Instantâneo", "label": "Sem atraso de sincronização, sem necessidade de login" },
+    { "value": "10+", "label": "Pacotes de idiomas suportados"}
+  ],
+
+  "features": {
+    "ariaLabel": "Funcionalidades",
+    "heading": "Tudo o que precisas.",
+    "headingAccent": "Nada que não faças",
+    "subheading": "Desenhado para trabalho concentrado. Sem subscrições para te preocupares, os teus dados não saem do teu computador.",
+    "items": [
+      { "title": "Estruturas aninhadas", "desc": "Divide qualquer objetivo em tarefas principais e subtarefas. Estrutura cristalina." },
+      { "title": "Fixar prioridade", "desc": "Dá destaque aos itens mais críticos de hoje numa área dedicada e fixada. Mantém-te totalmente focado." },
+      { "title": "Lembretes e prazos", "desc": "Prazos por tarefa e notificações locais. Nunca mais percas um acompanhamento." },
+      { "title": "Arrastar e reordenar", "desc": "Reorganiza as tuas listas e sublistas instantaneamente com arrastar e soltar fluido." },
+      { "title": "Tendências de progresso", "desc": "Os relatórios visuais de linha temporal mostram o teu ritmo de conclusão semana a semana" },
+      { "title": "Interface Multilíngue", "desc": "Muda toda a língua da interface com um só toque - 10 idiomas e a aumentar." }
+    ]
+  },
+
+  "showcase": {
+    "ariaLabel": "Capturas de ecrã",
+    "heading": "Vê isso",
+    "headingAccent": "em ação",
+    "subheading": "Um olhar mais atento à interface - listas aninhadas, modo escuro, temas personalizados e acompanhamento do progresso.",
+    "items": [
+      {
+        "src": "/images/apps_todolist.png", 
+        "alt": "Lista de tarefas aninhada com subtarefas e itens fixos",
+        "caption": "Listas de tarefas aninhadas"
+      },
+      {
+        "src": "/images/apps_dark_mode.png", 
+        "alt": "Interface em modo escuro a mostrar um esquema aninhado",
+        "caption": "Modo escuro bonito"
+      },
+      {
+        "src": "/images/apps_themes.png", 
+        "alt": "Vários temas de cores para o organizador",
+        "caption": "Temas de cores personalizados"
+      },
+      {
+        "src": "/images/apps_chart_report.png", 
+        "alt": "Gráfico de progresso semanal mostrando tarefas concluídas e incompletas",
+        "caption": "Relatórios de progresso"
+      }
+    ]
+  },
+
+  "trust": [
+    { "text": "100% offline - não é necessária conta" },
+    { "text": "Os dados nunca saem do teu dispositivo" }
+  ],
+
+  "footer": {
+    "copyright": "InnerOutliner. Todos os direitos reservados.",
+    "linksAriaLabel": "Links do rodapé",
+    "links": [
+      { "label": "Privacidade", "href": "/en/privacy/" },
+      { "label": "Termos", "href": "/en/terms" },
+      { "label": "Segurança", "href": "/en/changelog/"}
+    ]
+  }
+}

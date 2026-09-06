@@ -1,0 +1,103 @@
+{
+  "enabled": true,
+  "outputDir": "fr",
+  "htmlLang": "fr",
+  "htmlDir": "ltr",
+  "languageName": "Française",
+
+  "meta": {
+    "title": "InnerOutliner - Planifiez. Concentrez-vous. Terminé.",
+    "description": "InnerOutliner est un organisateur de tâches local qui transforme des idées dispersées en plans exécutables. Privé par conception - pas de cloud, pas de compte requis.",
+    "keywords": "InnerOutliner, planificateur de tâches, d'abord local, appli de todo, gestionnaire de tâches, productivité, hors ligne",
+    "canonical": "https://inneroutliner.com/fr/",
+    "ogLocale": "fr",
+    "ogTitle": "InnerOutliner - Planifiez. Concentrez-vous. Terminé.",
+    "ogDesc": "Un organisateur de tâches axé sur le local. Vos données restent sur votre appareil. Toujours."
+  },
+
+  "nav": {
+    "brand": "InnerOutliner",
+    "language": {
+      "ariaLabel": "Choisir la langue",
+      "heading": "Langue"
+    }
+  },
+
+  "hero": {
+    "ariaLabel": "Héroïne",
+    "badge": "D'abord local, privé, rapide",
+    "h1-line1": "Plan.",
+    "h1-line2": "Concentre-toi.",
+    "h1_line3": "Fait.",
+    "lead": "Transforme des pensées éparpillées en une structure de tâches claire et exécutable. Plans imbriqués, sous-tâches, rappels - tout reste sur ton appareil.",
+    "cta_primary_href": "#download",
+    "cta_primary_label": "Télécharger",
+    "cta_secondary_href": "#features",
+    "cta_secondary_label": "Fonctionnalités"
+  },
+
+  "stats": [
+    { "value": "100%", "label": "Stockage local - aucune exposition au cloud" },
+    { "value": "Instant", "label": "Pas de délai de synchronisation, pas besoin de se connecter" },
+    { "value": "10+", "label": "Packs de langues pris en charge"}
+  ],
+
+  "features": {
+    "ariaLabel": "Fonctionnalités",
+    "heading": "Tout ce dont vous avez besoin.",
+    "headingAccent": "Rien que tu ne fasses",
+    "subheading": "Conçu pour le travail concentré. Pas d'abonnements à gérer, aucune donnée ne quitte votre appareil.",
+    "items": [
+      { "title": "Plans imbriqués", "desc": "Divise n'importe quel objectif en tâches principales et sous-tâches. Structure super claire." },
+      { "title": "Épinglage prioritaire", "desc": "Mets les éléments les plus importants du jour dans une zone épinglée dédiée. Reste ultra concentré." },
+      { "title": "Rappels et échéances", "desc": "Dates limites pour chaque tâche et notifications locales. Ne ratez plus jamais un suivi." },
+      { "title": "Glisser et réorganiser", "desc": "Restructurez instantanément vos listes et sous-listes avec un glisser-déposer fluide." },
+      { "title": "Tendances de progression", "desc": "Les rapports de chronologie visuelle révèlent votre rythme d'accomplissement semaine après semaine" },
+      { "title": "Interface multilingue", "desc": "Change toute la langue de l'interface en un seul tapotement - 10 langues et ça continue de grandir." }
+    ]
+  },
+
+  "showcase": {
+    "ariaLabel": "Captures d'écran",
+    "heading": "Regarde-le",
+    "headingAccent": "en action",
+    "subheading": "Un coup d'œil plus près à l'interface - listes imbriquées, mode sombre, thèmes personnalisés et suivi des progrès.",
+    "items": [
+      {
+        "src": "/images/apps_todolist.png", 
+        "alt": "Liste de tâches imbriquée avec sous-tâches et éléments épinglés",
+        "caption": "Listes de tâches imbriquées"
+      },
+      {
+        "src": "/images/apps_dark_mode.png", 
+        "alt": "Interface en mode sombre affichant un plan imbriqué",
+        "caption": "Beau mode sombre"
+      },
+      {
+        "src": "/images/apps_themes.png", 
+        "alt": "Plusieurs thèmes de couleurs pour le planificateur",
+        "caption": "Thèmes de couleurs personnalisés"
+      },
+      {
+        "src": "/images/apps_chart_report.png", 
+        "alt": "Tableau de progression hebdomadaire montrant les tâches terminées et inachevées",
+        "caption": "Rapports d'avancement"
+      }
+    ]
+  },
+
+  "trust": [
+    { "text": "100 % hors ligne - aucun compte nécessaire" },
+    { "text": "Les données ne quittent jamais votre appareil" }
+  ],
+
+  "footer": {
+    "copyright": "InnerOutliner. Tous droits réservés.",
+    "linksAriaLabel": "Liens du pied de page",
+    "links": [
+      { "label": "Confidentialité", "href": "/en/privacy/" },
+      { "label": "Conditions", "href": "/en/terms" },
+      { "label": "Sécurité", "href": "/en/changelog/"}
+    ]
+  }
+}

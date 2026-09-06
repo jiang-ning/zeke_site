@@ -7,12 +7,19 @@
     <meta name="description" content="{{meta.description}}" />
     <meta name="keywords" content="{{meta.keywords}}" />
     <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0a0c12" />
     <link rel="canonical" href="{{meta.canonical}}" />
+    {{#each languages}}
+    <link rel="alternate" hreflang="{{htmlLang}}" href="{{absHref}}" />
+    {{/each}}
+    <link rel="alternate" hreflang="x-default" href="{{xDefaultHref}}" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{nav.brand}}" />
     <meta property="og:locale" content="{{meta.ogLocale}}" />
     <meta property="og:title" content="{{meta.ogTitle}}" />
     <meta property="og:description" content="{{meta.ogDesc}}" />
     <meta property="og:url" content="{{meta.canonical}}" />
+    {{STRUCTURED_DATA}}
     {{INLINE_CSS}}
   </head>
   <body>
@@ -22,11 +29,28 @@
        <nav class="nav" aria-label="Main navigation">
         <span class="brand">{{nav.brand}}</span>
         <div class="nav-right">
-          <div class="langswitch" aria-label="Language switcher">
-            {{#each nav.langSwitcher}}
-            <a href="{{href}}"{{#if active}} class="active" aria-current="page"{{/if}}>{{label}}</a>
-            {{/each}}
+          <div class="langpicker" data-langpicker>
+            <button type="button" class="langpicker-trigger" id="lang-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-menu" aria-label="{{nav.language.ariaLabel}}">
+              <span class="langpicker-globe" aria-hidden="true">&#127760;</span>
+              <span class="langpicker-current">{{currentLanguage.name}}</span>
+              <span class="langpicker-caret" aria-hidden="true"></span>
+            </button>
+
+            <div class="langpicker-menu" id="lang-menu" role="listbox" tabindex="-1" aria-labelledby="lang-trigger" hidden>
+              <p class="langpicker-menu-title">{{nav.language.heading}}</p>
+              <ul class="langpicker-list">
+                {{#each languages}}
+                <li>
+                  <a href="{{href}}" lang="{{htmlLang}}" role="option" class="langpicker-option{{#if active}} active{{/if}}" aria-selected="{{#if active}}true{{else}}false{{/if}}"{{#if active}}aria-current="page"{{/if}}>
+                    <span class="langpicker-option-name">{{name}}</span>
+                    <span class="langpicker-option-code">{{code}}</span>
+                  </a>
+                </li>
+                {{/each}}
+              </ul>
+            </div>
           </div>
+          <div class="langpicker-backdrop" data-langpicker-backdrop hidden></div>
         </div>
        </nav>
 
@@ -54,21 +78,6 @@
         </div>
       </section>
 
-      <!-- Download strip -->
-      <section class="download-strip" id="download" aria-label="{{download.ariaLabel}}">
-        <span class="download-strip-label">{{download.heading}}</span>
-        <div class="download-strip-btns">
-          {{#each download.stores}}
-          <a href="{{href}}" class="btn btn-store" aria-label="{{ariaLabel}}">
-            <span class="btn-store-label">
-              <span class="btn-store-sub">{{sub}}</span>
-              <span class="btn-store-name">{{name}}</span>
-            </span>
-          </a>
-          {{/each}}
-        </div>
-      </section>
-
       <!-- Features -->
       <section class="features-section" id="features" aria-label="{{features.ariaLabel}}">
         <div class="section-header">
@@ -81,6 +90,22 @@
             <h3>{{title}}</h3>
             <p>{{desc}}</p>
           </article>
+          {{/each}}
+        </div>
+      </section>
+
+      <!-- Screenshots -->
+      <section class="showcase-section" id="showcase" aria-label="{{showcase.ariaLabel}}">
+        <div class="section-header">
+          <h2>{{showcase.heading}} <span class="accent">{{showcase.headingAccent}}</span></h2>
+          <p>{{showcase.subheading}}</p>
+        </div>
+        <div class="showcase-grid">
+          {{#each showcase.items}}
+          <figure class="showcase-card">
+            <img src="{{src}}" alt="{{alt}}" loading="lazy" />
+            <figcaption>{{caption}}</figcaption>
+          </figure>
           {{/each}}
         </div>
       </section>

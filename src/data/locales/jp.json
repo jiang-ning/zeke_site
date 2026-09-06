@@ -1,0 +1,103 @@
+{
+  "enabled": true,
+  "outputDir": "jp",
+  "htmlLang": "jp",
+  "htmlDir": "ltr",
+  "languageName": "日本語",
+
+  "meta": {
+    "title": "インナーアウトライナー - アウトライン。集中。完了。",
+    "description": "InnerOutlinerは、散らばったアイデアを実行可能な計画に変えるローカル優先のタスクアウトライナーです。プライベート設計なので、クラウドもアカウントも不要です。",
+    "keywords": "InnerOutliner、タスクアウトライナー、ローカルファースト、TODOアプリ、タスク管理、生産性、オフライン",
+    "canonical": "https://inneroutliner.com/jp/",
+    "ogLocale": "ja",
+    "ogTitle": "インナーアウトライナー - アウトライン。集中。完了。",
+    "ogDesc": "ローカル優先のタスクアウトライナー。データはあなたのデバイスに残ります。いつもね。"
+  },
+
+  "nav": {
+    "brand": "InnerOutliner",
+    "language": {
+      "ariaLabel": "言語を選ぶ",
+      "heading": "言語"
+    }
+  },
+
+  "hero": {
+    "ariaLabel": "ヒーロー",
+    "badge": "ローカル優先、プライベート、速い",
+    "h1-line1": "アウトライン.",
+    "h1-line2": "集中.",
+    "h1_line3": "できた.",
+    "lead": "散らばった考えを、分かりやすく実行可能なタスク構造に変えよう。入れ子のアウトライン、サブタスク、リマインダー—すべてデバイスに残るよ。",
+    "cta_primary_href": "#download",
+    "cta_primary_label": "ダウンロード",
+    "cta_secondary_href": "#features",
+    "cta_secondary_label": "特徴"
+  },
+
+  "stats": [
+    { "value": "100%", "label": "ローカルストレージ - クラウドにはゼロ露出" },
+    { "value": "インスタント", "label": "同期の遅れなし、ログイン不要" },
+    { "value": "10+", "label": "対応している言語パック"}
+  ],
+
+  "features": {
+    "ariaLabel": "特徴",
+    "heading": "必要なものは全部そろってるよ。",
+    "headingAccent": "あなたがしないことは何もない",
+    "subheading": "集中して作業するために作られたよ。サブスクリプションの心配もないし、データがあなたのマシンを出ることもないよ。",
+    "items": [
+      { "title": "入れ子のアウトライン", "desc": "どんな目標も親タスクとサブタスクに分けよう。めっちゃ分かりやすい構造だよ。" },
+      { "title": "優先ピン留め", "desc": "今日の最重要アイテムを専用のピン留めエリアに上げておこう。集中していこう。" },
+      { "title": "リマインダーと締め切り", "desc": "タスクごとの締め切りとローカル通知。フォローアップを二度と忘れない。" },
+      { "title": "ドラッグして並べ替え", "desc": "リストやサブリストを流れるようなドラッグ＆ドロップで瞬時に再構築しよう。" },
+      { "title": "進行の傾向", "desc": "ビジュアルタイムラインのレポートで、週ごとの達成ペースがわかるよ" },
+      { "title": "多言語対応のUI", "desc": "ワンタップでインターフェース全体の言語を切り替え - 10のロケール以上、さらに拡大中。" }
+    ]
+  },
+
+  "showcase": {
+    "ariaLabel": "スクリーンショット",
+    "heading": "見て",
+    "headingAccent": "行動中",
+    "subheading": "インターフェースをもっと詳しく見てみよう - ネストされたリスト、ダークモード、カスタムテーマ、進捗管理。",
+    "items": [
+      {
+        "src": "/images/apps_todolist.png", 
+        "alt": "サブタスクとピン留めアイテム付きのネストされたやることリスト",
+        "caption": "入れ子のやることリスト"
+      },
+      {
+        "src": "/images/apps_dark_mode.png", 
+        "alt": "ダークモードのインターフェースで入れ子状のアウトラインを表示",
+        "caption": "美しいダークモード"
+      },
+      {
+        "src": "/images/apps_themes.png", 
+        "alt": "アウトライナー用の複数のカラーテーマ",
+        "caption": "カスタムカラーテーマ"
+      },
+      {
+        "src": "/images/apps_chart_report.png", 
+        "alt": "週ごとの進捗チャート（完了したタスクと未完了のタスクを表示）",
+        "caption": "進捗レポート"
+      }
+    ]
+  },
+
+  "trust": [
+    { "text": "100%オフライン - アカウント不要" },
+    { "text": "データはあなたのデバイスから出ることはありません" }
+  ],
+
+  "footer": {
+    "copyright": "InnerOutliner. 無断複写・転載を禁じます。",
+    "linksAriaLabel": "フッターリンク",
+    "links": [
+      { "label": "プライバシー", "href": "/en/privacy/" },
+      { "label": "条件", "href": "/en/terms" },
+      { "label": "セキュリティ", "href": "/en/changelog/"}
+    ]
+  }
+}

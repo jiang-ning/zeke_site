@@ -1,0 +1,103 @@
+{
+  "enabled": true,
+  "outputDir": "it",
+  "htmlLang": "it",
+  "htmlDir": "ltr",
+  "languageName": "Italiana",
+
+  "meta": {
+    "title": "InnerOutliner - Struttura. Focus. Fatto.",
+    "description": "InnerOutliner è un organizzatore di attività locale che trasforma idee sparpagliate in piani eseguibili. Privato per design - niente cloud, niente account richiesto.",
+    "keywords": "InnerOutliner, organizzatore di compiti, locale-centrico, app per cose da fare, gestore di attività, produttività, offline",
+    "canonical": "https://inneroutliner.com/it/",
+    "ogLocale": "it",
+    "ogTitle": "InnerOutliner - Struttura. Focus. Fatto.",
+    "ogDesc": "Un organizer di attività locale. I tuoi dati restano sul tuo dispositivo. Sempre."
+  },
+
+  "nav": {
+    "brand": "InnerOutliner",
+    "language": {
+      "ariaLabel": "Scegli lingua",
+      "heading": "Lingua"
+    }
+  },
+
+  "hero": {
+    "ariaLabel": "Eroe",
+    "badge": "Locale prima di tutto, Privato, Veloce",
+    "h1-line1": "Schema.",
+    "h1-line2": "Concentrazione.",
+    "h1_line3": "Fatto.",
+    "lead": "Trasforma i pensieri sparsi in una struttura di compiti chiara e eseguibile. Schemi annidati, sottoattività, promemoria: tutto resta sul tuo dispositivo.",
+    "cta_primary_href": "#download",
+    "cta_primary_label": "Scarica",
+    "cta_secondary_href": "#features",
+    "cta_secondary_label": "Caratteristiche"
+  },
+
+  "stats": [
+    { "value": "100%", "label": "Archiviazione locale - zero esposizione al cloud" },
+    { "value": "Istantaneo", "label": "Nessun ritardo nella sincronizzazione, nessun login richiesto" },
+    { "value": "10+", "label": "Pacchetti di lingue supportati"}
+  ],
+
+  "features": {
+    "ariaLabel": "Caratteristiche",
+    "heading": "Tutto ciò di cui hai bisogno.",
+    "headingAccent": "Niente che tu non faccia",
+    "subheading": "Progettato per lavorare in modo concentrato. Nessun abbonamento di cui preoccuparsi, nessun dato lascia il tuo dispositivo.",
+    "items": [
+      { "title": "Strutture annidate", "desc": "Scomponi qualsiasi obiettivo in attività principali e sottoattività. Struttura super chiara." },
+      { "title": "Fissaggio prioritario", "desc": "Solleva gli elementi più critici di oggi in un'area dedicata e fissata. Mantieniti super concentrato." },
+      { "title": "Promemoria e scadenze", "desc": "Scadenze per ogni compito e notifiche locali. Non perdere mai più un promemoria." },
+      { "title": "Trascina e riordina", "desc": "Riorganizza liste e sotto-liste all'istante con il pratico drag-and-drop." },
+      { "title": "Tendenze di progresso", "desc": "I report della linea temporale visiva mostrano il tuo ritmo di completamento settimana dopo settimana" },
+      { "title": "Interfaccia multi-lingua", "desc": "Cambia l'intera lingua dell'interfaccia con un solo tocco - 10 lingue disponibili e altre in arrivo." }
+    ]
+  },
+
+  "showcase": {
+    "ariaLabel": "Screenshot",
+    "heading": "Vedi",
+    "headingAccent": "in azione",
+    "subheading": "Uno sguardo più da vicino all'interfaccia - liste annidate, modalità scura, temi personalizzati e monitoraggio dei progressi.",
+    "items": [
+      {
+        "src": "/images/apps_todolist.png", 
+        "alt": "Lista di cose da fare annidata con sottoattività e elementi fissati",
+        "caption": "Elenchi di cose da fare annidati"
+      },
+      {
+        "src": "/images/apps_dark_mode.png", 
+        "alt": "Interfaccia in modalità scura che mostra un sommario nidificato",
+        "caption": "Bella modalità scura"
+      },
+      {
+        "src": "/images/apps_themes.png", 
+        "alt": "Più temi di colore per l'outliner",
+        "caption": "Temi di colore personalizzati"
+      },
+      {
+        "src": "/images/apps_chart_report.png", 
+        "alt": "Grafico dei progressi settimanali che mostra i compiti completati e quelli incompleti",
+        "caption": "Rapporti di progresso"
+      }
+    ]
+  },
+
+  "trust": [
+    { "text": "100% offline - nessun account richiesto" },
+    { "text": "I dati non lasciano mai il tuo dispositivo" }
+  ],
+
+  "footer": {
+    "copyright": "InnerOutliner. Tutti i diritti riservati.",
+    "linksAriaLabel": "Link nel piè di pagina",
+    "links": [
+      { "label": "Privacy", "href": "/en/privacy/" },
+      { "label": "Termini", "href": "/en/terms" },
+      { "label": "Sicurezza", "href": "/en/changelog/"}
+    ]
+  }
+}

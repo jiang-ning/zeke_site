@@ -1,0 +1,103 @@
+{
+  "enabled": true,
+  "outputDir": "de",
+  "htmlLang": "de",
+  "htmlDir": "ltr",
+  "languageName": "Deutsch",
+
+  "meta": {
+    "title": "InnerOutliner - Gliederung. Fokus. Erledigt.",
+    "description": "InnerOutliner ist ein lokal ausgerichtetes Aufgaben-Outline-Tool, das verstreute Ideen in ausführbare Pläne verwandelt. Privat durch Design – keine Cloud, kein Konto erforderlich.",
+    "keywords": "InnerOutliner, Aufgaben-Organizer, lokal zuerst, To-Do-App, Aufgabenmanager, Produktivität, offline",
+    "canonical": "https://inneroutliner.com/de/",
+    "ogLocale": "de",
+    "ogTitle": "InnerOutliner – Gliederung. Fokus. Erledigt.",
+    "ogDesc": "Ein lokal-basierter Aufgabenplaner. Deine Daten bleiben immer auf deinem Gerät."
+  },
+
+  "nav": {
+    "brand": "InnerOutliner",
+    "language": {
+      "ariaLabel": "Sprache wählen",
+      "heading": "Sprache"
+    }
+  },
+
+  "hero": {
+    "ariaLabel": "Held",
+    "badge": "Lokal zuerst, privat, schnell",
+    "h1-line1": "Umriss.",
+    "h1-line2": "Fokus.",
+    "h1_line3": "Fertig.",
+    "lead": "Verwandle verstreute Gedanken in eine saubere, ausführbare Aufgabenstruktur. Verschachtelte Gliederungen, Unteraufgaben, Erinnerungen – alles bleibt auf deinem Gerät.",
+    "cta_primary_href": "#download",
+    "cta_primary_label": "Herunterladen",
+    "cta_secondary_href": "#features",
+    "cta_secondary_label": "Funktionen"
+  },
+
+  "stats": [
+    { "value": "100%", "label": "Lokaler Speicher – keine Cloud-Belastung" },
+    { "value": "Sofort", "label": "Keine Synchronisationsverzögerung, kein Login erforderlich" },
+    { "value": "10+", "label": "Unterstützte Sprachpakete"}
+  ],
+
+  "features": {
+    "ariaLabel": "Funktionen",
+    "heading": "Alles, was du brauchst.",
+    "headingAccent": "Nichts, was du nicht tust",
+    "subheading": "Für konzentriertes Arbeiten entwickelt. Keine Abos, um die du dich kümmern musst, keine Daten verlassen deinen Computer.",
+    "items": [
+      { "title": "Verschachtelte Gliederungen", "desc": "Teile jedes Ziel in übergeordnete Aufgaben und Unteraufgaben auf. Kristallklare Struktur." },
+      { "title": "Prioritätsanheftung", "desc": "Hebe die wichtigsten heutigen Punkte in einen festen Bereich. Bleib ganz fokussiert." },
+      { "title": "Erinnerungen & Fälligkeitstermine", "desc": "Fristen für jede Aufgabe und lokale Benachrichtigungen. Verpasse nie wieder einen Folgetermin." },
+      { "title": "Ziehen & neu anordnen", "desc": "Strukturiere deine Listen und Unterlisten sofort um – ganz einfach per Drag & Drop." },
+      { "title": "Fortschrittstrends", "desc": "Visuelle Zeitachsenberichte zeigen dir Woche für Woche deinen Abschlussrhythmus" },
+      { "title": "Mehrsprachige Benutzeroberfläche", "desc": "Wechsle die gesamte Benutzeroberfläche mit einem Fingertipp – 10 Sprachen und es werden immer mehr." }
+    ]
+  },
+
+  "showcase": {
+    "ariaLabel": "Screenshots",
+    "heading": "Sieh es",
+    "headingAccent": "im Einsatz",
+    "subheading": "Ein genauerer Blick auf die Benutzeroberfläche – verschachtelte Listen, Dunkelmodus, individuelle Designs und Fortschrittsverfolgung.",
+    "items": [
+      {
+        "src": "/images/apps_todolist.png", 
+        "alt": "Verschachtelte To-Do-Liste mit Unteraufgaben und angehefteten Items",
+        "caption": "Verschachtelte To-do-Listen"
+      },
+      {
+        "src": "/images/apps_dark_mode.png", 
+        "alt": "Dunkler Modus zeigt eine verschachtelte Gliederung",
+        "caption": "Schöner Dark Mode"
+      },
+      {
+        "src": "/images/apps_themes.png", 
+        "alt": "Mehrere Farbthemen für den Gliederungsansicht",
+        "caption": "Benutzerdefinierte Farbthemen"
+      },
+      {
+        "src": "/images/apps_chart_report.png", 
+        "alt": "Wöchentliche Fortschrittsübersicht mit erledigten und unerledigten Aufgaben",
+        "caption": "Fortschrittsberichte"
+      }
+    ]
+  },
+
+  "trust": [
+    { "text": "100 % offline – kein Konto erforderlich" },
+    { "text": "Daten verlassen dein Gerät nie" }
+  ],
+
+  "footer": {
+    "copyright": "InnerOutliner. Alle Rechte vorbehalten.",
+    "linksAriaLabel": "Fußzeilen-Links",
+    "links": [
+      { "label": "Privatsphäre", "href": "/en/privacy/" },
+      { "label": "Bedingungen", "href": "/en/terms" },
+      { "label": "Sicherheit", "href": "/en/changelog/"}
+    ]
+  }
+}

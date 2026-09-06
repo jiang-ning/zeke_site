@@ -3,6 +3,7 @@
   "outputDir": "en",
   "htmlLang": "en",
   "htmlDir": "ltr",
+  "languageName": "English",
 
   "meta": {
     "title": "InnerOutliner - Outline. Focus. Done.",
@@ -16,10 +17,10 @@
 
   "nav": {
     "brand": "InnerOutliner",
-    "langSwitcher": [
-      { "code": "en", "label": "EN", "href": "/en/", "active": true},
-      { "code": "zh-cn", "label": "中文", "href": "/zh_cn", "active": false}
-    ]
+    "language": {
+      "ariaLabel": "Choose language",
+      "heading": "Language"
+    }
   },
 
   "hero": {
@@ -30,24 +31,16 @@
     "h1_line3": "Done.",
     "lead": "Turn scattered thoughts into a clean, executable task structure. Nested outlines, subtasks, reminders - everything stays on your device.",
     "cta_primary_href": "#download",
-    "cta_primary_label": "Download Free",
+    "cta_primary_label": "Download",
     "cta_secondary_href": "#features",
-    "cta_secondary_label": "See Features"
+    "cta_secondary_label": "Features"
   },
 
   "stats": [
     { "value": "100%", "label": "Local storage - zero cloud exposure" },
     { "value": "Instant", "label": "No sync delay, no login required" },
-    { "value": "14+", "label": "Language packs supported"}
+    { "value": "10+", "label": "Language packs supported"}
   ],
-
-  "download": {
-    "ariaLabel": "Download InnerOutliner",
-    "heading": "Download",
-    "stores": [
-      { "sub": "Get it on", "name": "Microsoft Store", "href": "#", "ariaLabel": "Get it on Microsoft Store"}
-    ]
-  },
 
   "features": {
     "ariaLabel": "Features",
@@ -60,7 +53,36 @@
       { "title": "Reminders & due dates", "desc": "Per-task deadlines and local notifications. Never miss a follow-up again." },
       { "title": "Drag & reorder", "desc": "Restructure your lists and sublists instantly with fluid drag-and-drop." },
       { "title": "Progress trends", "desc": "Visual timeline reports reveal your completion rhythm week by week" },
-      { "title": "Multi-language UI", "desc": "Switch the entire interface language in one tap - 14 locales and growing." }
+      { "title": "Multi-language UI", "desc": "Switch the entire interface language in one tap - 10 locales and growing." }
+    ]
+  },
+
+  "showcase": {
+    "ariaLabel": "Screenshots",
+    "heading": "See it",
+    "headingAccent": "in action",
+    "subheading": "A closer look at the interface - nested lists, dark mode, custom themes, and progress tracking.",
+    "items": [
+      {
+        "src": "/images/apps_todolist.png", 
+        "alt": "Nested to-do list with subtasks and pinned items",
+        "caption": "Nested to-do lists"
+      },
+      {
+        "src": "/images/apps_dark_mode.png", 
+        "alt": "Dark mode interface showing a nested outline",
+        "caption": "Beautiful dark mode"
+      },
+      {
+        "src": "/images/apps_themes.png", 
+        "alt": "Multiple color themes for the outliner",
+        "caption": "Custom color themes"
+      },
+      {
+        "src": "/images/apps_chart_report.png", 
+        "alt": "Weekly progress chart showing completed and incomplete tasks",
+        "caption": "Progress reports"
+      }
     ]
   },
 
@@ -75,8 +97,7 @@
     "links": [
       { "label": "Privacy", "href": "/en/privacy/" },
       { "label": "Terms", "href": "/en/terms" },
-      { "label": "Security", "href": "/en/changelog/"},
-      { "label": "中文", "href": "/zh_cn/" }
+      { "label": "Security", "href": "/en/changelog/"}
     ]
   }
 }

@@ -3,6 +3,8 @@
   "outputDir": "zh_cn",
   "htmlLang": "zh-CN",
   "htmlDir": "ltr",
+  "languageName": "简体中文",
+
   "meta": {
     "title": "InnerOutliner - 大纲梳理，专注完成",
     "description": "InnerOutliner 是一款本地优先任务大纲工具，帮你将零散想法整理为可执行计划。注重隐私，无需云端，无需账号。",
@@ -14,20 +16,10 @@
   },
   "nav": {
     "brand": "InnerOutliner",
-    "langSwitcher": [
-      {
-        "code": "en",
-        "label": "EN",
-        "href": "/en/",
-        "active": false
-      },
-      {
-        "code": "zh-cn",
-        "label": "中文",
-        "href": "/zh_cn/",
-        "active": true
-      }
-    ]
+    "language": {
+      "ariaLabel": "选择语言",
+      "heading": "语言"
+    }
   },
   "hero": {
     "ariaLabel": "主视觉区",
@@ -47,7 +39,7 @@
       "label": "本地存储，零云端数据暴露"
     },
     {
-      "value": "Instant",
+      "value": "即时",
       "label": "无同步延迟，无需登录"
     },
     {
@@ -55,18 +47,6 @@
       "label": "支持语言包"
     }
   ],
-  "download": {
-    "ariaLabel": "下载 InnerOutliner",
-    "heading": "立即下载",
-    "stores": [
-      {
-        "sub": "获取于",
-        "name": "微软商店",
-        "href": "#",
-        "ariaLabel": "从微软商店获取"
-      }
-    ]
-  },
   "features": {
     "ariaLabel": "功能介绍",
     "heading": "你所需要的一切。",
@@ -99,6 +79,34 @@
       }
     ]
   },
+  "showcase": {
+    "ariaLabel": "应用截图",
+    "heading": "界面一览，",
+    "headingAccent": "一目了然。",
+    "subheading": "近距离了解界面细节——嵌套列表、深色模式、自定义主题与进度追踪。",
+    "items": [
+      {
+        "src": "/images/apps_todolist.png", 
+        "alt": "带有子任务和置顶项目的嵌套待办列表",
+        "caption": "嵌套待办列表"
+      },
+      {
+        "src": "/images/apps_dark_mode.png", 
+        "alt": "深色模式下的嵌套大纲界面",
+        "caption": "精美深色模式"
+      },
+      {
+        "src": "/images/apps_themes.png", 
+        "alt": "大纲工具的多种配色主题",
+        "caption": "自定义主题"
+      },
+      {
+        "src": "/images/apps_chart_report.png", 
+        "alt": "展示已完成与未完成任务的每周进度图表",
+        "caption": "进度报表"
+      }
+    ]
+  },
   "trust": [
     {
       "text": "100% 离线运行，无需账号"
@@ -113,23 +121,15 @@
     "links": [
       {
         "label": "隐私政策",
-        "href": "/zh_cn/privacy/"
+        "href": "/en/privacy/"
       },
       {
         "label": "服务条款",
-        "href": "/zh_cn/terms/"
+        "href": "/en/terms/"
       },
       {
         "label": "安全策略",
-        "href": "/zh_cn/security/"
-      },
-      {
-        "label": "更新日志",
-        "href": "/zh_cn/changelog/"
-      },
-      {
-        "label": "中文",
-        "href": "/zh_cn/"
+        "href": "/en/security/"
       }
     ]
   }

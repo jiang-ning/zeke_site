@@ -1,0 +1,103 @@
+{
+  "enabled": true,
+  "outputDir": "zh_tw",
+  "htmlLang": "zh_tw",
+  "htmlDir": "ltr",
+  "languageName": "繁體中文",
+
+  "meta": {
+    "title": "InnerOutliner - 梳理思緒．專注．完成。",
+    "description": "InnerOutliner 是一個以本地為先的任務大綱工具，能把零散的想法變成可執行的計畫。設計上注重隱私——不用雲端，也不需要帳號。",
+    "keywords": "InnerOutliner，任務大綱工具，本地優先，待辦應用，任務管理器，生產力，離線",
+    "canonical": "https://inneroutliner.com/en/",
+    "ogLocale": "zh_tw",
+    "ogTitle": "InnerOutliner - 梳理思緒．專注．完成。",
+    "ogDesc": "本地優先的任務大綱工具。你的資料永遠保留在你的裝置上。"
+  },
+
+  "nav": {
+    "brand": "InnerOutliner",
+    "language": {
+      "ariaLabel": "選擇語言",
+      "heading": "語言"
+    }
+  },
+
+  "hero": {
+    "ariaLabel": "英雄",
+    "badge": "以本地為先、私密、快速",
+    "h1-line1": "大綱.",
+    "h1-line2": "專注.",
+    "h1_line3": "完成.",
+    "lead": "把零散的想法變成乾淨、可執行的任務結構。巢狀大綱、子任務、提醒——所有東西都保存在你的裝置裡。",
+    "cta_primary_href": "#download",
+    "cta_primary_label": "下載",
+    "cta_secondary_href": "#features",
+    "cta_secondary_label": "特色"
+  },
+
+  "stats": [
+    { "value": "100%", "label": "本地儲存 - 零雲端風險" },
+    { "value": "瞬間", "label": "無同步延遲，不需登入" },
+    { "value": "10+", "label": "支援的語言包"}
+  ],
+
+  "features": {
+    "ariaLabel": "特色",
+    "heading": "你需要的所有東西。",
+    "headingAccent": "沒什麼你不會的",
+    "subheading": "專為專注工作而設。不用擔心訂閱，也不會有資料外流。",
+    "items": [
+      { "title": "巢狀大綱", "desc": "把任何目標拆成主要任務和子任務。結構清楚明瞭。" },
+      { "title": "優先固定", "desc": "把今天最重要的事項釘到專用區域。保持高度專注。" },
+      { "title": "提醒與到期日", "desc": "每個任務的截止時間和本地通知。再也不會錯過任何跟進了。" },
+      { "title": "拖曳並重新排序", "desc": "用流暢的拖放功能，即刻重組你的清單和子清單。" },
+      { "title": "進展趨勢", "desc": "視覺化時間線報告每週顯示你的完成節奏" },
+      { "title": "多語言介面", "desc": "一鍵切換整個介面語言——支援 10 種語言，還在增加中。" }
+    ]
+  },
+
+  "showcase": {
+    "ariaLabel": "螢幕截圖",
+    "heading": "看看它",
+    "headingAccent": "行動中",
+    "subheading": "仔細看看介面——巢狀清單、深色模式、自訂主題，以及進度追蹤。",
+    "items": [
+      {
+        "src": "/images/apps_todolist.png", 
+        "alt": "巢狀待辦清單，附子任務和釘選項目",
+        "caption": "巢狀待辦清單"
+      },
+      {
+        "src": "/images/apps_dark_mode.png", 
+        "alt": "深色模式介面顯示巢狀大綱",
+        "caption": "美麗的深色模式"
+      },
+      {
+        "src": "/images/apps_themes.png", 
+        "alt": "大綱工具有多種顏色主題",
+        "caption": "自訂色彩主題"
+      },
+      {
+        "src": "/images/apps_chart_report.png", 
+        "alt": "每週進度圖，顯示已完成和未完成的任務",
+        "caption": "進度報告"
+      }
+    ]
+  },
+
+  "trust": [
+    { "text": "100% 離線使用 - 不需要帳號" },
+    { "text": "資料永遠不會離開你的裝置" }
+  ],
+
+  "footer": {
+    "copyright": "InnerOutliner。版權所有。",
+    "linksAriaLabel": "頁腳連結",
+    "links": [
+      { "label": "隱私", "href": "/en/privacy/" },
+      { "label": "條款", "href": "/en/terms" },
+      { "label": "安全", "href": "/en/changelog/"}
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "enabled": true,
+  "outputDir": "kr",
+  "htmlLang": "kr",
+  "htmlDir": "ltr",
+  "languageName": "한국어",
+
+  "meta": {
+    "title": "InnerOutliner - 개요. 집중. 완료.",
+    "description": "InnerOutliner는 흩어진 아이디어를 실행 가능한 계획으로 바꿔주는 로컬 우선 작업 아웃라이너예요. 기본적으로 사생활 보호 - 클라우드 없고, 계정도 필요 없어요.",
+    "keywords": "InnerOutliner, 작업 아웃라이너, 로컬 우선, 할 일 앱, 작업 관리자, 생산성, 오프라인",
+    "canonical": "https://inneroutliner.com/kr/",
+    "ogLocale": "ko",
+    "ogTitle": "InnerOutliner - 개요. 집중. 완료.",
+    "ogDesc": "로컬 우선 작업 개요 앱. 데이터는 항상 당신의 기기에만 저장돼요."
+  },
+
+  "nav": {
+    "brand": "InnerOutliner",
+    "language": {
+      "ariaLabel": "언어 선택",
+      "heading": "언어"
+    }
+  },
+
+  "hero": {
+    "ariaLabel": "영웅",
+    "badge": "로컬 우선, 개인용, 빠름",
+    "h1-line1": "개요.",
+    "h1-line2": "집중해.",
+    "h1_line3": "끝.",
+    "lead": "흩어진 생각을 깔끔하고 실행 가능한 작업 구조로 바꿔보세요. 중첩된 개요, 하위 작업, 알림까지—모든 게 당신의 기기에 그대로 남아요.",
+    "cta_primary_href": "#download",
+    "cta_primary_label": "다운로드",
+    "cta_secondary_href": "#features",
+    "cta_secondary_label": "특징"
+  },
+
+  "stats": [
+    { "value": "100%", "label": "로컬 저장 - 클라우드 노출 제로" },
+    { "value": "즉석", "label": "동기화 지연 없음, 로그인 필요 없음" },
+    { "value": "10+", "label": "지원되는 언어 팩"}
+  ],
+
+  "features": {
+    "ariaLabel": "특징",
+    "heading": "필요한 모든 것.",
+    "headingAccent": "네가 하지 않는 건 아무것도 없어",
+    "subheading": "집중해서 작업할 수 있도록 설계됐어요. 구독 걱정도 없고, 데이터가 내 기기를 떠날 일도 없어요.",
+    "items": [
+      { "title": "중첩된 개요", "desc": "어떤 목표든 부모 작업과 하위 작업으로 나눠봐. 완전 명확한 구조야." },
+      { "title": "우선순위 고정", "desc": "오늘 가장 중요한 항목들을 전용 고정 영역에 올려두세요. 집중하세요." },
+      { "title": "알림 & 마감일", "desc": "작업별 마감일과 지역 알림. 다시는 후속 조치를 놓치지 마세요." },
+      { "title": "끌어서 순서 바꾸기", "desc": "리스트와 하위 리스트를 드래그 앤 드롭으로 바로 재구성해보세요." },
+      { "title": "진행 추세", "desc": "시각적 타임라인 보고서를 보면 주별로 완료 속도를 확인할 수 있어요" },
+      { "title": "다국어 UI", "desc": "한 번의 탭으로 인터페이스 전체 언어 전환 - 10개 언어 지원 중이고 계속 늘어나는 중." }
+    ]
+  },
+
+  "showcase": {
+    "ariaLabel": "스크린샷",
+    "heading": "봐",
+    "headingAccent": "행동 중",
+    "subheading": "인터페이스를 좀 더 자세히 살펴보기 - 중첩 목록, 다크 모드, 맞춤 테마, 진행 상황 추적.",
+    "items": [
+      {
+        "src": "/images/apps_todolist.png", 
+        "alt": "하위 작업과 고정된 아이템이 있는 중첩된 할 일 목록",
+        "caption": "중첩된 할 일 목록"
+      },
+      {
+        "src": "/images/apps_dark_mode.png", 
+        "alt": "중첩된 개요를 보여주는 다크 모드 인터페이스",
+        "caption": "아름다운 다크 모드"
+      },
+      {
+        "src": "/images/apps_themes.png", 
+        "alt": "아웃라이너용 다양한 색상 테마",
+        "caption": "맞춤 색상 테마"
+      },
+      {
+        "src": "/images/apps_chart_report.png", 
+        "alt": "완료된 일과 미완료된 일을 보여주는 주간 진행 차트",
+        "caption": "진행 보고서"
+      }
+    ]
+  },
+
+  "trust": [
+    { "text": "100% 오프라인 - 계정 필요 없음" },
+    { "text": "데이터는 절대 기기를 떠나지 않아요" }
+  ],
+
+  "footer": {
+    "copyright": "InnerOutliner. 모든 권리 보유.",
+    "linksAriaLabel": "푸터 링크",
+    "links": [
+      { "label": "개인 정보", "href": "/en/privacy/" },
+      { "label": "약관", "href": "/en/terms" },
+      { "label": "보안", "href": "/en/changelog/"}
+    ]
+  }
+}
