@@ -17,6 +17,7 @@
 
   "nav": {
     "brand": "InnerOutliner",
+    "purchase": "프로 구입",
     "language": {
       "ariaLabel": "언어 선택",
       "heading": "언어"

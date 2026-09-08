@@ -17,6 +17,7 @@
 
   "nav": {
     "brand": "InnerOutliner",
+    "purchase": "Proを購入",
     "language": {
       "ariaLabel": "言語を選ぶ",
       "heading": "言語"

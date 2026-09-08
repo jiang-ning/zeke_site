@@ -16,6 +16,7 @@
   },
   "nav": {
     "brand": "InnerOutliner",
+    "purchase": "购买专业版",
     "language": {
       "ariaLabel": "选择语言",
       "heading": "语言"
