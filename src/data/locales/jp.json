@@ -177,5 +177,28 @@
       { "label": "条件", "href": "/jp/terms/" },
       { "label": "セキュリティ", "href": "/jp/security/"}
     ]
+  },
+
+  "license": {
+    "heading": "Proにアップグレード",
+    "summary": "一回の購入で無制限のリストとタスクをアンロックしよう。支払い後、ライセンスキーがここに表示されるよ。",
+    "planBadge": "一度きり",
+    "planName": "InnerOutliner Pro",
+    "planPriceSuffix": "",
+    "planPeriod": "一度の購入で、永久ライセンス",
+    "planPerks": [
+      "無制限のリスト（標準プランは3つまで）",
+      "無制限のタスク（スタンダードは10まで）",
+      "タスクデータをCSVにエクスポートする",
+      "データをいつでもバックアップして復元しよう",
+      "自分の完了傾向を知るための進捗レポート"
+    ],
+    "buyButton": "プロライセンスを買う",
+    "statusFinalizing": "購入を確定中…",
+    "resultIntro": "あなたのライセンスキー - InnerOutliner > 設定 > ライセンスに貼り付けてね:",
+    "copyButton": "コピー",
+    "copiedButton": "コピーした！",
+    "errorGeneric": "何か問題が発生しました。注文IDを添えてサポートに連絡してください：",
+    "activateHint": "InnerOutlinerを開いて、設定でライセンスをクリックし、上のキーを貼り付けてから、有効化をクリックしてね。"
   }
 }

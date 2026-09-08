@@ -177,5 +177,28 @@
       { "label": "條款", "href": "/zh_tw/terms/" },
       { "label": "安全", "href": "/zh_tw/security/"}
     ]
+  },
+
+  "license": {
+    "heading": "升級到專業版",
+    "summary": "一次性購買即可解鎖無限清單和任務。付款後，你的授權金鑰就會顯示在這裡。",
+    "planBadge": "一次性",
+    "planName": "InnerOutliner Pro",
+    "planPriceSuffix": "",
+    "planPeriod": "一次購買，永久授權",
+    "planPerks": [
+      "無限清單（標準版限制為3個）",
+      "無限任務（標準版限制為10個）",
+      "將你的任務資料匯出為 CSV",
+      "隨時備份和還原你的資料",
+      "進度報告，了解你的完成趨勢"
+    ],
+    "buyButton": "購買專業版授權",
+    "statusFinalizing": "正在完成你的購買...",
+    "resultIntro": "你的授權金鑰 - 貼到 InnerOutliner > 設定 > 授權:",
+    "copyButton": "複製",
+    "copiedButton": "已複製！",
+    "errorGeneric": "出了點問題。請用你的訂單號聯絡客服：",
+    "activateHint": "打開 InnerOutliner，點擊設定裡的授權，貼上上面的金鑰，然後點擊啟用。"
   }
 }

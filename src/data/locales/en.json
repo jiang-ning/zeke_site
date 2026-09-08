@@ -177,5 +177,28 @@
       { "label": "Terms", "href": "/en/terms/" },
       { "label": "Security", "href": "/en/security/"}
     ]
+  },
+
+  "license": {
+    "heading": "Upgrade to Pro",
+    "summary": "Unlock unlimited lists and tasks with a one-time purchase. After payment, your license key appears right here.",
+    "planBadge": "One-time",
+    "planName": "InnerOutliner Pro",
+    "planPriceSuffix": "",
+    "planPeriod": "One-time purchase, lifetime license",
+    "planPerks": [
+      "Unlimited lists (Standard is limited to 3)",
+      "Unlimited tasks (Standard is limited to 10)",
+      "Export your task data to CSV",
+      "Backup and restore your data anytime",
+      "Progress reports to understand your completion trends"
+    ],
+    "buyButton": "Buy Pro License",
+    "statusFinalizing": "Finalizing your purchase...",
+    "resultIntro": "Your license key - paste it into InnerOutliner > Settings > License:",
+    "copyButton": "Copy",
+    "copiedButton": "Copied!",
+    "errorGeneric": "Something went wrong. Contact support with your order ID:",
+    "activateHint": "Open InnerOutliner, click License in Settings, paste the key above, then click Activate."
   }
 }

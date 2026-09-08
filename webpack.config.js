@@ -41,6 +41,7 @@ module.exports = (env, argv) => {
           privacy: path.resolve(__dirname, 'src/templates/privacy.html'),
           terms: path.resolve(__dirname, 'src/templates/terms.html'),
           security: path.resolve(__dirname, 'src/templates/security.html'),
+          license: path.resolve(__dirname, 'src/templates/license.html'),
         },
         localesDir: path.resolve(__dirname, 'src/data/locales'),
         style: path.resolve(__dirname, 'src/styles/main.css'),

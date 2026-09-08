@@ -177,5 +177,28 @@
       { "label": "Términos", "href": "/es/terms/" },
       { "label": "Seguridad", "href": "/es/security/"}
     ]
+  },
+
+  "license": {
+    "heading": "Actualizar a Pro",
+    "summary": "Desbloquea listas y tareas ilimitadas con una compra única. Después del pago, tu clave de licencia aparecerá aquí mismo.",
+    "planBadge": "De una sola vez",
+    "planName": "InnerOutliner Pro",
+    "planPriceSuffix": "",
+    "planPeriod": "Compra única, licencia de por vida",
+    "planPerks": [
+      "Listas ilimitadas (La versión estándar está limitada a 3)",
+      "Tareas ilimitadas (La versión estándar está limitada a 10)",
+      "Exporta tus datos de tareas a CSV",
+      "Haz una copia de seguridad y restaura tus datos en cualquier momento",
+      "Informes de progreso para entender tus tendencias de finalización"
+    ],
+    "buyButton": "Comprar licencia Pro",
+    "statusFinalizing": "Finalizando tu compra...",
+    "resultIntro": "Tu clave de licencia: pégala en InnerOutliner > Configuración > Licencia:",
+    "copyButton": "Copiar",
+    "copiedButton": "¡Copiado!",
+    "errorGeneric": "Algo salió mal. Contacta con el soporte con tu ID de pedido:",
+    "activateHint": "Abre InnerOutliner, haz clic en Licencia en Configuración, pega la clave de arriba y luego haz clic en Activar."
   }
 }

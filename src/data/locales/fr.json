@@ -177,5 +177,28 @@
       { "label": "Conditions", "href": "/fr/terms/" },
       { "label": "Sécurité", "href": "/fr/security/"}
     ]
+  },
+
+  "license": {
+    "heading": "Passe à la version Pro",
+    "summary": "Débloque des listes et des tâches illimitées avec un achat unique. Après le paiement, ta clé de licence apparaît juste ici.",
+    "planBadge": "Unique",
+    "planName": "InnerOutliner Pro",
+    "planPriceSuffix": "",
+    "planPeriod": "Achat unique, licence à vie",
+    "planPerks": [
+      "Listes illimitées (la version Standard est limitée à 3)",
+      "Tâches illimitées (Standard est limité à 10)",
+      "Exporter vos données de tâches en CSV",
+      "Sauvegardez et restaurez vos données à tout moment",
+      "Rapports d'avancement pour comprendre tes tendances de complétion"
+    ],
+    "buyButton": "Acheter la licence Pro",
+    "statusFinalizing": "Finalisation de votre achat...",
+    "resultIntro": "Votre clé de licence - collez-la dans InnerOutliner > Paramètres > Licence :",
+    "copyButton": "Copier",
+    "copiedButton": "Copié !",
+    "errorGeneric": "Quelque chose a mal tourné. Contactez le support avec votre numéro de commande :",
+    "activateHint": "Ouvre InnerOutliner, clique sur Licence dans les Paramètres, colle la clé ci-dessus, puis clique sur Activer."
   }
 }

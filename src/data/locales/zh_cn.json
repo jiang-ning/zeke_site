@@ -209,5 +209,28 @@
         "href": "/zh_cn/security/"
       }
     ]
+  },
+
+  "license": {
+    "heading": "升级到专业版",
+    "summary": "通过一次性购买解锁无限列表和任务。付款后，你的许可证密钥会显示在这里。",
+    "planBadge": "一次性",
+    "planName": "InnerOutliner Pro",
+    "planPriceSuffix": "",
+    "planPeriod": "一次购买，终身许可",
+    "planPerks": [
+      "无限列表（标准版限3个）",
+      "无限任务（标准版限10个）",
+      "将你的任务数据导出为 CSV",
+      "随时备份和恢复你的数据",
+      "进度报告，了解你的任务完成趋势"
+    ],
+    "buyButton": "购买专业版许可",
+    "statusFinalizing": "正在完成您的购买...",
+    "resultIntro": "你的许可证密钥 - 粘贴到 InnerOutliner > 设置 > 许可证：",
+    "copyButton": "复制",
+    "copiedButton": "已复制！",
+    "errorGeneric": "出了点问题。请使用你的订单号联系客户支持：",
+    "activateHint": "打开 InnerOutliner，在设置中点击许可证，粘贴上面的密钥，然后点击激活。"
   }
 }

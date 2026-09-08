@@ -54,18 +54,32 @@
 
        <section class="features-section" aria-label="{{pageLabel}}">
         <div class="section-header">
-          <h1>{{pageLabel}}</h1>
-          <p>{{legal.privacy.summary}}</p>
+          <h1>{{license.heading}}</h1>
+          <p>{{license.summary}}</p>
         </div>
-        <div class="features-grid">
-          {{#each legal.privacy.sections}}
-          <article class="feature-card">
-            <h2>{{heading}}</h2>
-            {{#each paragraphs}}
-            <p>{{this}}</p>
-            {{/each}}
-          </article>
-          {{/each}}
+
+        <div class="license-plan-wrap">
+          <div class="plan plan-featured">
+            <span class="plan-badge">{{license.planBadge}}</span>
+            <div class="plan-name">{{license.planName}}</div>
+            <div class="plan-period">{{license.planPeriod}}</div>
+            <ul class="plan-perks">
+              {{#each license.planPerks}}
+              <li><span class="perk-check">&#10003;</span>{{this}}</li>
+              {{/each}}
+            </ul>
+            <button type="button" class="btn btn-gradient btn-plan" data-fsc-item-path-value="product path" data-fsc-action="Add, Checkout">{{license.buyButton}}</button>
+          </div>
+        </div>
+
+        <p class="license-status" id="license-status"></p>
+        <div class="license-result" id="license-result">
+          <p>{{license.resultIntro}}</p>
+          <textarea id="license-key" rows="3" readonly></textarea>
+          <div class="cta">
+            <button type="button" class="btn btn-glass" id="copy-btn">{{license.copyButton}}</button>
+          </div>
+          <p class="license-hint">{{license.activateHint}}</p>
         </div>
        </section>
 
@@ -80,5 +94,53 @@
     </div>
 
     {{INLINE_JS}}
+
+    <script id="fsc-api" src="https://sbl.onfastspring.com/sbl/1.0.3/fastspring-builder.min.js" type="text/javascript" data-storefront="https://inneroutliner.test.onfastspring.com/inneroutlinerapp" data-popup-closed="onFastSpringPopupClosed" data-continuous="true">
+      // calls the license server's /api/license endpoint (proxy /api/ to it via nginx)
+      async function onFastSpringPopupClosed(data) {
+        var statusEl = document.getElementById('license-status');
+        var resultEl = document.getElementById('license-result');
+        var keyEl = document.getElementById('license-key');
+
+        // data.id is only present once the order actually completed (absent if the buyer canceled)
+        if (!data || !data.id) {
+          return;
+        }
+
+        statusEl.textContent = '{{license.statusFinalizing}}';
+
+        try {
+          var res = await fetch('/api/license', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ orderId: data.id })
+          });
+          var body = await res.json();
+
+          if (!res.ok) {
+            throw new Error(body.error || 'License request failed.');
+          }
+
+          keyEl.value = body.licenseKey;
+          resultEl.classList.remove('error');
+          resultEl.classList.add('show');
+          statusEl.textContent = '';
+        } catch (err) {
+          resultEl.classList.add('error', 'show');
+          statusEl.textContent = ((err && err.message) || '{{license.errorGeneric}}') + ' ' + data.id;
+        }
+      }
+
+      document.addEventListener('click', function (e) {
+        if (e.target && e.target.id === 'copy-btn') {
+          var keyEl = document.getElementById('license-key');
+          keyEl.select();
+          document.execCommand('copy');
+          var original = e.target.textContent;
+          e.target.textContent = '{{license.copiedButton}}';
+          setTimeout(function () { e.target.textContent = original; }, 1500);
+        }
+      });
+    </script>
   </body>
 </html>

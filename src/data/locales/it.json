@@ -177,5 +177,28 @@
       { "label": "Termini", "href": "/it/terms/" },
       { "label": "Sicurezza", "href": "/it/security/"}
     ]
+  },
+
+  "license": {
+    "heading": "Passa a Pro",
+    "summary": "Sblocca liste e attività illimitate con un acquisto unico. Dopo il pagamento, la tua chiave di licenza apparirà proprio qui.",
+    "planBadge": "Una tantum",
+    "planName": "InnerOutliner Pro",
+    "planPriceSuffix": "",
+    "planPeriod": "Acquisto una tantum, licenza a vita",
+    "planPerks": [
+      "Liste illimitate (Lo standard è limitato a 3)",
+      "Attività illimitate (Lo standard è limitato a 10)",
+      "Esporta i tuoi dati delle attività in CSV",
+      "Esegui il backup e ripristina i tuoi dati in qualsiasi momento",
+      "Report sui progressi per capire le tue tendenze di completamento"
+    ],
+    "buyButton": "Acquista la licenza Pro",
+    "statusFinalizing": "Finalizzando il tuo acquisto...",
+    "resultIntro": "La tua chiave di licenza - incollala in InnerOutliner > Impostazioni > Licenza:",
+    "copyButton": "Copia",
+    "copiedButton": "Copiato!",
+    "errorGeneric": "Qualcosa è andato storto. Contatta il supporto con il tuo ID ordine:",
+    "activateHint": "Apri InnerOutliner, clicca su Licenza nelle Impostazioni, incolla la chiave qui sopra, poi clicca su Attiva."
   }
 }

@@ -177,5 +177,28 @@
       { "label": "Bedingungen", "href": "/de/terms/" },
       { "label": "Sicherheit", "href": "/de/security/"}
     ]
+  },
+
+  "license": {
+    "heading": "Auf Pro upgraden",
+    "summary": "Schalte unbegrenzte Listen und Aufgaben mit einem einmaligen Kauf frei. Nach der Zahlung erscheint dein Lizenzschlüssel direkt hier.",
+    "planBadge": "Einmalig",
+    "planName": "InnerOutliner Pro",
+    "planPriceSuffix": "",
+    "planPeriod": "Einmaliger Kauf, lebenslange Lizenz",
+    "planPerks": [
+      "Unbegrenzte Listen (Standard ist auf 3 begrenzt)",
+      "Unbegrenzte Aufgaben (Standard ist auf 10 begrenzt)",
+      "Exportiere deine Aufgabendaten als CSV",
+      "Sichere und stelle deine Daten jederzeit wieder her",
+      "Fortschrittsberichte, um deine Abschluss-Trends zu verstehen"
+    ],
+    "buyButton": "Pro-Lizenz kaufen",
+    "statusFinalizing": "Deinen Kauf abschließen...",
+    "resultIntro": "Dein Lizenzschlüssel – füge ihn ein bei InnerOutliner > Einstellungen > Lizenz:",
+    "copyButton": "Kopieren",
+    "copiedButton": "Kopiert!",
+    "errorGeneric": "Etwas ist schiefgelaufen. Kontaktiere den Support mit deiner Bestellnummer:",
+    "activateHint": "Öffne InnerOutliner, klicke in den Einstellungen auf Lizenz, füge den obigen Schlüssel ein und klicke dann auf Aktivieren."
   }
 }

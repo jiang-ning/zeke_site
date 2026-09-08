@@ -177,5 +177,28 @@
       { "label": "약관", "href": "/kr/terms/" },
       { "label": "보안", "href": "/kr/security/"}
     ]
+  },
+
+  "license": {
+    "heading": "프로로 업그레이드",
+    "summary": "한 번 구매로 무제한 리스트와 작업을 이용해보세요. 결제 후, 라이선스 키가 바로 여기에 표시됩니다.",
+    "planBadge": "한 번",
+    "planName": "InnerOutliner Pro",
+    "planPriceSuffix": "",
+    "planPeriod": "한 번 구매로 평생 이용 가능",
+    "planPerks": [
+      "무제한 리스트 (기본은 3개까지 가능)",
+      "무제한 작업 (표준은 10개로 제한됨)",
+      "작업 데이터를 CSV로 내보내기",
+      "언제든지 데이터를 백업하고 복원하세요",
+      "완료 추세를 파악하기 위한 진행 보고서"
+    ],
+    "buyButton": "프로 라이선스 구매",
+    "statusFinalizing": "구매를 마무리하는 중...",
+    "resultIntro": "당신의 라이선스 키 - InnerOutliner > 설정 > 라이선스에 붙여넣으세요:",
+    "copyButton": "복사",
+    "copiedButton": "복사됨!",
+    "errorGeneric": "문제가 발생했어요. 주문 번호와 함께 고객 지원팀에 문의하세요:",
+    "activateHint": "InnerOutliner를 열고, 설정에서 라이선스를 클릭한 다음, 위의 키를 붙여넣고 활성화를 클릭하세요."
   }
 }
