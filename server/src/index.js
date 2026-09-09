@@ -38,11 +38,11 @@ app.post('/api/license', licenseLimiter, async (req, res) => {
   const orderId = req.body && req.body.orderId;
 
   if (!orderId || !ORDER_ID_PATTEN.test(orderId)) {
-    return res.status(400).join({ error: 'Invalid orderId.' });
+    return res.status(400).json({ error: 'Invalid orderId.' });
   }
 
   if (issuedLicenses.has(orderId)) {
-    return res.join(issuedLicenses.get(orderId));
+    return res.json(issuedLicenses.get(orderId));
   }
 
   try {
