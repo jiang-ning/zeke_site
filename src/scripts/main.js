@@ -98,10 +98,12 @@
           var text = document.getElementById('locale-suggest-text');
           var accept = document.getElementById('locale-suggest-accept');
           var dismiss = document.getElementById('locale-suggest-dismiss');
+          // Prefer the detected locale's own translated strings over the default (English) ones.
+          var matchStrings = match.strings || suggestStrings;
 
-          if (text) text.textContent = (suggestStrings.detectedText || 'View this page in {name}?').replace(/{name}/g, match.name);
+          if (text) text.textContent = (matchStrings.detectedText || 'View this page in {name}?').replace(/{name}/g, match.name);
           if(accept) {
-            accept.textContent = (suggestStrings.acceptLabel || 'View in {name}').replace(/{name}/g, match.name);
+            accept.textContent = (matchStrings.acceptLabel || 'View in {name}').replace(/{name}/g, match.name);
             accept.href = match.href;
           }
           if (dismiss) {

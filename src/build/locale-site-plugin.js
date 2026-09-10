@@ -257,7 +257,18 @@ class LocaleSitePlugin {
               const pageLanguages = buildPageLanguages(locales, this.siteUrl, 'index');
               const suggestLocales = pageLanguages
                 .filter(lang => lang.code !== this.defaultLocale)
-                .map(lang => ({ code: lang.code, htmlLang: lang.htmlLang, name: lang.name, href: lang.href }));
+                .map(lang => { 
+                  const ownLocaleData = locales.find(l => l.outputDir === lang.code);
+                  return {
+                    code: lang.code, 
+                    htmlLang: lang.htmlLang, 
+                    name: lang.name, 
+                    href: lang.href,
+                    // Each target locale supplies its own translated suggestion strings,
+                    // so the banner reads naturally in the visitor's detected language.
+                    strings: (ownLocaleData && ownLocaleData.localeSuggest) || defaultLocaleData.localeSuggest || {},
+                  };
+                });
               const suggestData = {
                 locales: suggestLocales,
                 strings: defaultLocaleData.localeSuggest || {},
