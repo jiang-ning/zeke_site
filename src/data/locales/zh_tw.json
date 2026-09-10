@@ -92,6 +92,11 @@
     { "text": "資料永遠不會離開你的裝置" }
   ],
 
+  "localeSuggest": {
+    "detectedText": "要用 {name} 查看這個頁面嗎？",
+    "acceptLabel": "在 {name} 查看"
+  },
+
   "legal": {
     "privacy": {
       "summary": "InnerOutliner 如何處理資訊並保護你的隱私。",

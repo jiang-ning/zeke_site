@@ -92,6 +92,11 @@
     { "text": "البيانات لا تغادر جهازك" }
   ],
 
+  "localeSuggest": {
+    "detectedText": "هل تريد عرض هذه الصفحة بـ {name}؟",
+    "acceptLabel": "عرض في {name}"
+  },
+
   "legal": {
     "privacy": {
       "summary": "كيف يتعامل InnerOutliner مع المعلومات ويحمي خصوصيتك.",

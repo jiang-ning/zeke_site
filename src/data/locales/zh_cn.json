@@ -116,6 +116,10 @@
       "text": "数据永不离开你的设备"
     }
   ],
+  "localeSuggest": {
+    "detectedText": "要用{name}查看此页面吗？",
+    "acceptLabel": "在{name}中查看"
+  },
   "legal": {
     "privacy": {
       "summary": "InnerOutliner 如何处理信息并保护你的隐私。",

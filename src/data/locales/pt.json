@@ -92,6 +92,11 @@
     { "text": "Os dados nunca saem do teu dispositivo" }
   ],
 
+  "localeSuggest": {
+    "detectedText": "Ver esta página em {name}?",
+    "acceptLabel": "Ver em {name}"
+  },
+
   "legal": {
     "privacy": {
       "summary": "Como o InnerOutliner lida com a informação e protege a tua privacidade.",

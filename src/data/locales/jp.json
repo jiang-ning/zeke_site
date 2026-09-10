@@ -92,6 +92,11 @@
     { "text": "データはあなたのデバイスから出ることはありません" }
   ],
 
+  "localeSuggest": {
+    "detectedText": "{name}でこのページを表示しますか？",
+    "acceptLabel": "{name}で見る"
+  },
+
   "legal": {
     "privacy": {
       "summary": "InnerOutlinerが情報をどう扱い、プライバシーをどう守るか。",

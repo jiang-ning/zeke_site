@@ -76,7 +76,9 @@
     try {
       var STORAGE_KEY = 'io_locale_pref';
       if (localStorage.getItem(STORAGE_KEY) !== 'stay') {
-        var availableLocales = JSON.parse(localeDataEl.textContent || '[]');
+        var localeSuggestConfig = JSON.parse(localeDataEl.textContent || '{}');
+        var availableLocales = localeSuggestConfig.locales || [];
+        var suggestStrings = localeSuggestConfig.strings || {};
         var browserLangs = (navigator.languages && navigator.languages.length)
           ? navigator.languages
           : [navigator.language || ''];
@@ -97,9 +99,9 @@
           var accept = document.getElementById('locale-suggest-accept');
           var dismiss = document.getElementById('locale-suggest-dismiss');
 
-          if (text) text.textContent = 'It looks like your browser language is ' + match.name + '. View this page in ' + match.name + '?';
+          if (text) text.textContent = (suggestStrings.detectedText || 'View this page in {name}?').replace(/{name}/g, match.name);
           if(accept) {
-            accept.textContent = 'View in ' + match.name;
+            accept.textContent = (suggestStrings.acceptLabel || 'View in {name}').replace(/{name}/g, match.name);
             accept.href = match.href;
           }
           if (dismiss) {

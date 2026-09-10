@@ -250,6 +250,10 @@ class LocaleSitePlugin {
               const suggestLocales = pageLanguages
                 .filter(lang => lang.code !== this.defaultLocale)
                 .map(lang => ({ code: lang.code, htmlLang: lang.htmlLang, name: lang.name, href: lang.href }));
+              const suggestData = {
+                locales: suggestLocales,
+                strings: defaultLocaleData.localeSuggest || {},
+              };
               
               const pageData = {
                 ...defaultLocaleData,
@@ -292,7 +296,7 @@ class LocaleSitePlugin {
                 })),
                 currentLanguage: pageLanguages.find(lang => lang.code === defaultLocaleData.outputDir),
                 xDefaultHref: `${this.siteUrl}/`,
-                localeSuggestData: new Handlebars.SafeString(JSON.stringify(suggestLocales).replace(/</g,'\\u003c')),
+                localeSuggestData: new Handlebars.SafeString(JSON.stringify(suggestData).replace(/</g,'\\u003c')),
                 INLINE_CSS: new Handlebars.SafeString(`<style>${safeCSS}</style>`),
                 INLINE_JS: safeJS ? new Handlebars.SafeString(`<script>${safeJS}</script>`) : '',
                 STRUCTURED_DATA: new Handlebars.SafeString(

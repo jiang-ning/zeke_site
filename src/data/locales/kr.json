@@ -92,6 +92,11 @@
     { "text": "데이터는 절대 기기를 떠나지 않아요" }
   ],
 
+  "localeSuggest": {
+    "detectedText": "{name}로 이 페이지를 보시겠어요?",
+    "acceptLabel": "{name}에서 보기"
+  },
+
   "legal": {
     "privacy": {
       "summary": "InnerOutliner가 정보를 다루고 개인정보를 보호하는 방식.",

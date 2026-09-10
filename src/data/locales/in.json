@@ -92,6 +92,11 @@
     { "text": "डेटा कभी भी आपके डिवाइस से बाहर नहीं जाता" }
   ],
 
+  "localeSuggest": {
+    "detectedText": "क्या आप इस पेज को {name} में देखना चाहते हैं?",
+    "acceptLabel": "{name} में देखें"
+  },
+
   "legal": {
     "privacy": {
       "summary": "InnerOutliner जानकारी को कैसे संभालता है और आपकी गोपनीयता की रक्षा करता है।",
