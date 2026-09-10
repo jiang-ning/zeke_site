@@ -23,6 +23,16 @@
     {{INLINE_CSS}}
   </head>
   <body>
+    {{#if isRootPage}}
+    <script type="application/json" id="locale-suggest-data">{{localeSuggestData}}</script>
+    <div class="locale-suggest" id="locale-suggest" data-locale-suggest hidden>
+      <p class="locale-suggest-text" id="locale-suggest-text"></p>
+      <div class="locale-suggest-actions">
+        <a href="#" id="locale-suggest-accept" class="locale-suggest-btn locale-suggest-btn-accent"></a>
+        <button type="button" id="locale-suggest-dismiss" class="locale-suggest-btn">Stay in English</button>
+      </div>
+    </div>
+    {{/if}}
     <div class="page">
 
       <!-- Navigation -->

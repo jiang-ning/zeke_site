@@ -211,6 +211,63 @@ img, svg {
   display: none;
 }
 
+.locale-suggest {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: min(560px, calc(100vw - 32px));
+  padding: 14px 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-h);
+  background: var(--surface);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.locale-suggest[hidden] {
+  display: none;
+}
+
+.locale-suggest-text {
+  flex: 1 1 240px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.locale-suggest-actions {
+  display: flex;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.locale-suggest-btn {
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.locale-suggest-btn:hover {
+  border-color: var(--border-h);
+}
+
+.locale-suggest-btn-accent {
+  border: none;
+  background: linear-gradient(135deg, var(--accent1), var(--accent2));
+  color: #fff;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;

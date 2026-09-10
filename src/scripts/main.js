@@ -69,4 +69,52 @@
     });
   }
 
+  /* --- Locale suggestion banner (root landing page only) --- */
+  var localeBanner = document.getElementById('locale-suggest');
+  var localeDataEl = document.getElementById('locale-suggest-data');
+  if (localeBanner && localeDataEl) {
+    try {
+      var STORAGE_KEY = 'io_locale_pref';
+      if (localStorage.getItem(STORAGE_KEY) !== 'stay') {
+        var availableLocales = JSON.parse(localeDataEl.textContent || '[]');
+        var browserLangs = (navigator.languages && navigator.languages.length)
+          ? navigator.languages
+          : [navigator.language || ''];
+        var match = null;
+
+        browserLangs.some(function (raw) {
+          var lang = String(raw || '').toLowerCase();
+          if (!lang) return false;
+          var primary = lang.split('-')[0];
+          match = availableLocales.find(function (l) { return l.htmlLang.toLowerCase() === lang; })
+            || availableLocales.find(function (l) { return l.htmlLang.toLowerCase().split('-')[0] === primary; })
+            || null;
+          return !!match;
+        });
+
+        if (match) {
+          var text = document.getElementById('locale-suggest-text');
+          var accept = document.getElementById('locale-suggest-accept');
+          var dismiss = document.getElementById('locale-suggest-dismiss');
+
+          if (text) text.textContent = 'It looks like your browser language is ' + match.name + '. View this page in ' + match.name + '?';
+          if(accept) {
+            accept.textContent = 'View in ' + match.name;
+            accept.href = match.href;
+          }
+          if (dismiss) {
+            dismiss.addEventListener('click', function () {
+              try { localStorage.setItem(STORAGE_KEY, 'stay'); } catch (e) { /* ignore */}
+              localeBanner.hidden = true;
+            });
+          }
+
+          localeBanner.hidden = false;
+        }
+      }
+    } catch (e) {
+      // Progressive enhancement only - never block the page on storage/parsing errors.
+    }
+  }
+
 }());

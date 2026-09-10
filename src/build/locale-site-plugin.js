@@ -46,7 +46,7 @@ function pageLabelFromFooter(footerLinks, slug) {
 
 function buildPageMeta(siteUrl, localeData, slug, footerLinks) {
   if (slug === 'index') {
-    return localeData.mata;
+    return localeData.meta;
   }
 
   const label = pageLabelFromFooter(footerLinks, slug);
@@ -181,9 +181,11 @@ class LocaleSitePlugin {
                 };
 
                 const pageLanguages = buildPageLanguages(locales, this.siteUrl, slug);
-                const xDefaultHref = (
-                  pageLanguages.find(lang => lang.code === this.defaultLocale) || pageLanguages[0]
-                ).absHref;
+                // The index page group has a real language-neutral landing page at the site root;
+                // other page groups fall back to the default locale's own page.
+                const xDefaultHref = isIndexPage
+                  ? `${this.siteUrl}/`
+                  : (pageLanguages.find(lang => lang.code === this.defaultLocale) || pageLanguages[0]).absHref;
                 const pageLabel = pageLabelFromFooter(footerLinks, slug);
                 const structuredData = isIndexPage ? {
                   '@context': 'https://schema.org',
@@ -238,10 +240,83 @@ class LocaleSitePlugin {
               }
             }
 
+            // -- 5.5. Emit root index.html: language-neutral landing page that suggests a
+            // matching locale based on the visitor's browser language (defaults to 'en' content). --
+            let rootIndexEmitted = false;
+            const defaultLocaleData = locales.find(l => l.outputDir === this.defaultLocale) || locales[0];
+            if (defaultLocaleData && compiledTemplates.index) {
+              const footerLinks = buildFooterLinks(defaultLocaleData.outputDir, (defaultLocaleData.footer && defaultLocaleData.footer.links) || []);
+              const pageLanguages = buildPageLanguages(locales, this.siteUrl, 'index');
+              const suggestLocales = pageLanguages
+                .filter(lang => lang.code !== this.defaultLocale)
+                .map(lang => ({ code: lang.code, htmlLang: lang.htmlLang, name: lang.name, href: lang.href }));
+              
+              const pageData = {
+                ...defaultLocaleData,
+                meta: {
+                  ...buildPageMeta(this.siteUrl, defaultLocaleData, 'index', footerLinks),
+                  canonical: `${this.siteUrl}/`,
+                },
+                footer: defaultLocaleData.footer && {
+                  ...defaultLocaleData.footer,
+                  links: footerLinks,
+                },
+                showcase: defaultLocaleData.showcase && {
+                  ...defaultLocaleData.showcase,
+                  items: defaultLocaleData.showcase.items.map(item => ({
+                    ...item,
+                    src: item.src.replace(/^\/images\//, `./${this.imagesOutputDir}/`),
+                  })),
+                },
+              };
+
+              const structureData = {
+                '@context': 'https://schema.org',
+                '@type': 'SoftwareApplication',
+                name: defaultLocaleData.nav && defaultLocaleData.nav.brand,
+                description: pageData.meta && pageData.meta.description,
+                url: pageData.meta && pageData.meta.canonical,
+                inLanguage: defaultLocaleData.htmlLang,
+                applicationCategory: 'ProductivityApplication',
+                operatingSystem: 'macOS, Windows',
+                offers: { '@type': 'Offer', price: '4.99', priceCurrency: 'USD'},
+              };
+
+              const html = compiledTemplates.index({
+                ...pageData,
+                pageSlug: 'index',
+                isRootPage: true,
+                languages: pageLanguages.map(lang => ({
+                  ...lang,
+                  active: lang.code === defaultLocaleData.outputDir,
+                })),
+                currentLanguage: pageLanguages.find(lang => lang.code === defaultLocaleData.outputDir),
+                xDefaultHref: `${this.siteUrl}/`,
+                localeSuggestData: new Handlebars.SafeString(JSON.stringify(suggestLocales).replace(/</g,'\\u003c')),
+                INLINE_CSS: new Handlebars.SafeString(`<style>${safeCSS}</style>`),
+                INLINE_JS: safeJS ? new Handlebars.SafeString(`<script>${safeJS}</script>`) : '',
+                STRUCTURED_DATA: new Handlebars.SafeString(
+                  `<script type="application/ld+json">${JSON.stringify(structureData)}</script>`,
+                ),
+              });
+
+              compilation.emitAsset('index.html', new RawSource(html, false));
+              console.log(`\x1b[32m[LocaleSitePlugin]\x1b[0m built > dist/index.html (locale-detect landing page)`);
+              rootIndexEmitted = true;
+            }
+
             // -- 6. Emit sitemap.xml + robots.txt (SEO discovery files) --
             if (count > 0) {
               const today = new Date().toISOString().slice(0, 10);
               const sitemapSlugs = Object.keys(compiledTemplates);
+              const rootUrlEntry = rootIndexEmitted ? (() => {
+                const indexLanguages = buildPageLanguages(locales, this.siteUrl, 'index');
+                const alternates = indexLanguages
+                  .map(alt => `<xhtml:link rel="alternate" hreflang="${alt.htmlLang}" href="${alt.absHref}" />`)
+                  .concat(`<xhtml:link rel="alternate" hreflang="x-default" href="${this.siteUrl}" />`)
+                  .join('\n');
+                return `<url>\n <loc>${this.siteUrl}/<loc>\n <lastmod>${today}</lastmod>\n<changefreq>weekly</changefreq>\n <priority>1.0</priority>\n${alternates}\n </url>`;
+              })() : '';
               const urlEntries = sitemapSlugs.map(slug => {
                 const pageLanguages = buildPageLanguages(locales, this.siteUrl, slug);
 
@@ -258,7 +333,7 @@ class LocaleSitePlugin {
                 }).join('\n');
               }).join('\n');
 
-              const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urlEntries}\n</urlset>`;
+              const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${rootUrlEntry}\n${urlEntries}\n</urlset>`;
               compilation.emitAsset('sitemap.xml', new RawSource(sitemap, false));
 
               const robots = `User-agent: *\nAllow: /\n\nSitemap: ${this.siteUrl}/sitemap.xml\n`;
