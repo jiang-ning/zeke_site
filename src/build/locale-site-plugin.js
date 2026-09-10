@@ -44,6 +44,12 @@ function pageLabelFromFooter(footerLinks, slug) {
     : fallback;
 }
 
+function pageSuffixFor(slug) {
+  if (slug === 'index') return '';
+  if (slug === 'license') return 'license.html';
+  return `${slug}/`;
+}
+
 function buildPageMeta(siteUrl, localeData, slug, footerLinks) {
   if (slug === 'index') {
     return localeData.meta;
@@ -51,7 +57,7 @@ function buildPageMeta(siteUrl, localeData, slug, footerLinks) {
 
   const label = pageLabelFromFooter(footerLinks, slug);
   const brand = (localeData.nav && localeData.nav.brand) || 'InnerOutliner';
-  const canonical = `${siteUrl}/${localeData.outputDir}/${slug}/`;
+  const canonical = `${siteUrl}/${localeData.outputDir}/${pageSuffixFor(slug)}`;
   const description = `${label} information for ${brand}.`;
 
   return {
@@ -66,7 +72,7 @@ function buildPageMeta(siteUrl, localeData, slug, footerLinks) {
 }
 
 function buildPageLanguages(locales, siteUrl, slug) {
-  const pageSuffix = slug === 'index' ? '' : `${slug}/`;
+  const pageSuffix = pageSuffixFor(slug);
 
   return locales
     .map(locale => ({
@@ -160,7 +166,7 @@ class LocaleSitePlugin {
               for (const [slug, template] of Object.entries(compiledTemplates)) {
                 const isIndexPage = slug === 'index';
                 const pageDepthBase = localeData.outputDir.split('/').filter(Boolean).length;
-                const pageDepth = isIndexPage ? pageDepthBase : pageDepthBase + 1;
+                const pageDepth = pageSuffixFor(slug).endsWith('/') ? pageDepthBase + 1 : pageDepthBase;
                 const imagePrefix = `${'../'.repeat(pageDepth)}${this.imagesOutputDir}/`;
                 const footerLinks = buildFooterLinks(localeData.outputDir, (localeData.footer && localeData.footer.links) || []);
 
@@ -206,7 +212,7 @@ class LocaleSitePlugin {
                   '@type': 'WebPage',
                   name: pageLabel,
                   inLanguage: localeData.htmlLang,
-                  url: `${this.siteUrl}/${localeData.outputDir}/${slug}/`,
+                  url: `${this.siteUrl}/${localeData.outputDir}/${pageSuffixFor(slug)}`,
                   isPartOf: {
                     '@type': 'WebSite',
                     name: (localeData.nav && localeData.nav.brand) || 'InnerOutliner',
@@ -233,7 +239,9 @@ class LocaleSitePlugin {
 
                 const outputPath = isIndexPage
                   ? `${localeData.outputDir}/index.html`
-                  : `${localeData.outputDir}/${slug}/index.html`;
+                  : slug === 'license'
+                    ? `${localeData.outputDir}/license.html`
+                    : `${localeData.outputDir}/${slug}/index.html`;
                 compilation.emitAsset(outputPath, new RawSource(html, false));
                 console.log(`\x1b[32m[LocaleSitePlugin]\x1b[0m built > dist/${outputPath}`);
                 count++;
