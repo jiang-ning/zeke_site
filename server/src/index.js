@@ -49,7 +49,7 @@ app.post('/api/license', licenseLimiter, async (req, res) => {
     const order = await getFastSpringOrder(orderId);
 
     if (!order || order.completed !== true || order.reversed === true) {
-      return res.status(402).join({ error: 'Order is not a completed, valid purchase.' });
+      return res.status(402).json({ error: 'Order is not a completed, valid purchase.' });
     }
 
     const customer = order.customer || {};

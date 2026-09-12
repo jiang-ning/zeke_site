@@ -19,8 +19,22 @@
     <meta property="og:title" content="{{meta.ogTitle}}" />
     <meta property="og:description" content="{{meta.ogDesc}}" />
     <meta property="og:url" content="{{meta.canonical}}" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+
     {{STRUCTURED_DATA}}
     {{INLINE_CSS}}
+    <script
+      id="fsc-api"
+      src="https://sbl.onfastspring.com/sbl/1.0.9/fastspring-builder.min.js"
+      type="text/javascript"
+      data-storefront="inneroutliner.test.onfastspring.com/popup-inneroutliner">
+    </script>
   </head>
   <body>
     <div class="page">
@@ -68,7 +82,7 @@
               <li><span class="perk-check">&#10003;</span>{{this}}</li>
               {{/each}}
             </ul>
-            <button type="button" class="btn btn-gradient btn-plan" data-fsc-item-path-value="product path" data-fsc-action="Add, Checkout">{{license.buyButton}}</button>
+            <button type="button" class="btn btn-gradient btn-plan" data-fsc-action="Checkout">{{license.buyButton}}</button>
           </div>
         </div>
 
@@ -95,7 +109,7 @@
 
     {{INLINE_JS}}
 
-    <script id="fsc-api" src="https://sbl.onfastspring.com/sbl/1.0.3/fastspring-builder.min.js" type="text/javascript" data-storefront="https://inneroutliner.test.onfastspring.com/inneroutlinerapp" data-popup-closed="onFastSpringPopupClosed" data-continuous="true">
+    <script>
       // calls the license server's /api/license endpoint (proxy /api/ to it via nginx)
       async function onFastSpringPopupClosed(data) {
         var statusEl = document.getElementById('license-status');
@@ -142,5 +156,12 @@
         }
       });
     </script>
+    <!-- <script
+      id="fsc-api"
+      src="https://sbl.onfastspring.com/sbl/1.0.9/fastspring-builder.min.js"
+      type="text/javascript"
+      data-storefront="inneroutliner.test.onfastspring.com/ineroutlinerapp"
+      data-popup-closed="onFastSpringPopupClosed" data-continuous="true">
+    </script> -->
   </body>
 </html>
