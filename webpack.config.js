@@ -46,6 +46,7 @@ module.exports = (env, argv) => {
         localesDir: path.resolve(__dirname, 'src/data/locales'),
         style: path.resolve(__dirname, 'src/styles/main.css'),
         imagesDir: path.resolve(__dirname, 'src/images'),
+        iconsDir: path.resolve(__dirname, 'src/images/icons'),
         bundleKey: '__bundle.js',
         siteUrl: 'https://inneroutliner.com',
         defaultLocale: 'en',

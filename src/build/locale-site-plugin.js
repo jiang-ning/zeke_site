@@ -94,6 +94,7 @@ class LocaleSitePlugin {
     this.stylePath = options.style;
     this.imagesDir = options.imagesDir;
     this.imagesOutputDir = options.imagesOutputDir || 'images';
+    this.iconsDir = options.iconsDir;
     this.bundleKey = options.bundleKey || '__bundle.js';
     this.siteUrl = (options.siteUrl || 'https://inneroutliner.com').replace(/\/$/, '');
     this.defaultLocale = options.defaultLocale || 'en';
@@ -151,6 +152,21 @@ class LocaleSitePlugin {
 
               if (imageFiles.length) {
                 console.log(`\x1b[32m[LocaleSitePlugin]\x1b[0m copied ${imageFiles.length} image(s) > dist/${this.imagesOutputDir}/`);
+              }
+            }
+
+            // -- 3.5. Copy favicon/manifest icons to dist root
+            if (this.iconsDir && fs.existsSync(this.iconsDir)) {
+              const iconFiles = fs.readdirSync(this.iconsDir)
+                .filter(f => fs.statSync(path.join(this.iconsDir, f)).isFile());
+
+              for (const file of iconFiles) {
+                const content = fs.readFileSync(path.join(this.iconsDir, file));
+                compilation.emitAsset(file, new RawSource(content, true));
+              }
+
+              if (iconFiles.length) {
+                console.log(`\x1b[32m[LocaleSitePlugin]\x1b[0m copied ${iconFiles.length} icon file(s) > dist/`);
               }
             }
 

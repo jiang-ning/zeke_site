@@ -1,7 +1,7 @@
 {
   "name": "InnerOutliner",
   "short_name": "InnerOutliner",
-  "description": "Application description",
+  "description": "InnerOutliner is a local-first task outliner that turns scattered ideas into executable plans.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
