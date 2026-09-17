@@ -6,6 +6,7 @@ const express = require('express');
 const rateLimit = require('express-rate-limit');
 const { getFastSpringOrder } = require('./fastspring');
 const { generateLicenseKey } = require('./license');
+const { PLATFORMS, resolveDownload, detectPlatform } = require('./downloads');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -68,6 +69,35 @@ app.post('/api/license', licenseLimiter, async (req, res) => {
   } catch (err) {
     console.error('[license] failed to issue license for order', orderId, err);
     res.status(502).json({ error: 'Could not verify order with FastSpring.' });
+  }
+});
+
+// Stable public download URLs that 302 to the latest GitHub release asset, so the
+// site never hardcodes a version and the storage provider can be swapped here alone.
+app.get('/download', (req, res) => {
+  res.redirect(302, `/download/${detectPlatform(req.get('user-agent'))}`);
+});
+
+app.get('/download/:platform', async (req, res) => {
+  const { platform } = req.params;
+
+  if (!PLATFORMS.includes(platform)) {
+    return res.status(404).json({ error: 'Unknown platform.', platforms: PLATFORMS });
+  }
+
+  try {
+    const asset = await resolveDownload(platform);
+
+    if (!asset) {
+      return res.status(404).json({ error: `No ${platform} build in the latest release.` });
+    }
+
+    console.log(`[download] ${platform} ${asset.version} ${asset.name}`);
+    res.setHeader('Cache-Control', 'no-store');
+    res.redirect(302, asset.url);
+  } catch (err) {
+    console.error('[download] failed to resolve latest release for', platform, err);
+    res.status(502).json({ error: 'Could not reach the release server.' });
   }
 });
 
