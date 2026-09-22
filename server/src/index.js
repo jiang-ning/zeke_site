@@ -79,11 +79,8 @@ app.get('/download', (req, res) => {
 });
 
 app.get('/download/:platform', async (req, res) => {
-  const { platform } = req.params;
-
-  if (!PLATFORMS.includes(platform)) {
-    return res.status(404).json({ error: 'Unknown platform.', platforms: PLATFORMS });
-  }
+  
+  const platform = PLATFORMS.includes(req.params.platform) ? req.params.platform : 'win';
 
   try {
     const asset = await resolveDownload(platform);

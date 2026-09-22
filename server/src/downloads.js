@@ -9,9 +9,9 @@ const CACHE_TTL_MS = 5 * 60 * 1000;
 // (squirrel -> .exe, zip -> darwin .zip, deb -> .deb, rpm -> .rpm).
 const PLATFORM_MATCHERS = {
   win: [/\.exe$/i, /win32.*\.zip$/i],
-  'mac-arm64': [/arm64.*\.dmg$/i, /(darwin|mac|osx).*arm64.*\.zip$/i],
-  'linux-deb': [/\.deb$/i],
-  'linux-rpm': [/\.rpm$/i],
+  // 'mac-arm64': [/arm64.*\.dmg$/i, /(darwin|mac|osx).*arm64.*\.zip$/i],
+  // 'linux-deb': [/\.deb$/i],
+  // 'linux-rpm': [/\.rpm$/i],
 };
 
 const PLATFORMS = Object.keys(PLATFORM_MATCHERS);
