@@ -1,7 +1,5 @@
 'use strict';
 
-const { version } = require("react");
-
 const OWNER = process.env.GITHUB_RELEASE_OWNER || 'jiang-ning';
 const REPO = process.env.GITHUB_RELEASE_REPO || 'inneroutliner';
 const CACHE_TTL_MS = 5 * 60 * 1000;
@@ -37,7 +35,7 @@ async function fetchLatestRelease() {
     headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
   }
 
-  const response = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/release/latest`, { headers });
+  const response = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/releases/latest`, { headers });
 
   if (!response.ok) {
     throw new Error(`GitHub releases API returned ${response.status}`);
