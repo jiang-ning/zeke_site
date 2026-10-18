@@ -98,6 +98,7 @@ class LocaleSitePlugin {
     this.bundleKey = options.bundleKey || '__bundle.js';
     this.siteUrl = (options.siteUrl || 'https://inneroutliner.com').replace(/\/$/, '');
     this.defaultLocale = options.defaultLocale || 'en';
+    this.extraSitemapPaths = options.extraSitemapPaths || [];
   }
 
   apply(compiler) {
@@ -372,7 +373,12 @@ class LocaleSitePlugin {
                 }).join('\n');
               }).join('\n');
 
-              const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${rootUrlEntry}\n${urlEntries}\n</urlset>`;
+              // Standalone (non-localized) pages emitted by other plugins
+              const extraEntries = this.extraSitemapPaths
+                .map(p => `<url>\n <loc>${this.siteUrl}${p}</loc>\n <lastmod>${today}</lastmod>\n<changefreq>weekly</changefreq>\n <priority>${p.split('/').filter(Boolean).length > 1 ? '0.5' : '0.9'}</priority>\n </url>`)
+                .join('\n');
+
+              const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${rootUrlEntry}\n${urlEntries}\n${extraEntries}\n</urlset>`;
               compilation.emitAsset('sitemap.xml', new RawSource(sitemap, false));
 
               const robots = `User-agent: *\nAllow: /\n\nSitemap: ${this.siteUrl}/sitemap.xml\n`;
