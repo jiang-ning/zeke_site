@@ -5,7 +5,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const LocaleSitePlugin = require('./src/build/locale-site-plugin');
 const StaticDirPlugin = require('./src/build/static-dir-plugin');
 
-const CHERRYQUERY_STORE_URL = 'https://apps.microsoft.com/detail/<PRODUCT_ID>';
+const CHERRYQUERY_STORE_URL = 'https://apps.microsoft.com/detail/9P9TZ1C5CLX9';
 
 module.exports = (env, argv) => {
   const isProd = (argv && argv.mode === 'production') || process.env.NODE_ENV === 'production';
