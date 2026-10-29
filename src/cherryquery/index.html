@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CherryQuery - Find the words. Find the file.</title>
-    <meta name="description" content="CherryQuery is a Windows desktop app that searches inside your Word, Excel, PowerPoint, PDF and text files for a keyword. Your documents stay on your computer." />
-    <meta name="keywords" content="CherryQuery, document search, file content search, search inside files, Windows search, PDF search, Word search, Excel search, local search" />
+    <meta name="description" content="CherryQuery is a Windows desktop app that searches inside your Word, Excel, PowerPoint, PDF, email, archive, image and text files for a keyword - including scanned PDFs and images, read with OCR. Your documents stay on your computer." />
+    <meta name="keywords" content="CherryQuery, document search, file content search, search inside files, Windows search, PDF search, Word search, Excel search, email search, Outlook msg search, eml search, zip search, 7z search, rar search, tar search, OCR search, scanned PDF search, image text search, local search" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#fffdf8" />
     <link rel="canonical" href="https://inneroutliner.com/cherryquery" />
@@ -30,6 +30,7 @@
         </a>
         <nav class="site-nav" aria-label="Main navigation">
           <a href="#features">Features</a>
+          <a href="#ocr">Scanned files</a>
           <a href="#file-types">File types</a>
           <a href="#privacy">Privacy</a>
           <a class="btn btn-store btn-small" href="__MS_STORE_URL__" rel="noopener">Get it</a>
@@ -45,7 +46,7 @@
             <p class="eyebrow">Desktop search for Windows</p>
             <h1 id="hero-title">Find the words.<br /><span class="accent">Find the file.</span></h1>
             <p class="lead">
-              CherryQuery searches <em>inside</em> your Word, Excel, PowerPoint, PDF and text files for a keyword.
+              CherryQuery searches <em>inside</em> your Word, Excel, PowerPoint, PDF, email, archive and text files for a keyword &mdash; and now reads scanned PDFs and images too.
               Every match shows the file name, when it was last modified, and a preview with your keyword highlighted.
             </p>
             <div class="cta-row" id="download">
@@ -104,34 +105,29 @@
       <section class="preview" aria-label="Example search">
         <div class="wrap">
           <div class="app-window" role="img" aria-label="CherryQuery showing three documents that contain the word budget, each with the file name, modified date and a highlighted preview">
-            <div class="app-bar" aria-hidden="true">
-              <img src="/cherryquery/assets/logo.svg" alt="" width="20" height="20" />
-              CherryQuery
-              <span class="win-ctrls">&#8212; &#9633; &#10005;</span>
-            </div>
             <div class="app-body" aria-hidden="true">
               <div class="app-search">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m15.5 15.5 5 5" /></svg>
+                <img class="brand-mark" src="/cherryquery/assets/logo.svg" alt="" width="34" height="34" />
                 <span>budget<span class="caret"></span></span>
               </div>
               <p class="app-count">3 files contain &ldquo;budget&rdquo;</p>
               <ul class="app-results">
                 <li>
-                  <span class="file-bedge">DOCX</span>
+                  <span class="file-badge">DOCX</span>
                   <div>
                     <div class="r-head"><p class="r-name">Q4 Planning Notes.docx</p><p class="r-meta">Modified Oct 16, 2026, 4:18 PM</p></div>
                     <p class="r-snippet">&hellip;we agreed to move the remaining <mark>budget</mark> into the spring campaign and review it again in January&hellip;</p>
                   </div>
                 </li>
                 <li>
-                  <span class="file-bedge sun">XLSX</span>
+                  <span class="file-badge sun">XLSX</span>
                   <div>
                     <div class="r-head"><p class="r-name">Household 2026.xlsx</p><p class="r-meta">Modified Oct 12, 2026, 9:02 AM</p></div>
                     <p class="r-snippet">&hellip;Groceries 420 &middot; Utilities 185 &middot; Monthly <mark>budget</mark> remaining 1,240&hellip;</p>
                   </div>
                 </li>
                 <li>
-                  <span class="file-bedge sun">PDF</span>
+                  <span class="file-badge sun">PDF</span>
                   <div>
                     <div class="r-head"><p class="r-name">Community Center Proposal.pdf</p><p class="r-meta">Modified Sep 28, 2026, 2:47 PM</p></div>
                     <p class="r-snippet">&hellip;the estimated <mark>budget</mark> for the renovation includes materials, labor and a 10% contingency&hellip;</p>
@@ -156,7 +152,7 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z" /><path d="M14 3v5h5M8.5 13h7M8.5 17h4" /></svg>
               </span>
               <h3>Searches inside your files</h3>
-              <p>Word, Excel, PowerPoint, PDF, OpenDocument, RTF, notes, data files and source code &mdash; all searched by what they say.</p>
+              <p>Word, Excel, PowerPoint, PDF, OpenDocument, RTF, emails and their attachments, ZIP, 7z, RAR and tar archives, notes, data files and source code &mdash; all searched by what they say.</p>
             </article>
             <article class="card">
               <span class="icon-chip mint" aria-hidden="true">
@@ -197,6 +193,84 @@
         </div>
       </section>
 
+      <!-- Text recognition (OCR) -->
+      <section class="section ocr-section" id="ocr" aria-labelledby="ocr-title">
+        <div class="wrap ocr-band">
+          <div>
+            <p class="eyebrow">New: text recognition (OCR)</p>
+            <h2 id="ocr-title">Scans and photos are searchable, too.</h2>
+            <p class="ocr-lead">A scanned contract, a photographed receipt, a screenshot of a slide &mdash; CherryQuery reads the text in them with built-in text recognition (OCR) that runs on your PC, so they turn up in your search just like any other document.</p>
+            <ul class="checks">
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8" /></svg><span>Scanned PDFs and images, including every page of a multi-page TIFF.</span></li>
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8" /></svg><span>Each result shows a thumbnail of the spot on the page where your keyword was found, highlighted.</span></li>
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8" /></svg><span>Runs entirely on your PC &mdash; no cloud service, nothing uploaded.</span></li>
+              <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8" /></svg><span>Scanned PDFs that were skipped before are indexed again automatically.</span></li>
+            </ul>
+            <ul class="chips" aria-label="Formats read with text recognition">
+              <li>.pdf</li><li>.png</li><li>.jpg</li><li>.jpeg</li><li>.tif</li><li>.tiff</li>
+            </ul>
+          </div>
+
+          <div class="app-window" role="img" aria-label="CherryQuery showing a scanned PDF and a photo that contain the word deposit, each with a thumbnail of the scanned page with the word highlighted">
+            <div class="app-body" aria-hidden="true">
+              <div class="app-search">
+                <img class="brand-mark" src="/cherryquery/assets/logo.svg" alt="" width="34" height="34" />
+                <span>deposit</span>
+              </div>
+              <ul class="app-results">
+                <li>
+                  <span class="file-badge sun">PDF</span>
+                  <div>
+                    <div class="r-head"><p class="r-name">Signed Lease Agreement.pdf</p><p class="r-meta">Modified Oct 20, 2026</p></div>
+                    <svg class="r-thumb" viewBox="0 0 240 80" width="240" height="80" focusable="false">
+                      <rect width="240" height="80" fill="#fbf9f3" />
+                      <g transform="rotate(-.7 120 40)" font-family="Georgia, 'Times New Roman', serif" font-size="11" fill="#2e2629">
+                        <text x="14" y="8" textLength="200" lengthAdjust="spacingAndGlyphs" opacity=".85">month. 5. SECURITY DEPOSIT AND FEES.</text>
+                        <text x="14" y="27" textLength="170" lengthAdjust="spacingAndGlyphs">The tenant shall pay a security</text>
+                        <text x="14" y="46" textLength="40" lengthAdjust="spacingAndGlyphs">deposit</text>
+                        <text x="58" y="46" textLength="152" lengthAdjust="spacingAndGlyphs">of two months&#8217; rent prior</text>
+                        <text x="14" y="65" textLength="196" lengthAdjust="spacingAndGlyphs">to taking possession of the premises,</text>
+                        <text x="14" y="84" textLength="186" lengthAdjust="spacingAndGlyphs" opacity=".85">to be held by the landlord as a</text>
+                        <rect x="11" y="35" width="46" height="15" rx="2" fill="#ffd23c" fill-opacity=".35" stroke="#e6aa00" stroke-opacity=".9" />
+                      </g>
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <span class="file-badge">JPG</span>
+                  <div>
+                    <div class="r-head"><p class="r-name">Bank receipt.jpg</p><p class="r-meta">Modified Oct 14, 2026</p></div>
+                    <svg class="r-thumb" viewBox="0 0 240 80" width="240" height="80" focusable="false">
+                      <defs>
+                        <linearGradient id="receipt-light" x1="0" y1="0" x2="1" y2="1">
+                          <stop offset="0" stop-color="#f4f1ea" />
+                          <stop offset="1" stop-color="#dcd6cb" />
+                        </linearGradient>
+                      </defs>
+                      <rect width="240" height="80" fill="url(#receipt-light)" />
+                      <g transform="rotate(1.2 120 40)" font-family="Consolas, 'Cascadia Mono', Menlo, monospace" font-size="10" fill="#3a3436">
+                        <text x="22" y="10" textLength="70" lengthAdjust="spacingAndGlyphs" opacity=".8">10/14/2026</text>
+                        <text x="156" y="10" textLength="56" lengthAdjust="spacingAndGlyphs" opacity=".85">09:42 AM</text>
+                        <path d="M22 21h190" stroke="#3a3436" stroke-dasharray="4 3" opacity=".5" />
+                        <text x="22" y="40" textLength="28" lengthAdjust="spacingAndGlyphs">CASH</text>
+                        <text x="58" y="40" textLength="50" lengthAdjust="spacingAndGlyphs">DEPOSIT</text>
+                        <text x="152" y="40" textLength="60" lengthAdjust="spacingAndGlyphs">1,250.00</text>
+                        <text x="22" y="56" textLength="50" lengthAdjust="spacingAndGlyphs">ACCOUNT</text>
+                        <text x="152" y="56" textLength="60" lengthAdjust="spacingAndGlyphs">****4821</text>
+                        <text x="22" y="72" textLength="50" lengthAdjust="spacingAndGlyphs" opacity=".85">BALANCE</text>
+                        <text x="152" y="72" textLength="60" lengthAdjust="spacingAndGlyphs" opacity=".85">8,904.17</text>
+                        <rect x="55" y="30" width="56" height="13" rx="2" fill="#ffd23c" fill-opacity=".35" stroke="#e6aa00" stroke-opacity=".9" />
+                      </g>
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="type-note wrap">OCR always reads English, plus the languages you pick in Settings: the app languages are built in, and 100+ more are downloaded once when you add them. Up to 50 pages are read from each scanned PDF or TIFF.</p>
+      </section>
+
       <!-- File types -->
       <section class="section types-band" id="file-types" aria-labelledby="types-title">
         <div class="wrap">
@@ -211,6 +285,13 @@
                 <li>.docx</li><li>.xlsx</li><li>.pptx</li><li>.pdf</li><li>.odt</li><li>.ods</li><li>.odp</li><li>.rtf</li>
               </ul>
             </div>
+            <div class="card type-group featured">
+              <h3>Email and archives <span class="badge-new">New</span></h3>
+              <ul class="chips" aria-label="Email and archive formats">
+                <li>.eml</li><li>.msg</li><li>.zip</li><li>.7z</li><li>.rar</li><li>.tar</li><li>.tgz</li><li>.gz</li>
+              </ul>
+              <p class="type-desc">The subject, sender, recipients and body of <code>.eml</code> and Outlook <code>.msg</code> emails are searched. Attachment names are searched too, and so is attachment content when the attachment&rsquo;s extension is in your indexed list. Files inside ZIP, 7z, RAR and tar archives are searched the same way.</p>
+            </div>
             <div class="card type-group">
               <h3>Text and notes</h3>
               <ul class="chips" aria-label="Text and note formats">
@@ -223,14 +304,14 @@
                 <li>.csv</li><li>.tsv</li><li>.json</li><li>.xml</li><li>.yaml</li><li>.yml</li><li>.ini</li><li>.cfg</li><li>.conf</li><li>.toml</li><li>.properties</li>
               </ul>
             </div>
-            <div class="card type-group">
+            <div class="card type-group wide">
               <h3>Web and source code</h3>
               <ul class="chips" aria-label="Web and source code formats">
                 <li>.html</li><li>.htm</li><li>.css</li><li>.js</li><li>.jsx</li><li>.ts</li><li>.tsx</li><li>.py</li><li>.java</li><li>.c</li><li>.cpp</li><li>.h</li><li>.cs</li><li>.go</li><li>.rs</li><li>.rb</li><li>.sql</li><li>.sh</li><li>.ps1</li><li>.bat</li>
               </ul>
             </div>
           </div>
-          <p class="type-note">PDFs need a text layer to be searched. Older <code>.doc</code>, <code>.xls</code> and <code>.ppt</code> files aren&rsquo;t supported.</p>
+          <p class="type-note">Scanned PDFs and images are read with <a href="#ocr">text recognition</a>. Older <code>.doc</code>, <code>.xls</code> and <code>.ppt</code> files aren&rsquo;t supported.</p>
         </div>
       </section>
 
@@ -239,7 +320,7 @@
         <div class="wrap">
           <div class="privacy-band">
             <div class="big-lock" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="0.5" width="16" height="10.5" rx="2.5" /><path d="M7.5 10.5V7.5a4.5 4.5 0 0 1 9 0v3" /><path d="M12 14.5v2.5" /></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10.5" width="16" height="10.5" rx="2.5" /><path d="M7.5 10.5V7.5a4.5 4.5 0 0 1 9 0v3" /><path d="M12 14.5v2.5" /></svg>
             </div>
             <div>
               <h2 id="privacy-title">Your document stay on your computer.</h2>
@@ -273,11 +354,15 @@
             </details>
             <details>
               <summary>Are there size limits?</summary>
-              <p>Documents (Word, Excel, PowerPoint, PDF, OpenDocument, RTF) up to 50&nbsp;MB and text files up to 5&nbsp;MB are searched; larger files are skipped. Up to 2 million characters of text are indexed per file.</p>
+              <p>Documents (Word, Excel, PowerPoint, PDF, OpenDocument, RTF), emails and archives up to 50&nbsp;MB and text files up to 5&nbsp;MB are searched; larger files are skipped. Up to 2 million characters of text are indexed per file.</p>
+            </details>
+            <details>
+              <summary>How are emails and archives searched?</summary>
+              <p>For <code>.eml</code> and Outlook <code>.msg</code> files, the subject, sender, recipients and message body are searched. Attachment names are searched too, and so is attachment content when the attachment&rsquo;s extension is in your indexed list. ZIP, 7z, RAR (versions 4 and 5) and tar archives &mdash; including <code>.tgz</code> and <code>.tar.gz</code> &mdash; work the same way: the names of the files inside are always searched, and their content is searched when their extension is in your indexed list. A <code>.gz</code> file that isn&rsquo;t a tar archive, such as <code>report.txt.gz</code>, is searched as the file it contains. Attachments and archive files must also be within the maximum file size. Emails and archives inside each other are opened up to 3 levels deep, and up to 1,000 files are read from each archive. A match opens the email or archive, not the attachment or file inside it. Encrypted ZIP archives, and ZIP archives that use recompression other than Deflate, can&rsquo;t be read &mdash; only the names of the files inside are searched. Encrypted files inside 7z and RAR archives archives are searched by name only.</p>
             </details>
             <details>
               <summary>Can it read scanned or password-protected files?</summary>
-              <p>No. Scanned PDFs without a text layer won&rsquo;t match because text recognition (OCR) isn&rsquo;t used, and password-protected documents can&rsquo;t be read.</p>
+              <p>Yes. Scanned PDFs and images (.png, .jpg, .tif) are read with built-in text recognition (OCR), right on your PC&nbsp;&mdash; nothing is uploaded. Password-protected documents can&rsquo;t be read.</p>
             </details>
             <details>
               <summary>How does matching work?</summary>
