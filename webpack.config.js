@@ -3,9 +3,6 @@
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 const LocaleSitePlugin = require('./src/build/locale-site-plugin');
-const StaticDirPlugin = require('./src/build/static-dir-plugin');
-
-const CHERRYQUERY_STORE_URL = 'https://apps.microsoft.com/detail/9P9TZ1C5CLX9';
 
 module.exports = (env, argv) => {
   const isProd = (argv && argv.mode === 'production') || process.env.NODE_ENV === 'production';
@@ -53,19 +50,6 @@ module.exports = (env, argv) => {
         bundleKey: '__bundle.js',
         siteUrl: 'https://inneroutliner.com',
         defaultLocale: 'en',
-        extraSitemapPaths: [
-          '/cherryquery/',
-          '/cherryquery/privacy/',
-          '/cherryquery/terms/',
-          '/cherryquery/security/',
-        ],
-      }),
-
-      // -- CherryQuery product page (English-only static pages) > dist/cherryquery/ ---
-      new StaticDirPlugin({
-        from: path.resolve(__dirname, 'src/cherryquery'),
-        to: 'cherryquery',
-        replacements: { __MS_STORE_URL__: CHERRYQUERY_STORE_URL },
       }),
     ],
 
