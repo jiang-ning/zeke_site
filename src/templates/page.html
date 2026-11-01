@@ -46,7 +46,9 @@
        <nav class="nav" aria-label="Main navigation">
         <a href="/{{outputDir}}/"><span class="brand">{{nav.brand}}</span></a>
         <div class="nav-right">
+          {{#if nav.purchase}}
           <a href="/{{outputDir}}/license.html" class="btn btn-gradient">{{nav.purchase}}</a>
+          {{/if}}
           <div class="langpicker" data-langpicker>
             <button type="button" class="langpicker-trigger" id="lang-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-menu" aria-label="{{nav.language.ariaLabel}}">
               <span class="langpicker-globe" aria-hidden="true">&#127760;</span>
@@ -81,7 +83,7 @@
           <h1>{{hero.h1_line1}}<br><span class="accent">{{hero.h1_line2}}</span><br>{{hero.h1_line3}}</h1>
           <p class="lead">{{hero.lead}}</p>
           <div class="cta">
-            <a href="{{hero.cta_primary_href}}" class="btn btn-gradient">{{hero.cta_primary_label}}</a>
+            <a href="{{STORE_URL}}" class="btn btn-gradient" target="_blank" rel="noopener noreferrer">{{hero.cta_primary_label}}</a>
             <a href="{{hero.cta_secondary_href}}" class="btn btn-glass">{{hero.cta_secondary_label}}</a>
           </div>
         </article>

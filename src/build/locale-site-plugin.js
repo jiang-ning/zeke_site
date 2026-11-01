@@ -50,6 +50,10 @@ function pageSuffixFor(slug) {
   return `${slug}/`;
 }
 
+function localeHasPage(localeData, slug) {
+  return slug !== 'license' || Boolean(localeData.license);
+}
+
 function buildPageMeta(siteUrl, localeData, slug, footerLinks) {
   if (slug === 'index') {
     return localeData.meta;
@@ -75,6 +79,7 @@ function buildPageLanguages(locales, siteUrl, slug) {
   const pageSuffix = pageSuffixFor(slug);
 
   return locales
+  .filter(locale => localeHasPage(locale, slug))
     .map(locale => ({
       code: locale.outputDir,
       htmlLang: locale.htmlLang,
@@ -97,6 +102,7 @@ class LocaleSitePlugin {
     this.iconsDir = options.iconsDir;
     this.bundleKey = options.bundleKey || '__bundle.js';
     this.siteUrl = (options.siteUrl || 'https://inneroutliner.com').replace(/\/$/, '');
+    this.storeUrl = options.storeUrl || '';
     this.defaultLocale = options.defaultLocale || 'en';
     this.extraSitemapPaths = options.extraSitemapPaths || [];
   }
@@ -181,6 +187,7 @@ class LocaleSitePlugin {
             let count = 0;
             for (const localeData of locales) {
               for (const [slug, template] of Object.entries(compiledTemplates)) {
+                if (!localeHasPage(localeData, slug)) continue;
                 const isIndexPage = slug === 'index';
                 const pageDepthBase = localeData.outputDir.split('/').filter(Boolean).length;
                 const pageDepth = pageSuffixFor(slug).endsWith('/') ? pageDepthBase + 1 : pageDepthBase;
@@ -247,6 +254,7 @@ class LocaleSitePlugin {
                   })),
                   currentLanguage: pageLanguages.find(lang => lang.code === localeData.outputDir),
                   xDefaultHref,
+                  STORE_URL: this.storeUrl,
                   INLINE_CSS: new Handlebars.SafeString(`<style>${safeCSS}</style>`),
                   INLINE_JS: safeJS ? new Handlebars.SafeString(`<script>${safeJS}</script>`) : '',
                   STRUCTURED_DATA: new Handlebars.SafeString(
@@ -332,6 +340,7 @@ class LocaleSitePlugin {
                 })),
                 currentLanguage: pageLanguages.find(lang => lang.code === defaultLocaleData.outputDir),
                 xDefaultHref: `${this.siteUrl}/`,
+                STORE_URL: this.storeUrl,
                 localeSuggestData: new Handlebars.SafeString(JSON.stringify(suggestData).replace(/</g,'\\u003c')),
                 INLINE_CSS: new Handlebars.SafeString(`<style>${safeCSS}</style>`),
                 INLINE_JS: safeJS ? new Handlebars.SafeString(`<script>${safeJS}</script>`) : '',

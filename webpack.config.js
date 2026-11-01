@@ -49,6 +49,7 @@ module.exports = (env, argv) => {
         iconsDir: path.resolve(__dirname, 'src/images/icons'),
         bundleKey: '__bundle.js',
         siteUrl: 'https://inneroutliner.com',
+        storeUrl: 'https://apps.microsoft.com/detail/9NW595DWJ62V',
         defaultLocale: 'en',
       }),
     ],
