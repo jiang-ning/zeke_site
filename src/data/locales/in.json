@@ -180,7 +180,8 @@
     "links": [
       { "label": "प्राइवेसी", "href": "/in/privacy/" },
       { "label": "शर्तें", "href": "/in/terms/" },
-      { "label": "सुरक्षा", "href": "/in/security/"}
+      { "label": "सुरक्षा", "href": "/in/security/"},
+      { "label": "CherryQuery", "href": "https://cherryquery.com"}
     ]
   }
 }

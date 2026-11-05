@@ -903,6 +903,41 @@ h1 {
   color: var(--ink);
 }
 
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--muted);
+  background: var(--glass);
+  transition: color 0.18s, border-color 0.18s, background-color 0.18s;
+}
+
+.footer-social:hover {
+  color: var(--ink);
+  border-color: var(--border-h);
+  background: var(--glass-h);
+}
+
+.footer-social:focus-visible {
+  outline: 2px solid var(--accent1);
+  outline-offset: 2px;
+}
+
+.footer-social svg {
+  width: 16px;
+  height: 16px;
+}
+
 [dir="rtl"] .nav { flex-direction: row-reverse; }
 [dir="rtl"] .hero-main { text-align: right; }
 [dir="rtl"] .hero-main::after {right: auto; left: -110px; }
@@ -1031,7 +1066,7 @@ h1 {
   html { scroll-behavior: auto; }
   .badge-dot { animation: none; }
   .btn, .plan, .feature-card, .stat-card, 
-  .langpicker-trigger, .langpicker-caret, .langpicker-option, .footer-links a {
+  .langpicker-trigger, .langpicker-caret, .langpicker-option, .footer-links a, .footer-social {
     transition: none;
   }
 }

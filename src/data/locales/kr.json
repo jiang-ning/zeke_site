@@ -180,7 +180,8 @@
     "links": [
       { "label": "개인 정보", "href": "/kr/privacy/" },
       { "label": "약관", "href": "/kr/terms/" },
-      { "label": "보안", "href": "/kr/security/"}
+      { "label": "보안", "href": "/kr/security/"},
+      { "label": "CherryQuery", "href": "https://cherryquery.com"}
     ]
   }
 }

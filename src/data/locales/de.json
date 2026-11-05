@@ -180,7 +180,8 @@
     "links": [
       { "label": "Privatsphäre", "href": "/de/privacy/" },
       { "label": "Bedingungen", "href": "/de/terms/" },
-      { "label": "Sicherheit", "href": "/de/security/"}
+      { "label": "Sicherheit", "href": "/de/security/"},
+      { "label": "CherryQuery", "href": "https://cherryquery.com"}
     ]
   }
 }

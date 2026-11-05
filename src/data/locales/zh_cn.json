@@ -211,7 +211,8 @@
       {
         "label": "安全策略",
         "href": "/zh_cn/security/"
-      }
+      },
+      { "label": "CherryQuery", "href": "https://cherryquery.com"}
     ]
   }
 }

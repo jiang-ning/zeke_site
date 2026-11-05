@@ -180,7 +180,8 @@
     "links": [
       { "label": "隱私", "href": "/zh_tw/privacy/" },
       { "label": "條款", "href": "/zh_tw/terms/" },
-      { "label": "安全", "href": "/zh_tw/security/"}
+      { "label": "安全", "href": "/zh_tw/security/"},
+      { "label": "CherryQuery", "href": "https://cherryquery.com"}
     ]
   }
 }

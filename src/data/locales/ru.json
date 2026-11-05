@@ -180,7 +180,8 @@
     "links": [
       { "label": "Конфиденциальность", "href": "/ru/privacy/" },
       { "label": "Условия", "href": "/ru/terms/" },
-      { "label": "Безопасность", "href": "/ru/security/"}
+      { "label": "Безопасность", "href": "/ru/security/"},
+      { "label": "CherryQuery", "href": "https://cherryquery.com"}
     ]
   }
 }

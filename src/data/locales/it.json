@@ -180,7 +180,8 @@
     "links": [
       { "label": "Privacy", "href": "/it/privacy/" },
       { "label": "Termini", "href": "/it/terms/" },
-      { "label": "Sicurezza", "href": "/it/security/"}
+      { "label": "Sicurezza", "href": "/it/security/"},
+      { "label": "CherryQuery", "href": "https://cherryquery.com"}
     ]
   }
 }

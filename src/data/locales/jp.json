@@ -180,7 +180,8 @@
     "links": [
       { "label": "プライバシー", "href": "/jp/privacy/" },
       { "label": "条件", "href": "/jp/terms/" },
-      { "label": "セキュリティ", "href": "/jp/security/"}
+      { "label": "セキュリティ", "href": "/jp/security/"},
+      { "label": "CherryQuery", "href": "https://cherryquery.com"}
     ]
   }
 }
