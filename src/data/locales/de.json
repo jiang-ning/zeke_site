@@ -4,7 +4,6 @@
   "htmlLang": "de",
   "htmlDir": "ltr",
   "languageName": "Deutsch",
-
   "meta": {
     "title": "InnerOutliner - Gliederung. Fokus. Erledigt.",
     "description": "InnerOutliner ist ein lokal ausgerichtetes Aufgaben-Outline-Tool, das verstreute Ideen in ausführbare Pläne verwandelt. Privat durch Design – keine Cloud, kein Konto erforderlich.",
@@ -14,7 +13,6 @@
     "ogTitle": "InnerOutliner – Gliederung. Fokus. Erledigt.",
     "ogDesc": "Ein lokal-basierter Aufgabenplaner. Deine Daten bleiben immer auf deinem Gerät."
   },
-
   "nav": {
     "brand": "InnerOutliner",
     "language": {
@@ -22,7 +20,6 @@
       "heading": "Sprache"
     }
   },
-
   "hero": {
     "ariaLabel": "Held",
     "badge": "Lokal zuerst, privat, schnell",
@@ -35,28 +32,178 @@
     "cta_secondary_href": "#features",
     "cta_secondary_label": "Funktionen"
   },
-
   "stats": [
-    { "value": "100%", "label": "Lokaler Speicher – keine Cloud-Belastung" },
-    { "value": "Sofort", "label": "Keine Synchronisationsverzögerung, kein Login erforderlich" },
-    { "value": "10+", "label": "Unterstützte Sprachpakete"}
+    {
+      "value": "100%",
+      "label": "Lokaler Speicher – keine Cloud-Belastung"
+    },
+    {
+      "value": "Sofort",
+      "label": "Keine Synchronisationsverzögerung, kein Login erforderlich"
+    },
+    {
+      "value": "10+",
+      "label": "Unterstützte Sprachpakete"
+    }
   ],
-
   "features": {
     "ariaLabel": "Funktionen",
     "heading": "Alles, was du brauchst.",
     "headingAccent": "Nichts, was du nicht tust",
     "subheading": "Für konzentriertes Arbeiten entwickelt. Keine Abos, um die du dich kümmern musst, keine Daten verlassen deinen Computer.",
     "items": [
-      { "title": "Verschachtelte Gliederungen", "desc": "Teile jedes Ziel in übergeordnete Aufgaben und Unteraufgaben auf. Kristallklare Struktur." },
-      { "title": "Prioritätsanheftung", "desc": "Hebe die wichtigsten heutigen Punkte in einen festen Bereich. Bleib ganz fokussiert." },
-      { "title": "Erinnerungen & Fälligkeitstermine", "desc": "Fristen für jede Aufgabe und lokale Benachrichtigungen. Verpasse nie wieder einen Folgetermin." },
-      { "title": "Ziehen & neu anordnen", "desc": "Strukturiere deine Listen und Unterlisten sofort um – ganz einfach per Drag & Drop." },
-      { "title": "Fortschrittstrends", "desc": "Visuelle Zeitachsenberichte zeigen dir Woche für Woche deinen Abschlussrhythmus" },
-      { "title": "Mehrsprachige Benutzeroberfläche", "desc": "Wechsle die gesamte Benutzeroberfläche mit einem Fingertipp – 10 Sprachen und es werden immer mehr." }
+      {
+        "title": "Verschachtelte Gliederungen",
+        "desc": "Teile jedes Ziel in übergeordnete Aufgaben und Unteraufgaben auf. Kristallklare Struktur."
+      },
+      {
+        "title": "Board-Ansicht",
+        "desc": "Sieh jede Liste als Spalte nebeneinander. Ziehe Aufgaben zwischen Listen und ordne Spalten in Sekunden neu an."
+      },
+      {
+        "title": "Prioritätsanheftung",
+        "desc": "Hebe die wichtigsten heutigen Punkte in einen festen Bereich. Bleib ganz fokussiert."
+      },
+      {
+        "title": "Erinnerungen",
+        "desc": "Native Desktop-Benachrichtigungen an dem von dir gewählten Datum und zur gewählten Uhrzeit. Verpasse nie wieder eine Nachverfolgung."
+      },
+      {
+        "title": "Fälligkeitstermine",
+        "desc": "Fristen pro Aufgabe mit klaren Labels für „Heute fällig“ und „Überfällig“, damit nichts untergeht."
+      },
+      {
+        "title": "Fortschrittsberichte",
+        "desc": "Wöchentliche, monatliche und jährliche Diagramme zeigen deinen Abschlussrhythmus im Zeitverlauf."
+      },
+      {
+        "title": "Ziehen & neu anordnen",
+        "desc": "Strukturiere deine Listen und Unterlisten sofort um – ganz einfach per Drag & Drop."
+      },
+      {
+        "title": "Filter",
+        "desc": "Finde jede Aufgabe per Textsuche und grenze die Ansicht auf unerledigte oder erledigte Aufgaben ein."
+      },
+      {
+        "title": "Designs & Dunkelmodus",
+        "desc": "Hell, Dunkel oder Automatisch passend zum Betriebssystem, neun Farbdesigns und anpassbare Fenstertransparenz."
+      },
+      {
+        "title": "Immer im Vordergrund & Rand-Einrasten",
+        "desc": "Halte deine Liste über anderen Fenstern oder docke sie am Bildschirmrand an, um sie einzuklappen, bis du mit der Maus darüberfährst."
+      },
+      {
+        "title": "Backup, Wiederherstellung & CSV",
+        "desc": "Sichere alles in einer Backup-Datei, führe Daten beim Wiederherstellen zusammen oder ersetze sie und exportiere Aufgaben als CSV."
+      },
+      {
+        "title": "Mehrsprachige Benutzeroberfläche",
+        "desc": "Wechsle die gesamte Benutzeroberfläche mit einem Fingertipp – 10 Sprachen und es werden immer mehr."
+      }
     ]
   },
-
+  "spotlight": {
+    "ariaLabel": "Funktions-Highlights",
+    "heading": "Planen, terminieren und überprüfen –",
+    "headingAccent": "alles an einem Ort",
+    "subheading": "Ein genauerer Blick auf die Werkzeuge, die deine Arbeit voranbringen. Alles läuft lokal auf deinem Gerät.",
+    "board": {
+      "eyebrow": "Board",
+      "title": "Sieh jede Liste nebeneinander",
+      "desc": "Wechsle zur Board-Ansicht und jede deiner Listen wird zu einer eigenen Spalte. Verschaffe dir auf einen Blick das Gesamtbild und verschiebe Aufgaben genau dorthin, wo sie hingehören.",
+      "points": [
+        "Ziehe eine Aufgabe in eine andere Spalte, um sie in diese Liste zu verschieben – ihre Unteraufgaben wandern mit",
+        "Ziehe Spalten, um deine Listen neu anzuordnen",
+        "Füge Aufgaben direkt in jeder Spalte hinzu, bearbeite und erledige sie",
+        "Lege Aufgaben als Unteraufgaben ab und verfolge den Fortschritt wie 2/3 auf einen Blick"
+      ],
+      "svgLabel": "Board-Ansicht mit drei Listenspalten und einer Aufgabe, die von einer Spalte in eine andere gezogen wird",
+      "svg": {
+        "title": "Board",
+        "col1": "Arbeit",
+        "col2": "Privat",
+        "col3": "Ideen"
+      }
+    },
+    "reminder": {
+      "eyebrow": "Erinnerung",
+      "title": "Ein Hinweis genau im richtigen Moment",
+      "desc": "Füge jeder Aufgabe oder Unteraufgabe eine Erinnerung hinzu. Wenn es soweit ist, zeigt InnerOutliner eine native Desktop-Benachrichtigung an – ganz ohne Konto, Server oder Cloud.",
+      "points": [
+        "Wähle einen Tag im Kalender und eine Uhrzeit in 5-Minuten-Schritten",
+        "Die native Betriebssystem-Benachrichtigung zeigt den Aufgabentext an",
+        "Klicke auf die Benachrichtigung, um direkt zur App zurückzuspringen",
+        "Ändere oder entferne eine Erinnerung jederzeit"
+      ],
+      "svgLabel": "Eine Aufgabe mit einer Erinnerung für 09:30 Uhr und der dadurch ausgelösten Desktop-Benachrichtigung",
+      "svg": {
+        "task": "Zahnarzt anrufen",
+        "time": "Morgen, 09:30",
+        "picker": "Erinnerung",
+        "ok": "OK",
+        "app": "InnerOutliner",
+        "now": "jetzt",
+        "hint": "Zum Öffnen klicken",
+        "clock": "09:30"
+      }
+    },
+    "dueDate": {
+      "eyebrow": "Fälligkeitsdatum",
+      "title": "Wisse, was fällig ist, bevor es zu spät ist",
+      "desc": "Gib jeder Aufgabe oder Unteraufgabe eine Frist. InnerOutliner zeigt dir, wie viel Zeit noch bleibt, und sorgt dafür, dass überfällige Aufgaben nicht übersehen werden.",
+      "points": [
+        "Lege ein Fälligkeitsdatum über einen einfachen Kalender fest oder entferne es",
+        "Klare Status-Labels: Fällig in, Heute fällig und Überfällig",
+        "Heute fällige und überfällige Aufgaben heben sich durch eigene Farben ab",
+        "Erledigte Aufgaben zeigen an, ob sie rechtzeitig abgeschlossen wurden"
+      ],
+      "svgLabel": "Aufgabenliste mit Fälligkeitslabels: fällig in 3 Tagen, heute fällig, überfällig und rechtzeitig erledigt",
+      "svg": {
+        "title": "Fälligkeitsdatum",
+        "task1": "Quartalsplan entwerfen",
+        "date1": "25. Nov.",
+        "badge1": "Fällig in 3 Tagen",
+        "task2": "Rechnung senden",
+        "date2": "22. Nov.",
+        "badge2": "Heute fällig",
+        "task3": "Domain verlängern",
+        "date3": "20. Nov.",
+        "badge3": "2 Tage überfällig",
+        "task4": "Flüge buchen",
+        "date4": "18. Nov.",
+        "badge4": "Rechtzeitig erledigt"
+      }
+    },
+    "report": {
+      "eyebrow": "Bericht",
+      "title": "Sieh, wie dein Fortschritt Gestalt annimmt",
+      "desc": "Berichte verwandeln deinen Aufgabenverlauf in eine klare Trendlinie, sodass du siehst, wie viel du erledigst und was noch offen ist.",
+      "points": [
+        "Wechsle zwischen Woche, Monat und Jahr und blättere durch vergangene Zeiträume zurück",
+        "Gefülltes Liniendiagramm erledigter vs. unerledigter Aufgaben",
+        "Übersichtstabelle mit unerledigten, erledigten und gesamten Aufgaben pro Zeitraum",
+        "Umfasst Aufgaben und Unteraufgaben über alle deine Listen hinweg"
+      ],
+      "svgLabel": "Wöchentliches Berichtsliniendiagramm zum Vergleich erledigter und unerledigter Aufgaben von Montag bis Sonntag",
+      "svg": {
+        "title": "Bericht",
+        "week": "Woche",
+        "month": "Monat",
+        "year": "Jahr",
+        "completed": "Erledigt",
+        "incomplete": "Unerledigt",
+        "days": [
+          "Mo",
+          "Di",
+          "Mi",
+          "Do",
+          "Fr",
+          "Sa",
+          "So"
+        ]
+      }
+    }
+  },
   "showcase": {
     "ariaLabel": "Screenshots",
     "heading": "Sieh es",
@@ -64,38 +211,39 @@
     "subheading": "Ein genauerer Blick auf die Benutzeroberfläche – verschachtelte Listen, Dunkelmodus, individuelle Designs und Fortschrittsverfolgung.",
     "items": [
       {
-        "src": "/images/apps_todolist.png", 
+        "src": "/images/apps_todolist.png",
         "alt": "Verschachtelte To-Do-Liste mit Unteraufgaben und angehefteten Items",
         "caption": "Verschachtelte To-do-Listen"
       },
       {
-        "src": "/images/apps_dark_mode.png", 
+        "src": "/images/apps_dark_mode.png",
         "alt": "Dunkler Modus zeigt eine verschachtelte Gliederung",
         "caption": "Schöner Dark Mode"
       },
       {
-        "src": "/images/apps_themes.png", 
+        "src": "/images/apps_themes.png",
         "alt": "Mehrere Farbthemen für den Gliederungsansicht",
         "caption": "Benutzerdefinierte Farbthemen"
       },
       {
-        "src": "/images/apps_chart_report.png", 
+        "src": "/images/apps_chart_report.png",
         "alt": "Wöchentliche Fortschrittsübersicht mit erledigten und unerledigten Aufgaben",
         "caption": "Fortschrittsberichte"
       }
     ]
   },
-
   "trust": [
-    { "text": "100 % offline – kein Konto erforderlich" },
-    { "text": "Daten verlassen dein Gerät nie" }
+    {
+      "text": "100 % offline – kein Konto erforderlich"
+    },
+    {
+      "text": "Daten verlassen dein Gerät nie"
+    }
   ],
-
   "localeSuggest": {
     "detectedText": "Diese Seite in {name} ansehen?",
     "acceptLabel": "In {name} ansehen"
   },
-
   "legal": {
     "privacy": {
       "summary": "Wie InnerOutliner Informationen verarbeitet und deine Privatsphäre schützt.",
@@ -173,15 +321,26 @@
       ]
     }
   },
-
   "footer": {
     "copyright": "InnerOutliner. Alle Rechte vorbehalten.",
     "linksAriaLabel": "Fußzeilen-Links",
     "links": [
-      { "label": "Privatsphäre", "href": "/de/privacy/" },
-      { "label": "Bedingungen", "href": "/de/terms/" },
-      { "label": "Sicherheit", "href": "/de/security/"},
-      { "label": "CherryQuery", "href": "https://cherryquery.com"}
+      {
+        "label": "Privatsphäre",
+        "href": "/de/privacy/"
+      },
+      {
+        "label": "Bedingungen",
+        "href": "/de/terms/"
+      },
+      {
+        "label": "Sicherheit",
+        "href": "/de/security/"
+      },
+      {
+        "label": "CherryQuery",
+        "href": "https://cherryquery.com"
+      }
     ]
   }
 }

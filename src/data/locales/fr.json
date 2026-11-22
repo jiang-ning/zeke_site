@@ -4,7 +4,6 @@
   "htmlLang": "fr",
   "htmlDir": "ltr",
   "languageName": "Française",
-
   "meta": {
     "title": "InnerOutliner - Planifiez. Concentrez-vous. Terminé.",
     "description": "InnerOutliner est un organisateur de tâches local qui transforme des idées dispersées en plans exécutables. Privé par conception - pas de cloud, pas de compte requis.",
@@ -14,7 +13,6 @@
     "ogTitle": "InnerOutliner - Planifiez. Concentrez-vous. Terminé.",
     "ogDesc": "Un organisateur de tâches axé sur le local. Vos données restent sur votre appareil. Toujours."
   },
-
   "nav": {
     "brand": "InnerOutliner",
     "language": {
@@ -22,7 +20,6 @@
       "heading": "Langue"
     }
   },
-
   "hero": {
     "ariaLabel": "Héroïne",
     "badge": "D'abord local, privé, rapide",
@@ -35,28 +32,178 @@
     "cta_secondary_href": "#features",
     "cta_secondary_label": "Fonctionnalités"
   },
-
   "stats": [
-    { "value": "100%", "label": "Stockage local - aucune exposition au cloud" },
-    { "value": "Instant", "label": "Pas de délai de synchronisation, pas besoin de se connecter" },
-    { "value": "10+", "label": "Packs de langues pris en charge"}
+    {
+      "value": "100%",
+      "label": "Stockage local - aucune exposition au cloud"
+    },
+    {
+      "value": "Instant",
+      "label": "Pas de délai de synchronisation, pas besoin de se connecter"
+    },
+    {
+      "value": "10+",
+      "label": "Packs de langues pris en charge"
+    }
   ],
-
   "features": {
     "ariaLabel": "Fonctionnalités",
     "heading": "Tout ce dont vous avez besoin.",
     "headingAccent": "Rien que tu ne fasses",
     "subheading": "Conçu pour le travail concentré. Pas d'abonnements à gérer, aucune donnée ne quitte votre appareil.",
     "items": [
-      { "title": "Plans imbriqués", "desc": "Divise n'importe quel objectif en tâches principales et sous-tâches. Structure super claire." },
-      { "title": "Épinglage prioritaire", "desc": "Mets les éléments les plus importants du jour dans une zone épinglée dédiée. Reste ultra concentré." },
-      { "title": "Rappels et échéances", "desc": "Dates limites pour chaque tâche et notifications locales. Ne ratez plus jamais un suivi." },
-      { "title": "Glisser et réorganiser", "desc": "Restructurez instantanément vos listes et sous-listes avec un glisser-déposer fluide." },
-      { "title": "Tendances de progression", "desc": "Les rapports de chronologie visuelle révèlent votre rythme d'accomplissement semaine après semaine" },
-      { "title": "Interface multilingue", "desc": "Change toute la langue de l'interface en un seul tapotement - 10 langues et ça continue de grandir." }
+      {
+        "title": "Plans imbriqués",
+        "desc": "Divise n'importe quel objectif en tâches principales et sous-tâches. Structure super claire."
+      },
+      {
+        "title": "Vue Tableau",
+        "desc": "Affiche chaque liste sous forme de colonne côte à côte. Fais glisser les tâches d'une liste à l'autre et réorganise les colonnes en quelques secondes."
+      },
+      {
+        "title": "Épinglage prioritaire",
+        "desc": "Mets les éléments les plus importants du jour dans une zone épinglée dédiée. Reste ultra concentré."
+      },
+      {
+        "title": "Rappels",
+        "desc": "Notifications bureau natives à la date et à l'heure choisies. Ne rate plus jamais un suivi."
+      },
+      {
+        "title": "Dates d'échéance",
+        "desc": "Échéances par tâche avec des libellés clairs Aujourd'hui et En retard, pour que rien ne passe à travers les mailles du filet."
+      },
+      {
+        "title": "Rapports d'avancement",
+        "desc": "Des graphiques hebdomadaires, mensuels et annuels révèlent votre rythme d'accomplissement au fil du temps."
+      },
+      {
+        "title": "Glisser et réorganiser",
+        "desc": "Restructurez instantanément vos listes et sous-listes avec un glisser-déposer fluide."
+      },
+      {
+        "title": "Filtre",
+        "desc": "Trouvez n'importe quelle tâche par texte et limitez l'affichage aux tâches inachevées ou terminées uniquement."
+      },
+      {
+        "title": "Thèmes et mode sombre",
+        "desc": "Clair, sombre ou Auto selon votre système, neuf thèmes de couleur et opacité de fenêtre réglable."
+      },
+      {
+        "title": "Toujours au premier plan et ancrage au bord",
+        "desc": "Gardez votre liste au-dessus des autres fenêtres, ou ancrez-la au bord de l'écran pour la réduire jusqu'au survol."
+      },
+      {
+        "title": "Sauvegarde, restauration et CSV",
+        "desc": "Enregistrez tout dans un fichier de sauvegarde, fusionnez ou remplacez lors de la restauration, et exportez les tâches au format CSV."
+      },
+      {
+        "title": "Interface multilingue",
+        "desc": "Change toute la langue de l'interface en un seul tapotement - 10 langues et ça continue de grandir."
+      }
     ]
   },
-
+  "spotlight": {
+    "ariaLabel": "Fonctionnalités phares",
+    "heading": "Planifiez, programmez et faites le point -",
+    "headingAccent": "tout au même endroit",
+    "subheading": "Un aperçu détaillé des outils qui font avancer votre travail. Tout fonctionne localement sur votre appareil.",
+    "board": {
+      "eyebrow": "Tableau",
+      "title": "Affichez chaque liste côte à côte",
+      "desc": "Passez en vue Tableau pour que chacune de vos listes devienne sa propre colonne. Ayez une vue d'ensemble en un coup d'œil, puis placez vos tâches exactement là où elles doivent être.",
+      "points": [
+        "Faites glisser une tâche vers une autre colonne pour la déplacer dans cette liste - ses sous-tâches suivent",
+        "Faites glisser les colonnes pour réorganiser vos listes",
+        "Ajoutez, modifiez et terminez des tâches directement dans chaque colonne",
+        "Déposez des tâches en sous-tâches et suivez l'avancement comme 2/3 en un coup d'œil"
+      ],
+      "svgLabel": "Vue Tableau avec trois colonnes de listes et une tâche glissée d'une colonne à une autre",
+      "svg": {
+        "title": "Tableau",
+        "col1": "Travail",
+        "col2": "Personnel",
+        "col3": "Idées"
+      }
+    },
+    "reminder": {
+      "eyebrow": "Rappel",
+      "title": "Un coup de pouce au moment idéal",
+      "desc": "Associez un rappel à n'importe quelle tâche ou sous-tâche. Le moment venu, InnerOutliner affiche une notification bureau native - sans compte, sans serveur et sans cloud.",
+      "points": [
+        "Choisissez un jour sur le calendrier et une heure par tranches de 5 minutes",
+        "La notification native du système affiche le texte de la tâche",
+        "Cliquez sur la notification pour revenir directement dans l'application",
+        "Modifiez ou supprimez un rappel à tout moment"
+      ],
+      "svgLabel": "Une tâche avec un rappel réglé à 09:30 et la notification bureau qu'elle déclenche",
+      "svg": {
+        "task": "Appeler le dentiste",
+        "time": "Demain, 09:30",
+        "picker": "Rappel",
+        "ok": "OK",
+        "app": "InnerOutliner",
+        "now": "maintenant",
+        "hint": "Cliquer pour ouvrir",
+        "clock": "09:30"
+      }
+    },
+    "dueDate": {
+      "eyebrow": "Date d'échéance",
+      "title": "Sachez ce qui arrive à échéance avant qu'il ne soit trop tard",
+      "desc": "Fixez une date limite à n'importe quelle tâche ou sous-tâche. InnerOutliner vous indique le temps restant et rend les retards impossibles à manquer.",
+      "points": [
+        "Définissez ou supprimez une date d'échéance depuis un calendrier simple",
+        "Libellés d'état clairs : Échéance dans, Aujourd'hui et En retard",
+        "Les tâches du jour et en retard ressortent avec des couleurs distinctes",
+        "Les tâches terminées indiquent si elles ont été accomplies à temps"
+      ],
+      "svgLabel": "Liste de tâches affichant les libellés d'échéance : dans 3 jours, aujourd'hui, en retard et fait à temps",
+      "svg": {
+        "title": "Date d'échéance",
+        "task1": "Rédiger le plan trimestriel",
+        "date1": "25 nov.",
+        "badge1": "Dans 3 jours",
+        "task2": "Envoyer la facture",
+        "date2": "22 nov.",
+        "badge2": "Aujourd'hui",
+        "task3": "Renouveler le domaine",
+        "date3": "20 nov.",
+        "badge3": "2 j de retard",
+        "task4": "Réserver les vols",
+        "date4": "18 nov.",
+        "badge4": "Fait à temps"
+      }
+    },
+    "report": {
+      "eyebrow": "Rapport",
+      "title": "Voyez vos progrès prendre forme",
+      "desc": "Les rapports transforment l'historique de vos tâches en une courbe de tendance claire, pour voir ce que vous accomplissez et ce qui reste ouvert.",
+      "points": [
+        "Basculez entre Semaine, Mois et Année, et remontez dans les périodes passées",
+        "Graphique linéaire plein des tâches terminées par rapport aux inachevées",
+        "Tableau récapitulatif avec tâches inachevées, terminées et total par période",
+        "Couvre les tâches et sous-tâches de toutes vos listes"
+      ],
+      "svgLabel": "Graphique linéaire du rapport hebdomadaire comparant les tâches terminées et inachevées du lundi au dimanche",
+      "svg": {
+        "title": "Rapport",
+        "week": "Semaine",
+        "month": "Mois",
+        "year": "Année",
+        "completed": "Terminées",
+        "incomplete": "Inachevées",
+        "days": [
+          "Lun",
+          "Mar",
+          "Mer",
+          "Jeu",
+          "Ven",
+          "Sam",
+          "Dim"
+        ]
+      }
+    }
+  },
   "showcase": {
     "ariaLabel": "Captures d'écran",
     "heading": "Regarde-le",
@@ -64,38 +211,39 @@
     "subheading": "Un coup d'œil plus près à l'interface - listes imbriquées, mode sombre, thèmes personnalisés et suivi des progrès.",
     "items": [
       {
-        "src": "/images/apps_todolist.png", 
+        "src": "/images/apps_todolist.png",
         "alt": "Liste de tâches imbriquée avec sous-tâches et éléments épinglés",
         "caption": "Listes de tâches imbriquées"
       },
       {
-        "src": "/images/apps_dark_mode.png", 
+        "src": "/images/apps_dark_mode.png",
         "alt": "Interface en mode sombre affichant un plan imbriqué",
         "caption": "Beau mode sombre"
       },
       {
-        "src": "/images/apps_themes.png", 
+        "src": "/images/apps_themes.png",
         "alt": "Plusieurs thèmes de couleurs pour le planificateur",
         "caption": "Thèmes de couleurs personnalisés"
       },
       {
-        "src": "/images/apps_chart_report.png", 
+        "src": "/images/apps_chart_report.png",
         "alt": "Tableau de progression hebdomadaire montrant les tâches terminées et inachevées",
         "caption": "Rapports d'avancement"
       }
     ]
   },
-
   "trust": [
-    { "text": "100 % hors ligne - aucun compte nécessaire" },
-    { "text": "Les données ne quittent jamais votre appareil" }
+    {
+      "text": "100 % hors ligne - aucun compte nécessaire"
+    },
+    {
+      "text": "Les données ne quittent jamais votre appareil"
+    }
   ],
-
   "localeSuggest": {
     "detectedText": "Voir cette page en {name} ?",
     "acceptLabel": "Voir dans {name}"
   },
-
   "legal": {
     "privacy": {
       "summary": "Comment InnerOutliner gère les informations et protège votre vie privée.",
@@ -173,15 +321,26 @@
       ]
     }
   },
-
   "footer": {
     "copyright": "InnerOutliner. Tous droits réservés.",
     "linksAriaLabel": "Liens du pied de page",
     "links": [
-      { "label": "Confidentialité", "href": "/fr/privacy/" },
-      { "label": "Conditions", "href": "/fr/terms/" },
-      { "label": "Sécurité", "href": "/fr/security/"},
-      { "label": "CherryQuery", "href": "https://cherryquery.com"}
+      {
+        "label": "Confidentialité",
+        "href": "/fr/privacy/"
+      },
+      {
+        "label": "Conditions",
+        "href": "/fr/terms/"
+      },
+      {
+        "label": "Sécurité",
+        "href": "/fr/security/"
+      },
+      {
+        "label": "CherryQuery",
+        "href": "https://cherryquery.com"
+      }
     ]
   }
 }

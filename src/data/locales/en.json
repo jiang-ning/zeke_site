@@ -89,7 +89,7 @@
     "reminder": {
       "eyebrow": "Reminder",
       "title": "A nudge at exactly the right moment",
-      "desc": "Attach a reminder to any task or subtask. When the time comes, InnerOutliner show a native desktop notification - no account, no server, no cloud involved.",
+      "desc": "Attach a reminder to any task or subtask. When the time comes, InnerOutliner shows a native desktop notification - no account, no server, no cloud involved.",
       "points": [
         "Pick a day on the calendar and a time in 5-minute steps",
         "Native OS notification shows the task text",
@@ -136,7 +136,7 @@
       }
     },
     "report": {
-      "eyeBrow": "Report",
+      "eyebrow": "Report",
       "title": "See your progress take shape",
       "desc": "Reports turn your task history into a clear trend line, so you can see how much you finish and what's still open.",
       "points": [
