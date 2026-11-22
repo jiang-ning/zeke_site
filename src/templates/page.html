@@ -264,6 +264,46 @@
           </article>
           {{/with}}
 
+          {{#with spotlight.dueDate}}
+          <article class="spotlight spotlight" id="due-date">
+            <div class="spotlight-text">
+              <span class="spotlight-eyebrow">{{eyebrow}}</span>
+              <h3>{{title}}</h3>
+              <p>{{desc}}</p>
+              <ul class="spotlight-points">
+                {{#each points}}<li>{{this}}</li>{{/each}}
+              </ul>
+            </div>
+            <div class="spotlight-visual">
+              <svg viewBox="0 0 480 320" role="img" aria-label="{{svgLabel}}" xmlns="http://www.w3.org/2000/svg">
+                <rect class="sv-window" x="10" y="10" width="460" height="300" rx="14"/>
+                <circle cx="30" cy="28" r="4" fill="#ff5f57"/><circle cx="44" cy="28" r="4" fill="#febc2e"/><circle cx="58" cy="28" r="4" fill="#28c840"/>
+                <text class="sv-title" x="240" y="32" text-anchor="middle">{{svg.title}}</text>
+
+                <rect class="sv-card" x="26" y="50" width="428" height="50" rx="9"/><rect x="26" y="50" width="4" height="50" rx="2" fill="#8b84ff"/>
+                <circle class="sv-check" cx="50" cy="75" r="7"/>
+                <text class="sv-text" x="68" y="72">{{svg.task1}}</text><text class="sv-muted" x="68" y="89">{{svg.date1}}</text>
+                <rect x="322" y="64" width="118" height="22" rx="11" fill="rgba(139,132,255,0.16)"/><text class="sv-badge" x="381" y="79" text-anchor="middle" fill="#8b84ff">{{svg.badge1}}</text>
+
+                <rect class="sv-card" x="26" y="112" width="428" height="50" rx="9"/><rect x="26" y="112" width="4" height="50" rx="2" fill="#f5a524"/>
+                <circle class="sv-check" cx="50" cy="137" r="7"/>
+                <text class="sv-text" x="68" y="134">{{svg.task2}}</text><text class="sv-muted" x="68" y="151">{{svg.date2}}</text>
+                <rect x="322" y="126" width="118" height="22" rx="11" fill="rgba(245,165,36,0.16)"/><text class="sv-badge" x="381" y="141" text-anchor="middle" fill="#f5a524">{{svg.badge2}}</text>
+
+                <rect class="sv-card" x="26" y="174" width="428" height="50" rx="9"/><rect x="26" y="174" width="4" height="50" rx="2" fill="#ff5d6c"/>
+                <circle class="sv-check" cx="50" cy="199" r="7"/>
+                <text class="sv-text" x="68" y="196">{{svg.task3}}</text><text class="sv-muted" x="68" y="213">{{svg.date3}}</text>
+                <rect x="322" y="188" width="118" height="22" rx="11" fill="rgba(255,93,108,0.16)"/><text class="sv-badge" x="381" y="203" text-anchor="middle" fill="#ff5d6c">{{svg.badge3}}</text>
+
+                <rect class="sv-card" x="26" y="236" width="428" height="50" rx="9"/><rect x="26" y="236" width="4" height="50" rx="2" fill="#00d4aa"/>
+                <circle cx="50" cy="261" r="7" fill="#00d4aa"/><path d="M46.5 261l2.5 2.5 4.5-5" fill="none" stroke="#0a0c12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <text class="sv-text sv-done" x="68" y="258">{{svg.task4}}</text><text class="sv-muted" x="68" y="275">{{svg.date4}}</text>
+                <rect x="322" y="250" width="118" height="22" rx="11" fill="rgba(0,212,170,0.16)"/><text class="sv-badge" x="381" y="265" text-anchor="middle" fill="#00d4aa">{{svg.badge4}}</text>
+              </svg>
+            </div>
+          </article>
+          {{/with}}
+
           {{#with spotlight.report}}
           <article class="spotlight spotlight-reverse" id="report">
             <div class="spotlight-text">
