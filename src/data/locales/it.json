@@ -4,7 +4,6 @@
   "htmlLang": "it",
   "htmlDir": "ltr",
   "languageName": "Italiana",
-
   "meta": {
     "title": "InnerOutliner - Struttura. Focus. Fatto.",
     "description": "InnerOutliner è un organizzatore di attività locale che trasforma idee sparpagliate in piani eseguibili. Privato per design - niente cloud, niente account richiesto.",
@@ -14,7 +13,6 @@
     "ogTitle": "InnerOutliner - Struttura. Focus. Fatto.",
     "ogDesc": "Un organizer di attività locale. I tuoi dati restano sul tuo dispositivo. Sempre."
   },
-
   "nav": {
     "brand": "InnerOutliner",
     "language": {
@@ -22,12 +20,11 @@
       "heading": "Lingua"
     }
   },
-
   "hero": {
     "ariaLabel": "Eroe",
     "badge": "Locale prima di tutto, Privato, Veloce",
-    "h1-line1": "Schema.",
-    "h1-line2": "Concentrazione.",
+    "h1_line1": "Schema.",
+    "h1_line2": "Concentrazione.",
     "h1_line3": "Fatto.",
     "lead": "Trasforma i pensieri sparsi in una struttura di compiti chiara e eseguibile. Schemi annidati, sottoattività, promemoria: tutto resta sul tuo dispositivo.",
     "cta_primary_href": "/download",
@@ -35,28 +32,178 @@
     "cta_secondary_href": "#features",
     "cta_secondary_label": "Caratteristiche"
   },
-
   "stats": [
-    { "value": "100%", "label": "Archiviazione locale - zero esposizione al cloud" },
-    { "value": "Istantaneo", "label": "Nessun ritardo nella sincronizzazione, nessun login richiesto" },
-    { "value": "10+", "label": "Pacchetti di lingue supportati"}
+    {
+      "value": "100%",
+      "label": "Archiviazione locale - zero esposizione al cloud"
+    },
+    {
+      "value": "Istantaneo",
+      "label": "Nessun ritardo nella sincronizzazione, nessun login richiesto"
+    },
+    {
+      "value": "10+",
+      "label": "Pacchetti di lingue supportati"
+    }
   ],
-
   "features": {
     "ariaLabel": "Caratteristiche",
     "heading": "Tutto ciò di cui hai bisogno.",
     "headingAccent": "Niente che tu non faccia",
     "subheading": "Progettato per lavorare in modo concentrato. Nessun abbonamento di cui preoccuparsi, nessun dato lascia il tuo dispositivo.",
     "items": [
-      { "title": "Strutture annidate", "desc": "Scomponi qualsiasi obiettivo in attività principali e sottoattività. Struttura super chiara." },
-      { "title": "Fissaggio prioritario", "desc": "Solleva gli elementi più critici di oggi in un'area dedicata e fissata. Mantieniti super concentrato." },
-      { "title": "Promemoria e scadenze", "desc": "Scadenze per ogni compito e notifiche locali. Non perdere mai più un promemoria." },
-      { "title": "Trascina e riordina", "desc": "Riorganizza liste e sotto-liste all'istante con il pratico drag-and-drop." },
-      { "title": "Tendenze di progresso", "desc": "I report della linea temporale visiva mostrano il tuo ritmo di completamento settimana dopo settimana" },
-      { "title": "Interfaccia multi-lingua", "desc": "Cambia l'intera lingua dell'interfaccia con un solo tocco - 10 lingue disponibili e altre in arrivo." }
+      {
+        "title": "Strutture annidate",
+        "desc": "Scomponi qualsiasi obiettivo in attività principali e sottoattività. Struttura super chiara."
+      },
+      {
+        "title": "Vista bacheca",
+        "desc": "Visualizza ogni elenco come una colonna affiancata. Trascina le attività da un elenco all'altro e riordina le colonne in pochi secondi."
+      },
+      {
+        "title": "Fissaggio prioritario",
+        "desc": "Solleva gli elementi più critici di oggi in un'area dedicata e fissata. Mantieniti super concentrato."
+      },
+      {
+        "title": "Promemoria",
+        "desc": "Notifiche desktop native nella data e all'ora che scegli. Non perdere mai più un promemoria."
+      },
+      {
+        "title": "Scadenze",
+        "desc": "Scadenze per singola attività con etichette chiare Scade oggi e Scaduta, così nulla sfugge."
+      },
+      {
+        "title": "Rapporti di progresso",
+        "desc": "Grafici settimanali, mensili e annuali rivelano il tuo ritmo di completamento nel tempo."
+      },
+      {
+        "title": "Trascina e riordina",
+        "desc": "Riorganizza liste e sotto-liste all'istante con il pratico drag-and-drop."
+      },
+      {
+        "title": "Filtro",
+        "desc": "Trova qualsiasi attività per testo e restringi la vista solo alle attività incomplete o completate."
+      },
+      {
+        "title": "Temi e modalità scura",
+        "desc": "Chiaro, scuro o Automatico per seguire il sistema operativo, nove temi di colore e opacità della finestra regolabile."
+      },
+      {
+        "title": "Sempre in primo piano e aggancio al bordo",
+        "desc": "Mantieni il tuo elenco sopra le altre finestre oppure aggancialo al bordo dello schermo per comprimerlo finché non passi il cursore."
+      },
+      {
+        "title": "Backup, ripristino e CSV",
+        "desc": "Salva tutto in un file di backup, unisci o sostituisci al ripristino ed esporta le attività in CSV."
+      },
+      {
+        "title": "Interfaccia multi-lingua",
+        "desc": "Cambia l'intera lingua dell'interfaccia con un solo tocco - 10 lingue disponibili e altre in arrivo."
+      }
     ]
   },
-
+  "spotlight": {
+    "ariaLabel": "Funzionalità in evidenza",
+    "heading": "Pianifica, programma e rivedi -",
+    "headingAccent": "tutto in un unico posto",
+    "subheading": "Uno sguardo più da vicino agli strumenti che mandano avanti il tuo lavoro. Tutto gira localmente sul tuo dispositivo.",
+    "board": {
+      "eyebrow": "Bacheca",
+      "title": "Visualizza ogni elenco affiancato",
+      "desc": "Passa a Bacheca e ciascuno dei tuoi elenchi diventa una colonna a sé. Cogli il quadro generale a colpo d'occhio, poi sposta il lavoro esattamente dove deve stare.",
+      "points": [
+        "Trascina un'attività in un'altra colonna per spostarla in quell'elenco: le sue sottoattività la seguono",
+        "Trascina le colonne per riordinare i tuoi elenchi",
+        "Aggiungi, modifica e completa le attività direttamente dentro ogni colonna",
+        "Rilascia le attività dentro le sottoattività e segui l'avanzamento come 2/3 a colpo d'occhio"
+      ],
+      "svgLabel": "Vista bacheca con tre colonne di elenchi e un'attività trascinata da una colonna all'altra",
+      "svg": {
+        "title": "Bacheca",
+        "col1": "Lavoro",
+        "col2": "Personale",
+        "col3": "Idee"
+      }
+    },
+    "reminder": {
+      "eyebrow": "Promemoria",
+      "title": "Un avviso esattamente al momento giusto",
+      "desc": "Allega un promemoria a qualsiasi attività o sottoattività. Quando arriva il momento, InnerOutliner mostra una notifica desktop nativa: nessun account, nessun server, nessun cloud.",
+      "points": [
+        "Scegli un giorno sul calendario e un orario a intervalli di 5 minuti",
+        "La notifica nativa del sistema operativo mostra il testo dell'attività",
+        "Fai clic sulla notifica per tornare direttamente nell'app",
+        "Modifica o rimuovi un promemoria in qualsiasi momento"
+      ],
+      "svgLabel": "Un'attività con un promemoria impostato per le 09:30 e la notifica desktop che attiva",
+      "svg": {
+        "task": "Chiamare il dentista",
+        "time": "Domani, 09:30",
+        "picker": "Promemoria",
+        "ok": "OK",
+        "app": "InnerOutliner",
+        "now": "adesso",
+        "hint": "Fai clic per aprire",
+        "clock": "09:30"
+      }
+    },
+    "dueDate": {
+      "eyebrow": "Scadenza",
+      "title": "Sai cosa scade prima che sia tardi",
+      "desc": "Assegna una scadenza a qualsiasi attività o sottoattività. InnerOutliner ti dice quanto tempo resta e rende impossibile perdere le attività scadute.",
+      "points": [
+        "Imposta o rimuovi una scadenza da un semplice calendario",
+        "Etichette di stato chiare: Scade tra, Scade oggi e Scaduta",
+        "Le attività in scadenza oggi e quelle scadute risaltano con colori distinti",
+        "Le attività completate mostrano se sono state svolte in tempo"
+      ],
+      "svgLabel": "Elenco attività con etichette di scadenza: scade tra 3 giorni, scade oggi, scaduta e fatta in tempo",
+      "svg": {
+        "title": "Scadenza",
+        "task1": "Bozza piano trimestrale",
+        "date1": "25 nov",
+        "badge1": "Scade tra 3 giorni",
+        "task2": "Inviare fattura",
+        "date2": "22 nov",
+        "badge2": "Scade oggi",
+        "task3": "Rinnovare dominio",
+        "date3": "20 nov",
+        "badge3": "Scaduta da 2 giorni",
+        "task4": "Prenotare voli",
+        "date4": "18 nov",
+        "badge4": "Fatta in tempo"
+      }
+    },
+    "report": {
+      "eyebrow": "Rapporto",
+      "title": "Guarda i tuoi progressi prendere forma",
+      "desc": "I rapporti trasformano la cronologia delle attività in una chiara linea di tendenza, così puoi vedere quanto porti a termine e cosa resta aperto.",
+      "points": [
+        "Passa tra Settimana, Mese e Anno e scorri indietro nei periodi passati",
+        "Grafico a linee riempito delle attività completate rispetto a quelle incomplete",
+        "Tabella riepilogativa con attività incomplete, completate e totale per periodo",
+        "Include attività e sottoattività di tutti i tuoi elenchi"
+      ],
+      "svgLabel": "Grafico a linee del rapporto settimanale che confronta attività completate e incomplete da lunedì a domenica",
+      "svg": {
+        "title": "Rapporto",
+        "week": "Settimana",
+        "month": "Mese",
+        "year": "Anno",
+        "completed": "Completate",
+        "incomplete": "Incomplete",
+        "days": [
+          "Lun",
+          "Mar",
+          "Mer",
+          "Gio",
+          "Ven",
+          "Sab",
+          "Dom"
+        ]
+      }
+    }
+  },
   "showcase": {
     "ariaLabel": "Screenshot",
     "heading": "Vedi",
@@ -64,38 +211,39 @@
     "subheading": "Uno sguardo più da vicino all'interfaccia - liste annidate, modalità scura, temi personalizzati e monitoraggio dei progressi.",
     "items": [
       {
-        "src": "/images/apps_todolist.png", 
+        "src": "/images/apps_todolist.png",
         "alt": "Lista di cose da fare annidata con sottoattività e elementi fissati",
         "caption": "Elenchi di cose da fare annidati"
       },
       {
-        "src": "/images/apps_dark_mode.png", 
+        "src": "/images/apps_dark_mode.png",
         "alt": "Interfaccia in modalità scura che mostra un sommario nidificato",
         "caption": "Bella modalità scura"
       },
       {
-        "src": "/images/apps_themes.png", 
+        "src": "/images/apps_themes.png",
         "alt": "Più temi di colore per l'outliner",
         "caption": "Temi di colore personalizzati"
       },
       {
-        "src": "/images/apps_chart_report.png", 
+        "src": "/images/apps_chart_report.png",
         "alt": "Grafico dei progressi settimanali che mostra i compiti completati e quelli incompleti",
         "caption": "Rapporti di progresso"
       }
     ]
   },
-
   "trust": [
-    { "text": "100% offline - nessun account richiesto" },
-    { "text": "I dati non lasciano mai il tuo dispositivo" }
+    {
+      "text": "100% offline - nessun account richiesto"
+    },
+    {
+      "text": "I dati non lasciano mai il tuo dispositivo"
+    }
   ],
-
   "localeSuggest": {
     "detectedText": "Vuoi vedere questa pagina in {name}?",
     "acceptLabel": "Visualizza in {name}"
   },
-
   "legal": {
     "privacy": {
       "summary": "Come InnerOutliner gestisce le informazioni e protegge la tua privacy.",
@@ -173,15 +321,26 @@
       ]
     }
   },
-
   "footer": {
     "copyright": "InnerOutliner. Tutti i diritti riservati.",
     "linksAriaLabel": "Link nel piè di pagina",
     "links": [
-      { "label": "Privacy", "href": "/it/privacy/" },
-      { "label": "Termini", "href": "/it/terms/" },
-      { "label": "Sicurezza", "href": "/it/security/"},
-      { "label": "CherryQuery", "href": "https://cherryquery.com"}
+      {
+        "label": "Privacy",
+        "href": "/it/privacy/"
+      },
+      {
+        "label": "Termini",
+        "href": "/it/terms/"
+      },
+      {
+        "label": "Sicurezza",
+        "href": "/it/security/"
+      },
+      {
+        "label": "CherryQuery",
+        "href": "https://cherryquery.com"
+      }
     ]
   }
 }

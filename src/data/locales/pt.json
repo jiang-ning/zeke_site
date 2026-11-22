@@ -4,7 +4,6 @@
   "htmlLang": "pt",
   "htmlDir": "ltr",
   "languageName": "Português",
-
   "meta": {
     "title": "InnerOutliner - Estrutura. Concentra-te. Concluído.",
     "description": "InnerOutliner é um organizador de tarefas que funciona localmente e transforma ideias dispersas em planos executáveis. Privado por design - sem nuvem, sem necessidade de conta.",
@@ -14,7 +13,6 @@
     "ogTitle": "InnerOutliner - Estrutura. Concentra-te. Concluído.",
     "ogDesc": "Um organizador de tarefas com prioridade local. Os teus dados ficam no teu dispositivo. Sempre."
   },
-
   "nav": {
     "brand": "InnerOutliner",
     "language": {
@@ -22,12 +20,11 @@
       "heading": "Língua"
     }
   },
-
   "hero": {
     "ariaLabel": "Herói",
     "badge": "Primário local, Privado, Rápido",
-    "h1-line1": "Esboço.",
-    "h1-line2": "Foco.",
+    "h1_line1": "Esboço.",
+    "h1_line2": "Foco.",
     "h1_line3": "Feito.",
     "lead": "Transforma pensamentos dispersos numa estrutura de tarefas clara e executável. Esquemas aninhados, subtarefas, lembretes – tudo fica no teu dispositivo.",
     "cta_primary_href": "/download",
@@ -35,28 +32,178 @@
     "cta_secondary_href": "#features",
     "cta_secondary_label": "Funcionalidades"
   },
-
   "stats": [
-    { "value": "100%", "label": "Armazenamento local - sem exposição à cloud" },
-    { "value": "Instantâneo", "label": "Sem atraso de sincronização, sem necessidade de login" },
-    { "value": "10+", "label": "Pacotes de idiomas suportados"}
+    {
+      "value": "100%",
+      "label": "Armazenamento local - sem exposição à cloud"
+    },
+    {
+      "value": "Instantâneo",
+      "label": "Sem atraso de sincronização, sem necessidade de login"
+    },
+    {
+      "value": "10+",
+      "label": "Pacotes de idiomas suportados"
+    }
   ],
-
   "features": {
     "ariaLabel": "Funcionalidades",
     "heading": "Tudo o que precisas.",
     "headingAccent": "Nada que não faças",
     "subheading": "Desenhado para trabalho concentrado. Sem subscrições para te preocupares, os teus dados não saem do teu computador.",
     "items": [
-      { "title": "Estruturas aninhadas", "desc": "Divide qualquer objetivo em tarefas principais e subtarefas. Estrutura cristalina." },
-      { "title": "Fixar prioridade", "desc": "Dá destaque aos itens mais críticos de hoje numa área dedicada e fixada. Mantém-te totalmente focado." },
-      { "title": "Lembretes e prazos", "desc": "Prazos por tarefa e notificações locais. Nunca mais percas um acompanhamento." },
-      { "title": "Arrastar e reordenar", "desc": "Reorganiza as tuas listas e sublistas instantaneamente com arrastar e soltar fluido." },
-      { "title": "Tendências de progresso", "desc": "Os relatórios visuais de linha temporal mostram o teu ritmo de conclusão semana a semana" },
-      { "title": "Interface Multilíngue", "desc": "Muda toda a língua da interface com um só toque - 10 idiomas e a aumentar." }
+      {
+        "title": "Estruturas aninhadas",
+        "desc": "Divide qualquer objetivo em tarefas principais e subtarefas. Estrutura cristalina."
+      },
+      {
+        "title": "Vista de quadro",
+        "desc": "Vê cada lista como uma coluna lado a lado. Arrasta tarefas entre listas e reordena colunas em segundos."
+      },
+      {
+        "title": "Fixar prioridade",
+        "desc": "Dá destaque aos itens mais críticos de hoje numa área dedicada e fixada. Mantém-te totalmente focado."
+      },
+      {
+        "title": "Lembretes",
+        "desc": "Notificações nativas de ambiente de trabalho na data e hora que escolheres. Nunca mais percas um acompanhamento."
+      },
+      {
+        "title": "Datas de vencimento",
+        "desc": "Prazos por tarefa com etiquetas claras de Vence hoje e Em atraso, para que nada passe despercebido."
+      },
+      {
+        "title": "Relatórios de progresso",
+        "desc": "Gráficos semanais, mensais e anuais revelam o teu ritmo de conclusão ao longo do tempo."
+      },
+      {
+        "title": "Arrastar e reordenar",
+        "desc": "Reorganiza as tuas listas e sublistas instantaneamente com arrastar e soltar fluido."
+      },
+      {
+        "title": "Filtro",
+        "desc": "Encontra qualquer tarefa por texto e restringe a vista apenas às tarefas incompletas ou concluídas."
+      },
+      {
+        "title": "Temas e modo escuro",
+        "desc": "Claro, escuro ou Automático para seguir o teu sistema operativo, nove temas de cores e opacidade de janela ajustável."
+      },
+      {
+        "title": "Sempre no topo e encaixe na borda",
+        "desc": "Mantém a tua lista acima de outras janelas ou encaixa-a na borda do ecrã para a recolher até passares o cursor."
+      },
+      {
+        "title": "Cópia de segurança, restauro e CSV",
+        "desc": "Guarda tudo num ficheiro de cópia de segurança, junta ou substitui ao restaurar e exporta tarefas para CSV."
+      },
+      {
+        "title": "Interface Multilíngue",
+        "desc": "Muda toda a língua da interface com um só toque - 10 idiomas e a aumentar."
+      }
     ]
   },
-
+  "spotlight": {
+    "ariaLabel": "Destaques das funcionalidades",
+    "heading": "Planeia, agenda e revê -",
+    "headingAccent": "tudo num só lugar",
+    "subheading": "Um olhar mais atento às ferramentas que mantêm o teu trabalho a avançar. Tudo funciona localmente no teu dispositivo.",
+    "board": {
+      "eyebrow": "Quadro",
+      "title": "Vê cada lista lado a lado",
+      "desc": "Muda para Quadro e cada uma das tuas listas torna-se a sua própria coluna. Obtém uma visão geral num relance e move o trabalho exatamente para onde pertence.",
+      "points": [
+        "Arrasta uma tarefa para outra coluna para a mover para essa lista - as suas subtarefas vão com ela",
+        "Arrasta colunas para reordenar as tuas listas",
+        "Adiciona, edita e conclui tarefas diretamente dentro de cada coluna",
+        "Larga tarefas dentro de subtarefas e acompanha o progresso como 2/3 num relance"
+      ],
+      "svgLabel": "Vista de quadro com três colunas de listas e uma tarefa a ser arrastada de uma coluna para outra",
+      "svg": {
+        "title": "Quadro",
+        "col1": "Trabalho",
+        "col2": "Pessoal",
+        "col3": "Ideias"
+      }
+    },
+    "reminder": {
+      "eyebrow": "Lembrete",
+      "title": "Um aviso exatamente no momento certo",
+      "desc": "Anexa um lembrete a qualquer tarefa ou subtarefa. Quando chegar a hora, o InnerOutliner mostra uma notificação nativa de ambiente de trabalho - sem conta, sem servidor e sem nuvem.",
+      "points": [
+        "Escolhe um dia no calendário e uma hora em intervalos de 5 minutos",
+        "A notificação nativa do sistema operativo mostra o texto da tarefa",
+        "Clica na notificação para voltar diretamente à aplicação",
+        "Altera ou remove um lembrete a qualquer momento"
+      ],
+      "svgLabel": "Uma tarefa com um lembrete definido para as 09:30 e a notificação de ambiente de trabalho que aciona",
+      "svg": {
+        "task": "Ligar ao dentista",
+        "time": "Amanhã, 09:30",
+        "picker": "Lembrete",
+        "ok": "OK",
+        "app": "InnerOutliner",
+        "now": "agora",
+        "hint": "Clica para abrir",
+        "clock": "09:30"
+      }
+    },
+    "dueDate": {
+      "eyebrow": "Data de vencimento",
+      "title": "Sabe o que vence antes que seja tarde",
+      "desc": "Define um prazo para qualquer tarefa ou subtarefa. O InnerOutliner diz-te quanto tempo resta e torna impossível perder trabalho em atraso.",
+      "points": [
+        "Define ou remove uma data de vencimento a partir de um calendário simples",
+        "Etiquetas de estado claras: Vence em, Vence hoje e Em atraso",
+        "As tarefas que vencem hoje e as em atraso destacam-se com cores distintas",
+        "As tarefas concluídas mostram se foram feitas a tempo"
+      ],
+      "svgLabel": "Lista de tarefas a mostrar etiquetas de data de vencimento: vence em 3 dias, vence hoje, em atraso e feita a tempo",
+      "svg": {
+        "title": "Data de vencimento",
+        "task1": "Rascunhar plano trimestral",
+        "date1": "25 nov",
+        "badge1": "Vence em 3 dias",
+        "task2": "Enviar fatura",
+        "date2": "22 nov",
+        "badge2": "Vence hoje",
+        "task3": "Renovar domínio",
+        "date3": "20 nov",
+        "badge3": "2 dias em atraso",
+        "task4": "Reservar voos",
+        "date4": "18 nov",
+        "badge4": "Feita a tempo"
+      }
+    },
+    "report": {
+      "eyebrow": "Relatório",
+      "title": "Vê o teu progresso ganhar forma",
+      "desc": "Os relatórios transformam o teu histórico de tarefas numa linha de tendência clara, para que possas ver quanto concluis e o que ainda está em aberto.",
+      "points": [
+        "Alterna entre Semana, Mês e Ano e recua pelos períodos anteriores",
+        "Gráfico de linhas preenchido de tarefas concluídas vs. incompletas",
+        "Tabela de resumo com tarefas incompletas, concluídas e total por período",
+        "Abrange tarefas e subtarefas de todas as tuas listas"
+      ],
+      "svgLabel": "Gráfico de linhas do relatório semanal a comparar tarefas concluídas e incompletas de segunda a domingo",
+      "svg": {
+        "title": "Relatório",
+        "week": "Semana",
+        "month": "Mês",
+        "year": "Ano",
+        "completed": "Concluídas",
+        "incomplete": "Incompletas",
+        "days": [
+          "Seg",
+          "Ter",
+          "Qua",
+          "Qui",
+          "Sex",
+          "Sáb",
+          "Dom"
+        ]
+      }
+    }
+  },
   "showcase": {
     "ariaLabel": "Capturas de ecrã",
     "heading": "Vê isso",
@@ -64,38 +211,39 @@
     "subheading": "Um olhar mais atento à interface - listas aninhadas, modo escuro, temas personalizados e acompanhamento do progresso.",
     "items": [
       {
-        "src": "/images/apps_todolist.png", 
+        "src": "/images/apps_todolist.png",
         "alt": "Lista de tarefas aninhada com subtarefas e itens fixos",
         "caption": "Listas de tarefas aninhadas"
       },
       {
-        "src": "/images/apps_dark_mode.png", 
+        "src": "/images/apps_dark_mode.png",
         "alt": "Interface em modo escuro a mostrar um esquema aninhado",
         "caption": "Modo escuro bonito"
       },
       {
-        "src": "/images/apps_themes.png", 
+        "src": "/images/apps_themes.png",
         "alt": "Vários temas de cores para o organizador",
         "caption": "Temas de cores personalizados"
       },
       {
-        "src": "/images/apps_chart_report.png", 
+        "src": "/images/apps_chart_report.png",
         "alt": "Gráfico de progresso semanal mostrando tarefas concluídas e incompletas",
         "caption": "Relatórios de progresso"
       }
     ]
   },
-
   "trust": [
-    { "text": "100% offline - não é necessária conta" },
-    { "text": "Os dados nunca saem do teu dispositivo" }
+    {
+      "text": "100% offline - não é necessária conta"
+    },
+    {
+      "text": "Os dados nunca saem do teu dispositivo"
+    }
   ],
-
   "localeSuggest": {
     "detectedText": "Ver esta página em {name}?",
     "acceptLabel": "Ver em {name}"
   },
-
   "legal": {
     "privacy": {
       "summary": "Como o InnerOutliner lida com a informação e protege a tua privacidade.",
@@ -173,15 +321,26 @@
       ]
     }
   },
-
   "footer": {
     "copyright": "InnerOutliner. Todos os direitos reservados.",
     "linksAriaLabel": "Links do rodapé",
     "links": [
-      { "label": "Privacidade", "href": "/pt/privacy/" },
-      { "label": "Termos", "href": "/pt/terms/" },
-      { "label": "Segurança", "href": "/pt/security/"},
-      { "label": "CherryQuery", "href": "https://cherryquery.com"}
+      {
+        "label": "Privacidade",
+        "href": "/pt/privacy/"
+      },
+      {
+        "label": "Termos",
+        "href": "/pt/terms/"
+      },
+      {
+        "label": "Segurança",
+        "href": "/pt/security/"
+      },
+      {
+        "label": "CherryQuery",
+        "href": "https://cherryquery.com"
+      }
     ]
   }
 }

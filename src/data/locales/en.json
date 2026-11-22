@@ -26,8 +26,8 @@
   "hero": {
     "ariaLabel": "Hero",
     "badge": "Local-first, Private, Fast",
-    "h1-line1": "Outline.",
-    "h1-line2": "Focus.",
+    "h1_line1": "Outline.",
+    "h1_line2": "Focus.",
     "h1_line3": "Done.",
     "lead": "Turn scattered thoughts into a clean, executable task structure. Nested outlines, subtasks, reminders - everything stays on your device.",
     "cta_primary_href": "/download",
@@ -49,12 +49,113 @@
     "subheading": "Designed for focused work. No subscriptions to worry about, no data leaving your machine.",
     "items": [
       { "title": "Nested outlines", "desc": "Break any goal into parent tasks and subtasks. Crystal-clear structure." },
+      { "title": "Board view", "desc": "See every list as a column side by side. Drag tasks across lists and reorder columns in seconds." },
       { "title": "Priority pinning", "desc": "Hoist today's most critical items to a dedicated pinned area. Stay laser-focused." },
-      { "title": "Reminders & due dates", "desc": "Per-task deadlines and local notifications. Never miss a follow-up again." },
+      { "title": "Reminders", "desc": "Native desktop notifications at the date and time you pick. Never miss a follow-up again." },
+      { "title": "Due dates", "desc": "Per-task deadlines with clear Due Today and Overdue labels, so nothing slips through."},
+      { "title": "Progress reports", "desc": "Weekly, monthly and yearly charts reveal your completion rhythm over time." },
       { "title": "Drag & reorder", "desc": "Restructure your lists and sublists instantly with fluid drag-and-drop." },
-      { "title": "Progress trends", "desc": "Visual timeline reports reveal your completion rhythm week by week" },
+      { "title": "Filter", "desc": "Find any task by text and narrow the view to incomplete or completed tasks only." },
+      { "title": "Themes & dark mode", "desc": "Light, dark or Auto to follow your OS, nine color themes and adjustable window opacity." },
+      { "title": "Always on top & edge snap", "desc": "Keep your list above other windows, or snap it to the screen edge to collapse it until you hover." },
+      { "title": "Backup, restore & CSV", "desc": "Save everything to a backup file, merge or replace on restore, and export tasks to CSV." },
       { "title": "Multi-language UI", "desc": "Switch the entire interface language in one tap - 10 locales and growing." }
     ]
+  },
+
+  "spotlight": {
+    "ariaLabel": "Feature highlights",
+    "heading": "Plan, schedule and review -",
+    "headingAccent": "all in one place",
+    "subheading": "A closer look at the tools that keep your work moving. Everything runs locally on your device.",
+    "board": {
+      "eyebrow": "Board",
+      "title": "See every list side by side",
+      "desc": "Switch to Board and each of your lists becomes its own column. Get the big picture at a glance, then move work exactly where it belongs.",
+      "points": [
+        "Drag a task to another column to move it to that list - its subtasks come along",
+        "Drag columns to reorder your lists",
+        "Add, edit and complete tasks right inside each column",
+        "Drop tasks into subtasks and track progress like 2/3 at a glance"
+      ],
+      "svgLabel": "Board view with three list columns and a task being dragged from one column to another",
+      "svg": {
+        "title": "Board",
+        "col1": "Work",
+        "col2": "Personal",
+        "col3": "Ideas"
+      }
+    },
+    "reminder": {
+      "eyebrow": "Reminder",
+      "title": "A nudge at exactly the right moment",
+      "desc": "Attach a reminder to any task or subtask. When the time comes, InnerOutliner shows a native desktop notification - no account, no server, no cloud involved.",
+      "points": [
+        "Pick a day on the calendar and a time in 5-minute steps",
+        "Native OS notification shows the task text",
+        "Click the notification to jump straight back into the app",
+        "Change or remove a reminder at any time"
+      ],
+      "svgLabel": "A task with a reminder set for 09:30 and the desktop notification it triggers",
+      "svg": {
+        "task": "Call the dentist",
+        "time": "Tomorrow, 09:30",
+        "picker": "Reminder",
+        "ok": "OK",
+        "app": "InnerOutliner",
+        "now": "now",
+        "hint": "Click to open",
+        "clock": "09:30"
+      }
+    },
+    "dueDate": {
+      "eyebrow": "Due Date",
+      "title": "Know what's due before it's late",
+      "desc": "Give any task or subtask a deadline. InnerOutliner tells you how much time is left and makes overdue work impossible to miss.",
+      "points": [
+        "Set or remove a due date from a simple calendar",
+        "Clear status labels: Due in, Due Today and Overdue",
+        "Due-today and overdue tasks stand out with distinct colors",
+        "Completed tasks show whether they were done on time"
+      ],
+      "svgLabel": "Task list showing due date labels: due in 3 days, due today, overdue, and done on time",
+      "svg": {
+        "title": "Due Date",
+        "task1": "Draft quarterly plan",
+        "date1": "Nov 25",
+        "badge1": "Due in 3 days",
+        "task2": "Send invoice",
+        "date2": "Nov 22",
+        "badge2": "Due Today",
+        "task3": "Renew domain",
+        "date3": "Nov 20",
+        "badge3": "Overdue 2 days",
+        "task4": "Book flights",
+        "date4": "Nov 18",
+        "badge4": "Done on time"
+      }
+    },
+    "report": {
+      "eyebrow": "Report",
+      "title": "See your progress take shape",
+      "desc": "Reports turn your task history into a clear trend line, so you can see how much you finish and what's still open.",
+      "points": [
+        "Switch between Week, Month and Year, and step back through past periods",
+        "Filled line chart of completed vs. incomplete tasks",
+        "Summary table with incomplete, completed and total per period",
+        "Covers tasks and subtasks across all your lists"
+      ],
+      "svgLabel": "Weekly report line chart comparing completed and incomplete tasks from Monday to Sunday",
+      "svg": {
+        "title": "Report",
+        "week": "Week",
+        "month": "Month",
+        "year": "Year",
+        "completed": "Completed",
+        "incomplete": "Incomplete",
+        "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+      }
+    }
   },
 
   "showcase": {

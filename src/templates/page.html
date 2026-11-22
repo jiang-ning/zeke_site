@@ -123,6 +123,242 @@
         </div>
       </section>
 
+      {{#if spotlight}}
+      <!-- Feature spotlights -->
+      <section class="spotlight-section" id="spotlight" aria-label="{{spotlight.ariaLabel}}">
+        <div class="section-header">
+          <h2>{{spotlight.heading}} <span class="accent">{{spotlight.headingAccent}}</span></h2>
+          <p>{{spotlight.subheading}}</p>
+        </div>
+
+        <!-- Shared SVG defs: ids must be unique per document -->
+        <svg class="sv-defs" width="0" height="0" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="sv-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#6c63ff"/>
+              <stop offset="1" stop-color="#e040a0"/>
+            </linearGradient>
+            <linearGradient id="sv-area-green" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#00d4aa" stop-opacity="0.35"/>
+              <stop offset="1" stop-color="#00d4aa" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="sv-area-purple" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#8b84ff" stop-opacity="0.3"/>
+              <stop offset="1" stop-color="#8b84ff" stop-opacity="0"/>
+            </linearGradient>
+            <marker id="sv-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0 0L10 5L0 10z" fill="#8b84ff"/>
+            </marker>
+          </defs>
+        </svg>
+
+        <div class="spotlight-list">
+          {{#with spotlight.board}}
+          <article class="spotlight" id="board">
+            <div class="spotlight-text">
+              <span class="spotlight-eyebrow">{{eyebrow}}</span>
+              <h3>{{title}}</h3>
+              <p>{{desc}}</p>
+              <ul class="spotlight-points">
+                {{#each points}}<li>{{this}}</li>{{/each}}
+              </ul>
+            </div>
+            <div class="spotlight-visual">
+              <svg viewBox="0 0 480 320" role="img" aria-label="{{svgLabel}}" xmlns="http://www.w3.org/2000/svg">
+                <rect class="sv-window" x="10" y="10" width="460" height="300" rx="14"/>
+                <circle cx="30" cy="28" r="4" fill="#ff5f57"/><circle cx="44" cy="28" r="4" fill="#febc2e"/><circle cx="58" cy="28" r="4" fill="#28c840"/>
+                <text class="sv-title" x="240" y="32" text-anchor="middle">{{svg.title}}</text>
+
+                <rect class="sv-col" x="26" y="46" width="136" height="250" rx="10"/>
+                <rect class="sv-col" x="172" y="46" width="136" height="250" rx="10"/>
+                <rect class="sv-col" x="318" y="46" width="136" height="250" rx="10"/>
+                <text class="sv-head" x="38" y="68">{{svg.col1}}</text><text class="sv-muted" x="150" y="68" text-anchor="end">2</text>
+                <text class="sv-head" x="184" y="68">{{svg.col2}}</text><text class="sv-muted" x="296" y="68" text-anchor="end">3</text>
+                <text class="sv-head" x="330" y="68">{{svg.col3}}</text><text class="sv-muted" x="442" y="68" text-anchor="end">3</text>
+
+                <rect class="sv-card" x="34" y="80" width="120" height="34" rx="7"/><circle class="sv-check" cx="50" cy="97" r="6"/><rect class="sv-line" x="64" y="94" width="70" height="6" rx="3"/>
+                <rect class="sv-card" x="34" y="122" width="120" height="34" rx="7"/><circle class="sv-check" cx="50" cy="139" r="6"/><rect class="sv-line" x="64" y="136" width="44" height="6" rx="3"/>
+                <rect x="116" y="131" width="30" height="16" rx="8" fill="rgba(0,212,170,0.15)"/><text x="131" y="143" text-anchor="middle" class="sv-chip" fill="#00d4aa">2/3</text>
+
+                <rect class="sv-card" x="180" y="80" width="120" height="34" rx="7"/><circle class="sv-check" cx="196" cy="97" r="6"/><rect class="sv-line" x="210" y="94" width="78" height="6" rx="3"/>
+                <rect x="180" y="122" width="120" height="34" rx="7" fill="rgba(108,99,255,0.1)" stroke="#6c63ff" stroke-dasharray="5 4"/>
+                <rect class="sv-card" x="180" y="164" width="120" height="34" rx="7"/><circle class="sv-check" cx="196" cy="181" r="6"/><rect class="sv-line" x="210" y="178" width="60" height="6" rx="3"/>
+
+                <rect class="sv-card" x="326" y="80" width="120" height="34" rx="7"/><circle class="sv-check" cx="342" cy="97" r="6"/><rect class="sv-line" x="356" y="94" width="58" height="6" rx="3"/>
+                <rect class="sv-card" x="326" y="122" width="120" height="34" rx="7"/><circle cx="342" cy="139" r="6" fill="#00d4aa"/><path d="M339 13912 2 4-4" fill="none" stroke="#0a0c12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect class="sv-line" x="356" y="136" width="72" height="6" rx="3" opacity="0.35"/>
+                <rect class="sv-card" x="326" y="164" width="120" height="34" rx="7"/><circle class="sv-check" cx="342" cy="181" r="6"/><rect class="sv-line" x="356" y="178" width="48" height="6" rx="3"/>
+
+                <text class="sv-muted" x="40" y="280">+</text><rect class="sv-faint" x="54" y="273" width="50" height="6" rx="3"/>
+                <text class="sv-muted" x="186" y="280">+</text><rect class="sv-faint" x="200" y="273" width="50" height="6" rx="3"/>
+                <text class="sv-muted" x="332" y="280">+</text><rect class="sv-faint" x="346" y="273" width="50" height="6" rx="3"/>
+
+                <g transform="translate(116 200) rotate(-6)">
+                  <rect x="4" y="7" width="120" height="34" rx="7" fill="rgba(0,0,0,0.4)"/>
+                  <rect x="0" y="0" width="120" height="34" rx="7" fill="#1d2236" stroke="url(#sv-grad)" stroke-width="1.5"/>
+                  <circle class="sv-check" cx="16" cy="17" r="6"/><rect class="sv-line" x="30" y="14" width="66" height="6" rx="3"/>
+                </g>
+                <path d="M232 194C252 184 254 172 242 162" fill="none" stroke="#8b84ff" stroke-width="1.6" stroke-dasharray="4 4" marker-end="url(#sv-arrow)"/>
+              </svg>
+            </div>
+          </article>
+          {{/with}}
+
+          {{#with spotlight.reminder}}
+          <article class="spotlight spotlight-reverse" id="reminder">
+            <div class="spotlight-text">
+              <span class="spotlight-eyebrow">{{eyebrow}}</span>
+              <h3>{{title}}</h3>
+              <p>{{desc}}</p>
+              <ul class="spotlight-points">
+                {{#each points}}<li>{{this}}</li>{{/each}}
+              </ul>
+            </div>
+            <div class="spotlight-visual">
+              <svg viewBox="0 0 480 320" role="img" aria-label="{{svgLabel}}" xmlns="http://www.w3.org/2000/svg">
+                <rect class="sv-window" x="10" y="60" width="300" height="230" rx="14"/>
+                <circle cx="30" cy="78" r="4" fill="#ff5f57"/><circle cx="44" cy="78" r="4" fill="#febc2e"/><circle cx="58" cy="78" r="4" fill="#28c840"/>
+
+                <rect class="sv-card" x="26" y="98" width="268" height="42" rx="8"/>
+                <circle class="sv-check" cx="44" cy="119" r="7"/>
+                <text class="sv-text" x="60" y="116">{{svg.task}}</text>
+                <text class="sv-chip" x="60" y="131" fill="#8b84ff">{{svg.time}}</text>
+                <g transform="translate(266 111)">
+                  <path d="M8 1.5a4.5 4.5 0 0 0-4.5 4.5v3L2 11.5h12L12.5 9V6A4.5 4.5 0 0 0 8 1.5z" fill="#8b84ff"/>
+                  <circle cx="8" cy="13.6" r="1.7" fill="#8b84ff"/>
+                </g>
+
+                <rect x="40" y="152" width="240" height="112" rx="10" fill="#171c2b" stroke="rgba(108,99,255,0.45)"/>
+                <text class="sv-head" x="56" y="174">{{svg.picker}}</text>
+                <text class="sv-muted" x="62" y="204" text-anchor="middle">16</text>
+                <text class="sv-muted" x="90" y="204" text-anchor="middle">17</text>
+                <text class="sv-muted" x="118" y="204" text-anchor="middle">18</text>
+                <circle cx="146" cy="200" r="11" fill="url(#sv-grad)"/>
+                <text class="sv-head" x="146" y="204" text-anchor="middle" fill="#fff">19</text>
+                <text class="sv-muted" x="174" y="204" text-anchor="middle">20</text>
+                <text class="sv-muted" x="202" y="204" text-anchor="middle">21</text>
+                <text class="sv-muted" x="230" y="204" text-anchor="middle">22</text>
+                <rect class="sv-card" x="56" y="222" width="40" height="26" rx="6"/><text class="sv-head" x="76" y="240" text-anchor="middle">09</text>
+                <text class="sv-head" x="104" y="240" text-anchor="middle">:</text>
+                <rect class="sv-card" x="112" y="222" width="40" height="26" rx="6"/><text class="sv-head" x="132" y="240" text-anchor="middle">30</text>
+                <rect x="200" y="222" width="64" height="26" rx="6" fill="url(#sv-grad)"/><text class="sv-head" x="232" y="240" text-anchor="middle" fill="#fff">{{svg.ok}}</text>
+
+                <path d="M286 112C330 110 352 106 354 100" fill="none" stroke="#8b84ff" stroke-width="1.6" stroke-dasharray="4 4" marker-end="url(#sv-arrow)"/>
+
+                <rect x="250" y="20" width="224" height="80" rx="12" fill="rgba(0,0,0,0.4)"/>
+                <rect x="246" y="14" width="224" height="80" rx="12" fill="#1b2133" stroke="rgba(255,255,255,0.14)"/>
+                <rect x="260" y="30" width="28" height="28" rx="7" fill="url(#sv-grad)"/>
+                <path d="M267 44l5 5 9-10" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <text class="sv-head" x="298" y="40">{{svg.app}}</text>
+                <text class="sv-muted" x="458" y="40" text-anchor="end">{{svg.now}}</text>
+                <text class="sv-text" x="298" y="58">{{svg.task}}</text>
+                <text class="sv-muted" x="298" y="78">{{svg.hint}}</text>
+
+                <circle cx="395" cy="200" r="58" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+                <path d="M395 148v8M395 244v8M343 200h8M439 200h8" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M395 200L366 192" stroke="#e8eaf2" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M395 200V242" stroke="#8b84ff" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="395" cy="200" r="4" fill="#e8eaf2"/>
+                <text class="sv-head" x="395" y="285" text-anchor="middle">{{svg.clock}}</text>
+              </svg>
+            </div>
+          </article>
+          {{/with}}
+
+          {{#with spotlight.dueDate}}
+          <article class="spotlight spotlight" id="due-date">
+            <div class="spotlight-text">
+              <span class="spotlight-eyebrow">{{eyebrow}}</span>
+              <h3>{{title}}</h3>
+              <p>{{desc}}</p>
+              <ul class="spotlight-points">
+                {{#each points}}<li>{{this}}</li>{{/each}}
+              </ul>
+            </div>
+            <div class="spotlight-visual">
+              <svg viewBox="0 0 480 320" role="img" aria-label="{{svgLabel}}" xmlns="http://www.w3.org/2000/svg">
+                <rect class="sv-window" x="10" y="10" width="460" height="300" rx="14"/>
+                <circle cx="30" cy="28" r="4" fill="#ff5f57"/><circle cx="44" cy="28" r="4" fill="#febc2e"/><circle cx="58" cy="28" r="4" fill="#28c840"/>
+                <text class="sv-title" x="240" y="32" text-anchor="middle">{{svg.title}}</text>
+
+                <rect class="sv-card" x="26" y="50" width="428" height="50" rx="9"/><rect x="26" y="50" width="4" height="50" rx="2" fill="#8b84ff"/>
+                <circle class="sv-check" cx="50" cy="75" r="7"/>
+                <text class="sv-text" x="68" y="72">{{svg.task1}}</text><text class="sv-muted" x="68" y="89">{{svg.date1}}</text>
+                <rect x="322" y="64" width="118" height="22" rx="11" fill="rgba(139,132,255,0.16)"/><text class="sv-badge" x="381" y="79" text-anchor="middle" fill="#8b84ff">{{svg.badge1}}</text>
+
+                <rect class="sv-card" x="26" y="112" width="428" height="50" rx="9"/><rect x="26" y="112" width="4" height="50" rx="2" fill="#f5a524"/>
+                <circle class="sv-check" cx="50" cy="137" r="7"/>
+                <text class="sv-text" x="68" y="134">{{svg.task2}}</text><text class="sv-muted" x="68" y="151">{{svg.date2}}</text>
+                <rect x="322" y="126" width="118" height="22" rx="11" fill="rgba(245,165,36,0.16)"/><text class="sv-badge" x="381" y="141" text-anchor="middle" fill="#f5a524">{{svg.badge2}}</text>
+
+                <rect class="sv-card" x="26" y="174" width="428" height="50" rx="9"/><rect x="26" y="174" width="4" height="50" rx="2" fill="#ff5d6c"/>
+                <circle class="sv-check" cx="50" cy="199" r="7"/>
+                <text class="sv-text" x="68" y="196">{{svg.task3}}</text><text class="sv-muted" x="68" y="213">{{svg.date3}}</text>
+                <rect x="322" y="188" width="118" height="22" rx="11" fill="rgba(255,93,108,0.16)"/><text class="sv-badge" x="381" y="203" text-anchor="middle" fill="#ff5d6c">{{svg.badge3}}</text>
+
+                <rect class="sv-card" x="26" y="236" width="428" height="50" rx="9"/><rect x="26" y="236" width="4" height="50" rx="2" fill="#00d4aa"/>
+                <circle cx="50" cy="261" r="7" fill="#00d4aa"/><path d="M46.5 261l2.5 2.5 4.5-5" fill="none" stroke="#0a0c12" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <text class="sv-text sv-done" x="68" y="258">{{svg.task4}}</text><text class="sv-muted" x="68" y="275">{{svg.date4}}</text>
+                <rect x="322" y="250" width="118" height="22" rx="11" fill="rgba(0,212,170,0.16)"/><text class="sv-badge" x="381" y="265" text-anchor="middle" fill="#00d4aa">{{svg.badge4}}</text>
+              </svg>
+            </div>
+          </article>
+          {{/with}}
+
+          {{#with spotlight.report}}
+          <article class="spotlight spotlight-reverse" id="report">
+            <div class="spotlight-text">
+              <span class="spotlight-eyebrow">{{eyebrow}}</span>
+              <h3>{{title}}</h3>
+              <p>{{desc}}</p>
+              <ul class="spotlight-points">
+                {{#each points}}<li>{{this}}</li>{{/each}}
+              </ul>
+            </div>
+            <div class="spotlight-visual">
+              <svg viewBox="0 0 480 320" role="img" aria-label="{{svgLabel}}" xmlns="http://www.w3.org/2000/svg">
+                <rect class="sv-window" x="10" y="10" width="460" height="300" rx="14"/>
+                <circle cx="30" cy="28" r="4" fill="#ff5f57"/><circle cx="44" cy="28" r="4" fill="#febc2e"/><circle cx="58" cy="28" r="4" fill="#28c840"/>
+                <text class="sv-title" x="240" y="32" text-anchor="middle">{{svg.title}}</text>
+
+                <rect x="26" y="46" width="186" height="28" rx="8" fill="rgba(255,255,255,0.05)"/>
+                <rect x="29" y="49" width="60" height="22" rx="6" fill="url(#sv-grad)"/>
+                <text class="sv-head" x="59" y="64" text-anchor="middle" fill="#fff">{{svg.week}}</text>
+                <text class="sv-muted" x="121" y="64" text-anchor="middle">{{svg.month}}</text>
+                <text class="sv-muted" x="183" y="64" text-anchor="middle">{{svg.year}}</text>
+
+                <circle cx="300" cy="60" r="4" fill="#00d4aa"/><text class="sv-text" x="310" y="64">{{svg.completed}}</text>
+                <circle cx="385" cy="60" r="4" fill="#8b84ff"/><text class="sv-text" x="395" y="64">{{svg.incomplete}}</text>
+
+                <path d="M44 100H454M44 140H454M44 180H454M44 220H454" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3 4"/>
+                <path d="M44 260H454" stroke="rgba(255,255,255,0.14)"/>
+
+                <path d="M60 210L124 196L188 212L252 190L316 200L380 184L444 194V260H60Z" fill="url(#sv-area-purple)"/>
+                <path d="M60 210L124 196L188 212L252 190L316 200L380 184L444 194" fill="none" stroke="#8b84ff" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M60 236L124 218L188 206L252 180L316 170L380 140L444 112V260H60Z" fill="url(#sv-area-green)"/>
+                <path d="M60 236L124 218L188 206L252 180L316 170L380 140L444 112" fill="none" stroke="#00d4aa" stroke-width="2.5" stroke-linejoin="round"/>
+
+                <g fill="#111520" stroke="#8b84ff" stroke-width="2">
+                  <circle cx="60" cy="210" r="3.5"/><circle cx="124" cy="196" r="3.5"/><circle cx="188" cy="212" r="3.5"/><circle cx="252" cy="190" r="3.5"/><circle cx="316" cy="200" r="3.5"/><circle cx="380" cy="184" r="3.5"/><circle cx="444" cy="194" r="3.5"/>
+                </g>
+                <g fill="#111520" stroke="#00d4aa" stroke-width="2">
+                  <circle cx="60" cy="236" r="3.5"/><circle cx="124" cy="218" r="3.5"/><circle cx="188" cy="206" r="3.5"/><circle cx="252" cy="180" r="3.5"/><circle cx="316" cy="170" r="3.5"/><circle cx="380" cy="140" r="3.5"/><circle cx="444" cy="112" r="3.5"/>
+                </g>
+
+                <text class="sv-muted" x="60" y="284" text-anchor="middle">{{svg.days.[0]}}</text>
+                <text class="sv-muted" x="124" y="284" text-anchor="middle">{{svg.days.[1]}}</text>
+                <text class="sv-muted" x="188" y="284" text-anchor="middle">{{svg.days.[2]}}</text>
+                <text class="sv-muted" x="252" y="284" text-anchor="middle">{{svg.days.[3]}}</text>
+                <text class="sv-muted" x="316" y="284" text-anchor="middle">{{svg.days.[4]}}</text>
+                <text class="sv-muted" x="380" y="284" text-anchor="middle">{{svg.days.[5]}}</text>
+                <text class="sv-muted" x="444" y="284" text-anchor="middle">{{svg.days.[6]}}</text>
+              </svg>
+            </div>
+          </article>
+          {{/with}}
+        </div>
+      </section>
+      {{/if}}
+
       <!-- Screenshots -->
       <section class="showcase-section" id="showcase" aria-label="{{showcase.ariaLabel}}">
         <div class="section-header">
