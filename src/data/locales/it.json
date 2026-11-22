@@ -26,8 +26,8 @@
   "hero": {
     "ariaLabel": "Eroe",
     "badge": "Locale prima di tutto, Privato, Veloce",
-    "h1-line1": "Schema.",
-    "h1-line2": "Concentrazione.",
+    "h1_line1": "Schema.",
+    "h1_line2": "Concentrazione.",
     "h1_line3": "Fatto.",
     "lead": "Trasforma i pensieri sparsi in una struttura di compiti chiara e eseguibile. Schemi annidati, sottoattività, promemoria: tutto resta sul tuo dispositivo.",
     "cta_primary_href": "/download",

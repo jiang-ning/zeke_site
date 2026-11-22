@@ -26,8 +26,8 @@
   "hero": {
     "ariaLabel": "Héroïne",
     "badge": "D'abord local, privé, rapide",
-    "h1-line1": "Plan.",
-    "h1-line2": "Concentre-toi.",
+    "h1_line1": "Plan.",
+    "h1_line2": "Concentre-toi.",
     "h1_line3": "Fait.",
     "lead": "Transforme des pensées éparpillées en une structure de tâches claire et exécutable. Plans imbriqués, sous-tâches, rappels - tout reste sur ton appareil.",
     "cta_primary_href": "/download",

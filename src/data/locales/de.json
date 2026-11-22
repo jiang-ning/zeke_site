@@ -26,8 +26,8 @@
   "hero": {
     "ariaLabel": "Held",
     "badge": "Lokal zuerst, privat, schnell",
-    "h1-line1": "Umriss.",
-    "h1-line2": "Fokus.",
+    "h1_line1": "Umriss.",
+    "h1_line2": "Fokus.",
     "h1_line3": "Fertig.",
     "lead": "Verwandle verstreute Gedanken in eine saubere, ausführbare Aufgabenstruktur. Verschachtelte Gliederungen, Unteraufgaben, Erinnerungen – alles bleibt auf deinem Gerät.",
     "cta_primary_href": "/download",

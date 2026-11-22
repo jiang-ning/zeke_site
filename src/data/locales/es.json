@@ -26,8 +26,8 @@
   "hero": {
     "ariaLabel": "Héroe",
     "badge": "Primero local, privado, rápido",
-    "h1-line1": "Esquema.",
-    "h1-line2": "Enfócate.",
+    "h1_line1": "Esquema.",
+    "h1_line2": "Enfócate.",
     "h1_line3": "Listo.",
     "lead": "Convierte pensamientos dispersos en una estructura de tareas limpia y ejecutable. Esquemas anidados, subtareas, recordatorios: todo se queda en tu dispositivo.",
     "cta_primary_href": "/download",
